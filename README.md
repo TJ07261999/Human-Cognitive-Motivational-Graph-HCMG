@@ -9,3 +9,4 @@
 3. Set the `MONGODB_URI` in [.env.local](.env.local) to your Mongo DB URI key
 4. Run the app:
    `npm run dev`
+If you have Dockerfile, then `docker run -p 3000:3000 --env-file .env hcmg-app`
