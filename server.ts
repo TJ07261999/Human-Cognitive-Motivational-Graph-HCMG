@@ -21,7 +21,7 @@ async function getMongoClient() {
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   app.use(express.json());
 
@@ -66,20 +66,37 @@ async function startServer() {
       
       const targetLang = language === 'ja' ? 'Japanese' : (language === 'ko' ? 'Korean' : 'English');
 
-      const prompt = `You are an expert cognitive architect for the Human Cognitive-Motivational Graph (HCMG). 
-Based on these top 3 dominant traits of a user, write a brief, insightful, and slightly mysterious 3-sentence profile describing their cognitive archetype. Keep it professional and focused on their network topology.
+      const prompt = `You are a psychological and cognitive expert.
+Based on the user's top three dominant traits from a psychological assessment, provide a concrete, easy-to-understand summary of what kind of person they are, their strengths, and what motivates them. Write in a friendly and professional tone. Output exactly in ${targetLang}.
 
-Top Traits:
+Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
 
-Output ONLY the 3-sentence description limit in ${targetLang}. No pleasantries.`;
+Analyze these traits and return a strictly valid JSON object with the following structure. Do not include markdown formatting or backticks:
+{
+  "summary": "Your detailed summary paragraph here in ${targetLang}...",
+  "translatedTraits": {
+    "Trait 1 English Name": "Trait 1 translated to ${targetLang}",
+    "Trait 2 English Name": "Trait 2 translated to ${targetLang}",
+    "Trait 3 English Name": "Trait 3 translated to ${targetLang}"
+  }
+}`;
 
       const response = await ai.models.generateContent({
         model: 'gemini-3.5-flash',
         contents: prompt,
       });
 
-      res.json({ result: response.text });
+      let resultText = response.text || "{}";
+      resultText = resultText.replace(/```json/gi, '').replace(/```/g, '').trim();
+      let analyzeResult = { summary: "", translatedTraits: {} };
+      try {
+        analyzeResult = JSON.parse(resultText);
+      } catch (e) {
+        analyzeResult.summary = resultText;
+      }
+
+      res.json({ result: analyzeResult });
     } catch (error: any) {
       console.error('Error in /api/analyze:', error);
       res.status(500).json({ error: error.message || 'Analysis failed' });

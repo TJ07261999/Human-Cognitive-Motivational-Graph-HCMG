@@ -21,7 +21,7 @@ export default function Results() {
     );
   }
 
-  const { topTraits, vectorHash, answers, aiSummary } = state;
+  const { topTraits, vectorHash, answers, aiSummary, translatedTraits } = state;
 
   // Find top categories based on answers
   const categoryScores: Record<string, { total: number, count: number }> = {};
@@ -61,10 +61,6 @@ export default function Results() {
         </div>
         <h1 className="text-4xl font-semibold tracking-tight mb-4">{t('r.title')}</h1>
         <p className="text-neutral-400">{t('r.subtitle')}</p>
-        <p className="text-indigo-400 text-sm mt-4 font-mono max-w-xl mx-auto">
-          [PHASE 1: DATA COLLECTION] <br/>
-          Once 1,000 global nodes are collected, dimensionality reduction and clustering will assign topological archetype classes.
-        </p>
       </motion.div>
 
       {aiSummary && (
@@ -72,13 +68,10 @@ export default function Results() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3 }}
-          className="bg-indigo-900/20 border border-indigo-500/30 rounded-3xl p-8 mb-16 relative overflow-hidden"
+          className="bg-neutral-800/50 border border-neutral-700/50 rounded-3xl p-8 mb-16 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 p-6 opacity-10 pointer-events-none">
-            <Hexagon size={120} />
-          </div>
-          <h2 className="text-xl font-medium tracking-tight mb-4 text-indigo-300">Phase 1 Insight (AI Prototype Analysis)</h2>
-          <p className="text-emerald-50 leading-relaxed text-lg z-10 relative">
+          <h2 className="text-xl font-medium tracking-tight mb-4 text-white">{t('r.summary')}</h2>
+          <p className="text-neutral-200 leading-relaxed text-lg z-10 relative">
             {aiSummary}
           </p>
         </motion.div>
@@ -88,13 +81,13 @@ export default function Results() {
         <div className="space-y-8">
           <div>
             <h2 className="text-xl font-medium tracking-tight mb-6 flex items-center gap-3">
-              <Network className="text-indigo-400" size={20} /> Prominent Traits
+              <Network className="text-indigo-400" size={20} /> {t('r.prominent_traits')}
             </h2>
             <div className="space-y-4">
               {topTraits.map((trait: any, i: number) => (
                 <div key={i} className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 flex flex-col items-center text-center">
                   <div className="text-3xl font-semibold mb-1 text-white">{trait.score}%</div>
-                  <div className="text-indigo-400 font-medium mb-2">{trait.name}</div>
+                  <div className="text-indigo-400 font-medium mb-2">{translatedTraits?.[trait.name] || trait.name}</div>
                   <div className="h-1.5 w-full bg-neutral-800 rounded-full overflow-hidden mt-4">
                     <motion.div 
                       className="h-full bg-indigo-500"
@@ -115,7 +108,7 @@ export default function Results() {
               {catAverages.map((cat, i) => (
                 <div key={i}>
                   <div className="flex justify-between text-sm mb-1.5">
-                    <span className="text-neutral-300">{cat.category}</span>
+                    <span className="text-neutral-300">{t(`cat.${cat.category}`)}</span>
                     <span className="text-neutral-500 font-mono">Lv {cat.score.toFixed(1)}</span>
                   </div>
                   <div className="h-2 w-full bg-neutral-900 rounded-full overflow-hidden">

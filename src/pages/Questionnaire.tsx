@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import graphData from '../data/hcmg_graph.json';
@@ -6,6 +6,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 import LanguageSelector from '../components/LanguageSelector';
 
 export default function Questionnaire() {
+  const topRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const { language, t } = useLanguage();
   const [answers, setAnswers] = useState<Record<string, number>>({});
@@ -26,6 +27,18 @@ export default function Questionnaire() {
   const QUESTIONS_PER_PAGE = 10;
   const totalPages = Math.ceil(questions.length / QUESTIONS_PER_PAGE);
   
+  // Scroll to top when page changes
+  useEffect(() => {
+    // Timeout ensures scroll happens after AnimatePresence mode="popLayout" layout changes
+    setTimeout(() => {
+      if (topRef.current) {
+        topRef.current.scrollIntoView({ behavior: 'instant', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+    }, 50);
+  }, [page]);
+
   const currentQuestions = questions.slice(page * QUESTIONS_PER_PAGE, (page + 1) * QUESTIONS_PER_PAGE);
 
   const handleAnswer = (id: string, value: number) => {
@@ -36,7 +49,6 @@ export default function Questionnaire() {
 
   const handleNext = () => {
     if (page < totalPages - 1) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
       setPage(p => p + 1);
     } else {
       submitData();
@@ -63,6 +75,7 @@ export default function Questionnaire() {
       const vectorHash = `HCMG-${prefix}-${hexStr}`;
 
       let aiSummary = "";
+      let translatedTraits: Record<string, string> = {};
       try {
         const analyzeRes = await fetch('/api/analyze', {
           method: 'POST',
@@ -71,7 +84,12 @@ export default function Questionnaire() {
         });
         if (analyzeRes.ok) {
           const analyzeData = await analyzeRes.json();
-          aiSummary = analyzeData.result;
+          if (typeof analyzeData.result === 'object') {
+             aiSummary = analyzeData.result.summary;
+             translatedTraits = analyzeData.result.translatedTraits || {};
+          } else {
+             aiSummary = analyzeData.result;
+          }
         }
       } catch (err) {
         console.warn('AI analysis fell back:', err);
@@ -85,16 +103,20 @@ export default function Questionnaire() {
         version: "1.0-data-collection"
       };
       
-      const saveRes = await fetch('/api/responses', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(responseDoc)
-      });
-      if (!saveRes.ok) {
-        throw new Error('Failed to save to database');
+      try {
+        const saveRes = await fetch('/api/responses', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(responseDoc)
+        });
+        if (!saveRes.ok) {
+          console.warn('Failed to save to database');
+        }
+      } catch (dbErr) {
+        console.warn('DB error silently ignored:', dbErr);
       }
       
-      navigate('/results', { state: { topTraits, vectorHash, answers, aiSummary } });
+      navigate('/results', { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
     } catch (err: any) {
       console.error(err);
       alert("Failed to submit data: " + err.message);
@@ -104,7 +126,7 @@ export default function Questionnaire() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <div ref={topRef} className="max-w-3xl mx-auto px-6 py-16">
       <LanguageSelector />
       <div className="mb-12 mt-12">
         <div className="flex justify-between items-end mb-4">
@@ -171,7 +193,6 @@ export default function Questionnaire() {
         <button 
           onClick={() => {
             if (page > 0) {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
               setPage(p => p - 1);
             }
           }}

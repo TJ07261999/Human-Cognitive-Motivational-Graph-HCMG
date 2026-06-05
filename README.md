@@ -1,3 +1,13 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/f3baa627-ff70-447a-ac1d-1c5044bba187
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
@@ -6,9 +16,5 @@
 1. Install dependencies:
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Set the `MONGODB_URI` in [.env.local](.env.local) to your Mongo DB URI key
-4. Run the app:
+3. Run the app:
    `npm run dev`
-
-
-If you have Dockerfile, then `docker run -p 3000:3000 --env-file .env hcmg-app`
