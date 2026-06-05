@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "Response": {
+      "title": "Questionnaire Response",
+      "description": "A user's anonymous response to the HCMG questionnaire.",
+      "type": "object",
+      "properties": {
+        "answers": {
+          "type": "object",
+          "description": "Answers keyed by node ID, value 1-5"
+        },
+        "archetypes": {
+          "type": "array",
+          "description": "The computed archetypes and percentages for the user."
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp"
+        }
+      },
+      "required": ["answers", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/responses/{responseId}": {
+      "schema": { "$ref": "#/entities/Response" },
+      "description": "Stores all anonymous HCMG questionnaire responses."
+    }
+  }
+}
