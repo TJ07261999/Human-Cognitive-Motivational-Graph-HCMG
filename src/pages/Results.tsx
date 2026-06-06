@@ -1,4 +1,5 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Network, ArrowLeft, Hexagon } from 'lucide-react';
 import graphData from '../data/hcmg_graph.json';
@@ -7,22 +8,60 @@ import LanguageSelector from '../components/LanguageSelector';
 import ShareButtons from '../components/ShareButtons';
 
 export default function Results() {
+  const { id } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
   const { t } = useLanguage();
-  const state = location.state as any;
+  const [data, setData] = useState<any>(location.state || null);
+  const [loading, setLoading] = useState(!location.state && id);
+  const [error, setError] = useState('');
 
-  if (!state) {
+  useEffect(() => {
+    if (!data && id) {
+      fetch(`/api/responses/${id}`)
+        .then(res => {
+          if (!res.ok) throw new Error('Result not found');
+          return res.json();
+        })
+        .then(doc => {
+          setData(doc);
+        })
+        .catch(err => {
+          setError(err.message);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    }
+  }, [id, data]);
+
+  if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <button onClick={() => navigate('/')} className="text-indigo-400 hover:text-indigo-300">
+        <div className="animate-pulse flex items-center gap-2 text-indigo-400">
+          <Hexagon className="animate-spin" /> Loading analysis...
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center gap-6 text-center px-4">
+        <h2 className="text-2xl font-semibold text-white">404 - Not Found</h2>
+        <p className="text-neutral-400">
+          {error || "結果データが見つかりませんでした。"}
+          <br /><br />
+          <span className="text-sm">正しい共有URL（例: /results/xxxxxxxx）であるか確認してください。<br/>データベースへの保存に失敗した場合、共有リンクは生成されません。</span>
+        </p>
+        <button onClick={() => navigate('/')} className="px-6 py-2 bg-indigo-500/20 text-indigo-400 rounded-full font-medium hover:bg-indigo-500/30 transition-colors">
           {t('r.home')}
         </button>
       </div>
     );
   }
 
-  const { topTraits, vectorHash, answers, aiSummary, translatedTraits } = state;
+  const { topTraits, vectorHash, answers, aiSummary, translatedTraits } = data;
 
   // Find top categories based on answers
   const categoryScores: Record<string, { total: number, count: number }> = {};
@@ -127,6 +166,19 @@ export default function Results() {
       </div>
 
       <ShareButtons title={`My primary intrinsic traits are ${topTraits.slice(0, 2).map((t: any) => translatedTraits?.[t.name] || t.name).join(' & ')} on HCMG!`} />
+      
+      {id && (
+        <div className="mt-16 text-center bg-indigo-500/10 border border-indigo-500/20 rounded-3xl p-8 mb-8">
+          <h3 className="text-2xl font-medium tracking-tight mb-4 text-white">Curious about your own cognitive graph?</h3>
+          <p className="text-neutral-400 mb-6">Take the assessment and map your root drives, reasoning models, and execution patterns.</p>
+          <button 
+            onClick={() => navigate('/questionnaire')}
+            className="bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-3 rounded-full font-medium transition-all"
+          >
+            Take the Assessment
+          </button>
+        </div>
+      )}
     </div>
   );
 }
