@@ -10,8 +10,9 @@ interface LanguageContextType {
 
 const translations = {
   en: {
-    'landing.title': 'Human Cognitive-Motivational Graph',
+    'landing.title': 'HCMG - Personality Assessment',
     'landing.subtitle': 'More than a personality test. We map your root drives, reasoning models, and execution patterns into a 225-node mathematical graph.',
+    'landing.test_phase': 'This application is currently in the testing phase.',
     'landing.feature1.title': 'Information Architecture',
     'landing.feature1.desc': 'How you process signals, patterns, and ambiguity.',
     'landing.feature2.title': 'Reasoning & Execution',
@@ -62,8 +63,9 @@ const translations = {
     'theory.meta.desc': 'The highest level of cognitive abstraction. It measures your Metacognition (observing your own thoughts), Self-Correction speed, and Identity Flexibility—how perfectly aligned your internal identity is across all external environments.'
   },
   ja: {
-    'landing.title': 'Human Cognitive-Motivational Graph',
+    'landing.title': 'HCMG - Personality Assessment',
     'landing.subtitle': '単なる性格診断ではありません。あなたの根本的な動機、推論モデル、実行パターンを225ノードの数学的グラフにマッピングします。',
+    'landing.test_phase': '※現在テスト段階です',
     'landing.feature1.title': '情報アーキテクチャ',
     'landing.feature1.desc': 'シグナル、パターン、不確実性をどのように処理するか。',
     'landing.feature2.title': '推論と実行',
@@ -99,7 +101,7 @@ const translations = {
     'theory.title': 'HCMG 理論基盤',
     'theory.intro': '人間の認知・動機グラフ（HCMG）は、従来の16タイプのようないわゆる「性格分類」の枠組みを捨て、ネットワークトポロジーのアプローチを採用しています。人間のOS（オペレーティング・システム）の中核となる、7つの基盤となる領域を測定・パラメーター化します。',
     'theory.energy.title': '1. エネルギー・アーキテクチャ',
-    'theory.energy.desc': 'あなたがどのように活力を生み出し、消費し、回復するかを示します。一人の時間で精神的なバッテリーを深く充電するのか、それとも集団の中にいることで逆に活力を得るのかなど、心の根本的なエネルギー源を追跡します。',
+    'theory.energy.desc': 'あなたがどのように活力を生み出し、消費し、回復するかを示します。一人の時間で精神的なバッテリーを深く充電するのか、それとも集団の中にいることで逆に活力を得るのかなど、心の根本的なエネルギー源을 追跡します。',
     'theory.information.title': '2. 情報処理（Information Processing）',
     'theory.information.desc': '現実を認識するためのフィルターとレンズです。物事の裏にある隠されたパターンを検出したり（パターン探索）、細かいことよりも全体像を見据えたり（大局的思考）、あるいは他の人が見逃すような小さな矛盾やミスに気付く（細部へのこだわり）などの傾向を測定します。',
     'theory.reasoning.title': '3. 推論と論理（Reasoning & Logic）',
@@ -114,8 +116,9 @@ const translations = {
     'theory.meta.desc': '最も抽象度の高い認知レベルです。自分自身の思考をまるで他人のように客観視できるか（メタ認知）、激しい議論の中でも自分が間違っていれば即座に訂正できるか（自己修正）、そして「職場」「友人」「一人」の時で自分のキャラクターやアイデンティティに裏表がなく、どれだけ一貫しているか（真正性/Authenticity）を測定します。'
   },
   ko: {
-    'landing.title': '인간 인지-동기 그래프 (HCMG)',
+    'landing.title': 'HCMG - Personality Assessment',
     'landing.subtitle': '단순한 성격 테스트가 아닙니다. 당신의 근본적인 동기, 추론 모델, 실행 패턴을 225개 노드의 수학적 그래프로 매핑합니다.',
+    'landing.test_phase': '현재 테스트 단계입니다.',
     'landing.feature1.title': '정보 아키텍처',
     'landing.feature1.desc': '신호, 패턴, 불확실성을 처리하는 방식.',
     'landing.feature2.title': '추론 및 실행',
