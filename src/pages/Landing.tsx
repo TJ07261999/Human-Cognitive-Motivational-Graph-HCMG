@@ -1,8 +1,10 @@
+import { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { BrainCircuit, FunctionSquare, Network, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import LanguageSelector from '../components/LanguageSelector';
+import ShareButtons from '../components/ShareButtons';
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -50,6 +52,9 @@ export default function Landing() {
             <span>{t('landing.theory')}</span>
           </button>
         </div>
+
+        <ShareButtons title="HCMG - Human Cognitive Motivational Graph" />
+
         <div className="mt-8 flex flex-col items-center gap-2">
           <p className="text-neutral-500 text-sm">
             {t('landing.disclaimer')}
@@ -63,7 +68,7 @@ export default function Landing() {
   );
 }
 
-function Feature({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+function Feature({ icon, title, desc }: { icon: ReactNode, title: string, desc: string }) {
   return (
     <div className="p-6 rounded-2xl bg-neutral-900/50 border border-neutral-800">
       <div className="text-indigo-400 mb-4">{icon}</div>
