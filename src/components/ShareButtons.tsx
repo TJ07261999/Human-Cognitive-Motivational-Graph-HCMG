@@ -74,7 +74,7 @@ export default function ShareButtons({ title = "HCMG - Human Cognitive Motivatio
         break;
     }
 
-    // 引数渡しをサポートしていないアプリはクリップボードにコピーさせる
+    // 引数渡しをサポートしていないアプリ等はクリップボードにコピーした上でアプリを開く準備をする
     if (needsCopyFallback) {
       try {
         await navigator.clipboard.writeText(`${title} - ${url}`);
