@@ -2,7 +2,7 @@ import express from 'express';
 import path from 'path';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb';
 
 // Global MongoDB client
 let mongoClient: MongoClient | null = null;
@@ -45,11 +45,10 @@ async function startServer() {
     }
   });
 
-  // API Route to fetch a Response by ID (これの追加が必要です)
+  // API Route to fetch a Response by ID
   app.get('/api/responses/:id', async (req, res) => {
     try {
       const { id } = req.params;
-      const { ObjectId } = require('mongodb');
       const client = await getMongoClient();
       const db = client.db();
       const collection = db.collection('responses');
