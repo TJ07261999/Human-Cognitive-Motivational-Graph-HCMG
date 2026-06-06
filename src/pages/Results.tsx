@@ -48,11 +48,11 @@ export default function Results() {
   if (error || !data) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center gap-6 text-center px-4">
-        <h2 className="text-2xl font-semibold text-white">404 - Not Found</h2>
+        <h2 className="text-2xl font-semibold text-white">{t('r.not_found_title')}</h2>
         <p className="text-neutral-400">
-          {error || "結果データが見つかりませんでした。"}
+          {error || t('r.not_found_desc_1')}
           <br /><br />
-          <span className="text-sm">正しい共有URL（例: /results/xxxxxxxx）であるか確認してください。<br/>データベースへの保存に失敗した場合、共有リンクは生成されません。</span>
+          <span className="text-sm">{t('r.not_found_desc_2')}<br/>{t('r.not_found_desc_3')}</span>
         </p>
         <button onClick={() => navigate('/')} className="px-6 py-2 bg-indigo-500/20 text-indigo-400 rounded-full font-medium hover:bg-indigo-500/30 transition-colors">
           {t('r.home')}
