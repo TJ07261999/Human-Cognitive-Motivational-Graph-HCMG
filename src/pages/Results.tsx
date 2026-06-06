@@ -169,13 +169,13 @@ export default function Results() {
       
       {id && (
         <div className="mt-16 text-center bg-indigo-500/10 border border-indigo-500/20 rounded-3xl p-8 mb-8">
-          <h3 className="text-2xl font-medium tracking-tight mb-4 text-white">Curious about your own cognitive graph?</h3>
-          <p className="text-neutral-400 mb-6">Take the assessment and map your root drives, reasoning models, and execution patterns.</p>
+          <h3 className="text-2xl font-medium tracking-tight mb-4 text-white">{t('r.curious_title')}</h3>
+          <p className="text-neutral-400 mb-6">{t('r.curious_desc')}</p>
           <button 
             onClick={() => navigate('/questionnaire')}
             className="bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-3 rounded-full font-medium transition-all"
           >
-            Take the Assessment
+            {t('r.take_assessment')}
           </button>
         </div>
       )}
