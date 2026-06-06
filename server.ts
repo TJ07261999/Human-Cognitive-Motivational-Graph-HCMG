@@ -21,7 +21,7 @@ async function getMongoClient() {
 
 async function startServer() {
   const app = express();
-  const PORT = process.env.PORT || 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   app.use(express.json());
 
@@ -42,6 +42,26 @@ async function startServer() {
     } catch (error: any) {
       console.error('Error saving to MongoDB:', error);
       res.status(500).json({ error: error.message || 'Failed to save response' });
+    }
+  });
+
+  // API Route to fetch a Response by ID (これの追加が必要です)
+  app.get('/api/responses/:id', async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { ObjectId } = require('mongodb');
+      const client = await getMongoClient();
+      const db = client.db();
+      const collection = db.collection('responses');
+      
+      const doc = await collection.findOne({ _id: new ObjectId(id) });
+      if (!doc) {
+        return res.status(404).json({ error: 'Not found' });
+      }
+      res.json(doc);
+    } catch (error: any) {
+      console.error('Error fetching from MongoDB:', error);
+      res.status(500).json({ error: 'Failed to fetch response' });
     }
   });
 
@@ -111,7 +131,6 @@ Analyze these traits and return a strictly valid JSON object with the following 
     });
     app.use(vite.middlewares);
   } else {
-    // Note: express v5 requires *all
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
     app.get('*all', (req, res) => {
