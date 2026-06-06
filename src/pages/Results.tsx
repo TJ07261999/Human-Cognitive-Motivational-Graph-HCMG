@@ -4,6 +4,7 @@ import { Network, ArrowLeft, Hexagon } from 'lucide-react';
 import graphData from '../data/hcmg_graph.json';
 import { useLanguage } from '../i18n/LanguageContext';
 import LanguageSelector from '../components/LanguageSelector';
+import ShareButtons from '../components/ShareButtons';
 
 export default function Results() {
   const location = useLocation();
@@ -124,6 +125,8 @@ export default function Results() {
            </div>
         </div>
       </div>
+
+      <ShareButtons title={`My primary intrinsic traits are ${topTraits.slice(0, 2).map((t: any) => translatedTraits?.[t.name] || t.name).join(' & ')} on HCMG!`} />
     </div>
   );
 }
