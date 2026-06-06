@@ -26,8 +26,11 @@ export default function Landing() {
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6 leading-tight">
           {t('landing.title')}
         </h1>
-        <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-4 leading-relaxed">
           {t('landing.subtitle')}
+        </p>
+        <p className="text-emerald-400/90 font-medium tracking-wide mb-12">
+          {t('landing.test_phase')}
         </p>
 
         <div className="grid sm:grid-cols-3 gap-6 mb-16 text-left">
@@ -53,15 +56,12 @@ export default function Landing() {
           </button>
         </div>
 
-        <ShareButtons title="HCMG - Human Cognitive Motivational Graph" />
+        <ShareButtons title="HCMG - Personality Assessment" />
 
         <div className="mt-8 flex flex-col items-center gap-2">
           <p className="text-neutral-500 text-sm">
             {t('landing.disclaimer')}
           </p>
-          <a href="/hcmg_graph.json" download className="text-indigo-500/80 text-sm hover:text-indigo-400 hover:underline transition-colors mt-2">
-            {t('landing.download')}
-          </a>
         </div>
       </motion.div>
     </div>
