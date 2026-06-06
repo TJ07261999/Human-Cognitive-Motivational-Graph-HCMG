@@ -100,23 +100,32 @@ export default function Questionnaire() {
         topTraits,
         vectorHash,
         aiSummary,
+        translatedTraits, // add this here
         version: "1.0-data-collection"
       };
       
+      let docId = null;
       try {
         const saveRes = await fetch('/api/responses', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(responseDoc)
         });
-        if (!saveRes.ok) {
+        if (saveRes.ok) {
+          const resMap = await saveRes.json();
+          docId = resMap.id;
+        } else {
           console.warn('Failed to save to database');
         }
       } catch (dbErr) {
         console.warn('DB error silently ignored:', dbErr);
       }
       
-      navigate('/results', { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
+      if (docId) {
+        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
+      } else {
+        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
+      }
     } catch (err: any) {
       console.error(err);
       alert("Failed to submit data: " + err.message);
