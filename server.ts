@@ -67,7 +67,7 @@ async function startServer() {
   // API Route for Gemini analysis
   app.post('/api/analyze', async (req, res) => {
     try {
-      const { topTraits, language } = req.body;
+      const { topTraits } = req.body;
       
       const apiKey = process.env.GEMINI_API_KEY;
       if (!apiKey) {
@@ -83,43 +83,44 @@ async function startServer() {
         }
       });
       
-      const languageMap: Record<string, string> = {
-        ja: 'Japanese',
-        ko: 'Korean',
-        th: 'Thai',
-        zh: 'Simplified Chinese',
-        en: 'English'
-      };
-      const targetLang = languageMap[language] || 'English';
-
       const prompt = `You are a psychological and cognitive expert.
-Based on the user's top three dominant traits from a psychological assessment, provide a concrete, easy-to-understand summary of what kind of person they are, their strengths, and what motivates them. Write in a friendly and professional tone. Output exactly in ${targetLang}.
+Based on the user's top three dominant traits from a psychological assessment, provide a concrete, easy-to-understand summary of what kind of person they are, their strengths, and what motivates them. Write in a friendly and professional tone.
 
 Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
 
-Analyze these traits and return a strictly valid JSON object with the following structure. Do not include markdown formatting or backticks:
+Analyze these traits and translate the summary and the trait names into English, Japanese, Korean, Simplified Chinese, and Thai.
+Return a STRICTLY VALID JSON object with the following structure. Do not include markdown formatting or backticks.
+
 {
-  "summary": "Your detailed summary paragraph here in ${targetLang}...",
+  "summaries": {
+    "en": "Your detailed summary paragraph in English...",
+    "ja": "Your detailed summary paragraph translated to Japanese...",
+    "ko": "Your detailed summary paragraph translated to Korean...",
+    "zh": "Your detailed summary paragraph translated to Simplified Chinese...",
+    "th": "Your detailed summary paragraph translated to Thai..."
+  },
   "translatedTraits": {
-    "Trait 1 English Name": "Trait 1 translated to ${targetLang}",
-    "Trait 2 English Name": "Trait 2 translated to ${targetLang}",
-    "Trait 3 English Name": "Trait 3 translated to ${targetLang}"
+    "en": { "Original Trait 1 English Name": "Translated to English", "Original Trait 2 English Name": "Translated to English", "Original Trait 3 English Name": "Translated to English" },
+    "ja": { "Original Trait 1 English Name": "Translated to Japanese", ... },
+    "ko": { "Original Trait 1 English Name": "Translated to Korean", ... },
+    "zh": { "Original Trait 1 English Name": "Translated to Simplified Chinese", ... },
+    "th": { "Original Trait 1 English Name": "Translated to Thai", ... }
   }
 }`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-2.5-flash',
+        model: 'gemini-1.5-flash',
         contents: prompt,
       });
 
       let resultText = response.text || "{}";
       resultText = resultText.replace(/```json/gi, '').replace(/```/g, '').trim();
-      let analyzeResult = { summary: "", translatedTraits: {} };
+      let analyzeResult = { summaries: {}, translatedTraits: {} };
       try {
         analyzeResult = JSON.parse(resultText);
       } catch (e) {
-        analyzeResult.summary = resultText;
+        console.warn("Failed to parse JSON result from Gemini", e);
       }
 
       res.json({ result: analyzeResult });
