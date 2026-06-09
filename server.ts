@@ -84,21 +84,21 @@ async function startServer() {
       });
       
       const prompt = `You are a psychological and cognitive expert.
-Based on the user's top three dominant traits from a psychological assessment, provide a concrete, easy-to-understand summary of what kind of person they are, their strengths, and what motivates them. Write in a friendly and professional tone.
+Based on the user's top three dominant traits from a psychological assessment, provide a highly detailed, comprehensive, and deep psychological summary of what kind of person they are, their strengths, their cognitive patterns, and what motivates them. The summary must be detailed and extensive, providing deep insights rather than a brief overview. Write in a friendly and professional tone.
 
 Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
 
-Analyze these traits and translate the summary and the trait names into English, Japanese, Korean, Simplified Chinese, and Thai.
+Analyze these traits and translate the detailed summary and the trait names into English, Japanese, Korean, Simplified Chinese, and Thai.
 Return a STRICTLY VALID JSON object with the following structure. Do not include markdown formatting or backticks.
 
 {
   "summaries": {
-    "en": "Your detailed summary paragraph in English...",
-    "ja": "Your detailed summary paragraph translated to Japanese...",
-    "ko": "Your detailed summary paragraph translated to Korean...",
-    "zh": "Your detailed summary paragraph translated to Simplified Chinese...",
-    "th": "Your detailed summary paragraph translated to Thai..."
+    "en": "Your detailed, multi-paragraph summary in English...",
+    "ja": "Your detailed, multi-paragraph summary translated to Japanese...",
+    "ko": "Your detailed, multi-paragraph summary translated to Korean...",
+    "zh": "Your detailed, multi-paragraph summary translated to Simplified Chinese...",
+    "th": "Your detailed, multi-paragraph summary translated to Thai..."
   },
   "translatedTraits": {
     "en": { "Original Trait 1 English Name": "Translated to English", "Original Trait 2 English Name": "Translated to English", "Original Trait 3 English Name": "Translated to English" },
@@ -110,7 +110,7 @@ Return a STRICTLY VALID JSON object with the following structure. Do not include
 }`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3.1-flash-lite',
+        model: 'gemini-3.5-flash',
         contents: prompt,
         config: {
           responseMimeType: "application/json",
