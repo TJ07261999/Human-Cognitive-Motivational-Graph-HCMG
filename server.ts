@@ -83,7 +83,14 @@ async function startServer() {
         }
       });
       
-      const targetLang = language === 'ja' ? 'Japanese' : (language === 'ko' ? 'Korean' : 'English');
+      const languageMap: Record<string, string> = {
+        ja: 'Japanese',
+        ko: 'Korean',
+        th: 'Thai',
+        zh: 'Simplified Chinese',
+        en: 'English'
+      };
+      const targetLang = languageMap[language] || 'English';
 
       const prompt = `You are a psychological and cognitive expert.
 Based on the user's top three dominant traits from a psychological assessment, provide a concrete, easy-to-understand summary of what kind of person they are, their strengths, and what motivates them. Write in a friendly and professional tone. Output exactly in ${targetLang}.
