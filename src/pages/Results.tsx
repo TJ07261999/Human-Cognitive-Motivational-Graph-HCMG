@@ -11,7 +11,7 @@ export default function Results() {
   const { id } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const [data, setData] = useState<any>(location.state || null);
   const [loading, setLoading] = useState(!location.state && id);
   const [error, setError] = useState('');
@@ -61,7 +61,9 @@ export default function Results() {
     );
   }
 
-  const { topTraits, vectorHash, answers, aiSummary, translatedTraits } = data;
+  const { topTraits, vectorHash, answers } = data;
+  const aiSummary = data.aiSummaries ? (data.aiSummaries[language] || data.aiSummaries['en'] || '') : data.aiSummary;
+  const translatedTraits = data.translatedTraitsMap ? (data.translatedTraitsMap[language] || data.translatedTraitsMap['en'] || {}) : data.translatedTraits;
 
   // Find top categories based on answers
   const categoryScores: Record<string, { total: number, count: number }> = {};
