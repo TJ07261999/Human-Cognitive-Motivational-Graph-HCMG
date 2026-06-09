@@ -16,7 +16,7 @@ export default function Questionnaire() {
   const questions = useMemo(() => {
     const children = graphData.nodes.filter((n: any) => n.tier === 2);
     // Filter to only include nodes that explicitly have custom questions defined in our generated JSON graph
-    const supportedChildren = children.filter((n: any) => n.question && n.question.en && n.question.ja && n.question.ko);
+    const supportedChildren = children.filter((n: any) => n.question && n.question.en && n.question.ja && n.question.ko && n.question.zh && n.question.th);
     
     // shuffle and take 60
     const shuffled = [...supportedChildren].sort(() => 0.5 - Math.random());
