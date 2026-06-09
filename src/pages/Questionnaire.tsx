@@ -76,23 +76,35 @@ export default function Questionnaire() {
 
       let aiSummary = "";
       let translatedTraits: Record<string, string> = {};
-      try {
-        const analyzeRes = await fetch('/api/analyze', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ topTraits, language })
-        });
-        if (analyzeRes.ok) {
-          const analyzeData = await analyzeRes.json();
-          if (typeof analyzeData.result === 'object') {
-             aiSummary = analyzeData.result.summary;
-             translatedTraits = analyzeData.result.translatedTraits || {};
+      
+      let attempts = 0;
+      let success = false;
+      while (attempts < 3 && !success) {
+        try {
+          const analyzeRes = await fetch('/api/analyze', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ topTraits, language })
+          });
+          if (analyzeRes.ok) {
+            const analyzeData = await analyzeRes.json();
+            if (typeof analyzeData.result === 'object') {
+               aiSummary = analyzeData.result.summary;
+               translatedTraits = analyzeData.result.translatedTraits || {};
+            } else {
+               aiSummary = analyzeData.result;
+            }
+            success = true;
           } else {
-             aiSummary = analyzeData.result;
+             console.warn('Analysis failed with status', analyzeRes.status);
+             attempts++;
+             if (attempts < 3) await new Promise(r => setTimeout(r, 1000 * attempts));
           }
+        } catch (err) {
+          console.warn('AI analysis fell back:', err);
+          attempts++;
+          if (attempts < 3) await new Promise(r => setTimeout(r, 1000 * attempts));
         }
-      } catch (err) {
-        console.warn('AI analysis fell back:', err);
       }
 
       const responseDoc = {
