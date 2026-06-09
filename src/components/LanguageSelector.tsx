@@ -10,7 +10,9 @@ export default function LanguageSelector() {
   const options: { val: Language, label: string }[] = [
     { val: 'en', label: 'English' },
     { val: 'ja', label: '日本語' },
-    { val: 'ko', label: '한국어' }
+    { val: 'ko', label: '한국어' },
+    { val: 'zh', label: '中文 (简体)' },
+    { val: 'th', label: 'ไทย' }
   ];
 
   return (
