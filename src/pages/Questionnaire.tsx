@@ -105,6 +105,17 @@ export default function Questionnaire() {
         }
       }
 
+      // Final fallback if the model completely fails due to high demand (503)
+      if (Object.keys(aiSummaries).length === 0) {
+        aiSummaries = {
+          en: "Our AI is currently experiencing high demand and could not generate a summary at this moment. You are characterized by strong autonomy and a desire to forge your own path.",
+          ja: "現在AIにアクセスが集中しており、サマリーを生成できませんでした。結果としては、あなたの中核には強い独立心と自律性があります。",
+          ko: "현재 AI 수요가 많아 요약을 생성하지 못했습니다. 당신의 핵심 동기는 자율성과 독립성입니다.",
+          zh: "由于目前人工智能请求过多，无法生成总结。您具有很强的自主性和独立思考能力。",
+          th: "ขณะนี้ AI มีผู้ใช้งานเป็นจำนวนมาก จึงไม่สามารถสร้างบทสรุปได้"
+        };
+      }
+
       const responseDoc = {
         answers,
         topTraits,
