@@ -74,8 +74,8 @@ export default function Questionnaire() {
       const prefix = topTraits[0]?.name.substring(0, 2).toUpperCase() || 'XX';
       const vectorHash = `HCMG-${prefix}-${hexStr}`;
 
-      let aiSummary = "";
-      let translatedTraits: Record<string, string> = {};
+      let aiSummaries: Record<string, string> = {};
+      let translatedTraitsMap: Record<string, Record<string, string>> = {};
       
       let attempts = 0;
       let success = false;
@@ -84,15 +84,13 @@ export default function Questionnaire() {
           const analyzeRes = await fetch('/api/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ topTraits, language })
+            body: JSON.stringify({ topTraits })
           });
           if (analyzeRes.ok) {
             const analyzeData = await analyzeRes.json();
             if (typeof analyzeData.result === 'object') {
-               aiSummary = analyzeData.result.summary;
-               translatedTraits = analyzeData.result.translatedTraits || {};
-            } else {
-               aiSummary = analyzeData.result;
+               aiSummaries = analyzeData.result.summaries || {};
+               translatedTraitsMap = analyzeData.result.translatedTraits || {};
             }
             success = true;
           } else {
@@ -111,9 +109,9 @@ export default function Questionnaire() {
         answers,
         topTraits,
         vectorHash,
-        aiSummary,
-        translatedTraits, // add this here
-        version: "1.0-data-collection"
+        aiSummaries,
+        translatedTraitsMap,
+        version: "1.1-multilingual-summary"
       };
       
       let docId = null;
@@ -134,9 +132,9 @@ export default function Questionnaire() {
       }
       
       if (docId) {
-        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
+        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap } });
       } else {
-        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummary, translatedTraits } });
+        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap } });
       }
     } catch (err: any) {
       console.error(err);
