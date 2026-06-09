@@ -109,7 +109,7 @@ Analyze these traits and return a strictly valid JSON object with the following 
 }`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
+        model: 'gemini-2.5-flash',
         contents: prompt,
       });
 
