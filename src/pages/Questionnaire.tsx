@@ -77,6 +77,8 @@ export default function Questionnaire() {
       let aiSummaries: Record<string, string> = {};
       let translatedTraitsMap: Record<string, Record<string, string>> = {};
       
+      let sectorImplicationsMap: any = {};
+      
       let attempts = 0;
       let success = false;
       while (!success) {
@@ -91,6 +93,7 @@ export default function Questionnaire() {
             if (typeof analyzeData.result === 'object' && analyzeData.result.summaries) {
                aiSummaries = analyzeData.result.summaries || {};
                translatedTraitsMap = analyzeData.result.translatedTraits || {};
+               sectorImplicationsMap = analyzeData.result.sectorImplications || {};
                success = true;
             } else {
                // Malformed JSON response, try again
@@ -115,6 +118,7 @@ export default function Questionnaire() {
         vectorHash,
         aiSummaries,
         translatedTraitsMap,
+        sectorImplicationsMap,
         version: "1.1-multilingual-summary"
       };
       
@@ -136,9 +140,9 @@ export default function Questionnaire() {
       }
       
       if (docId) {
-        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap } });
+        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap, sectorImplicationsMap } });
       } else {
-        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap } });
+        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap, sectorImplicationsMap } });
       }
     } catch (err: any) {
       console.error(err);
@@ -192,18 +196,20 @@ export default function Questionnaire() {
                   <button
                     key={val}
                     onClick={() => handleAnswer(q.id, val)}
-                    className={`p-4 rounded-xl border transition-all ${
+                    className={`p-2 md:p-4 rounded-xl border transition-all flex flex-col items-center justify-center min-h-[4rem] md:min-h-[5rem] ${
                       answers[q.id] === val 
                         ? 'border-indigo-500 bg-indigo-500/10 text-indigo-300' 
                         : 'border-neutral-800 hover:border-neutral-700 text-neutral-500 hover:text-neutral-300 hover:bg-neutral-800/50'
                     }`}
                   >
-                    <div className="text-lg font-sans mb-1">{val}</div>
-                    <div className="hidden md:block opacity-50 px-1">
-                      {val === 1 && t('q.low')}
-                      {val === 3 && t('q.avg')}
-                      {val === 5 && t('q.high')}
-                    </div>
+                    <div className="text-lg font-sans leading-none">{val}</div>
+                    {(val === 1 || val === 3 || val === 5) && (
+                      <div className="text-[9px] md:text-xs opacity-60 mt-1 px-0.5 leading-tight text-center">
+                        {val === 1 && t('q.low')}
+                        {val === 3 && t('q.avg')}
+                        {val === 5 && t('q.high')}
+                      </div>
+                    )}
                   </button>
                 ))}
               </div>
