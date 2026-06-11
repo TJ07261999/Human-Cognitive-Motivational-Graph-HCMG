@@ -113,9 +113,9 @@ export default function Results() {
           className="bg-neutral-800/50 border border-neutral-700/50 rounded-3xl p-8 mb-16 relative overflow-hidden"
         >
           <h2 className="text-xl font-medium tracking-tight mb-4 text-white">{t('r.summary')}</h2>
-          <p className="text-neutral-200 leading-relaxed text-lg z-10 relative">
+          <div className="text-neutral-200 leading-relaxed text-lg z-10 relative whitespace-pre-wrap font-sans">
             {aiSummary}
-          </p>
+          </div>
         </motion.div>
       )}
 
@@ -153,7 +153,7 @@ export default function Results() {
                     <span className="text-neutral-300">{t(`cat.${cat.category}`)}</span>
                     <span className="text-neutral-500 font-mono">Lv {cat.score.toFixed(1)}</span>
                   </div>
-                  <div className="h-2 w-full bg-neutral-900 rounded-full overflow-hidden">
+                  <div className="h-2 w-full bg-neutral-900 rounded-full overflow-hidden mb-2">
                     <motion.div 
                       className="h-full bg-emerald-500"
                       initial={{ width: 0 }}
@@ -161,6 +161,11 @@ export default function Results() {
                       transition={{ delay: 0.8 + i * 0.05, duration: 0.8 }}
                     />
                   </div>
+                  {data?.sectorImplicationsMap?.[language]?.[cat.category] && (
+                     <p className="text-sm text-neutral-400 mt-2 leading-relaxed">
+                       {data.sectorImplicationsMap[language][cat.category]}
+                     </p>
+                  )}
                 </div>
               ))}
            </div>
