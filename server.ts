@@ -84,7 +84,16 @@ async function startServer() {
       });
       
       const prompt = `You are a psychological and cognitive expert.
-Based on the user's top three dominant traits from a psychological assessment, provide a highly detailed, comprehensive, and deep psychological summary of what kind of person they are, their strengths, their cognitive patterns, and what motivates them. The summary must be detailed and extensive, providing deep insights rather than a brief overview. Write in a friendly and professional tone.
+Based on the user's top three dominant traits from a psychological assessment, provide a highly detailed, comprehensive, and deep psychological summary of what kind of person they are, their strengths, their cognitive patterns, and what motivates them.
+
+The summary MUST be extremely extensive (at least 600 words) and MUST structurally contain three full, deep paragraphs per language:
+Paragraph 1: Core Identity & Cognitive Patterns - Analyze how these traits interact to form their fundamental worldview and thought processes.
+Paragraph 2: Execution & Strengths - Detail how they apply these traits to solve complex problems and produce unique value in real-world scenarios.
+Paragraph 3: Inner Motivations & Optimal Environment - Explain what drives them internally and the specific conditions they need to thrive.
+
+Furthermore, provide exactly one informative sentence for each of the 7 abstract cognitive sectors (Energy, Information, Reasoning, Motivation, Execution, Emotional Architecture, Meta-Self) detailing what their profile suggests about their capability in that specific sector.
+
+Write in a friendly and professional tone.
 
 Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
@@ -94,11 +103,18 @@ Return a STRICTLY VALID JSON object with the following structure. Do not include
 
 {
   "summaries": {
-    "en": "Your detailed, multi-paragraph summary in English...",
-    "ja": "Your detailed, multi-paragraph summary translated to Japanese...",
-    "ko": "Your detailed, multi-paragraph summary translated to Korean...",
-    "zh": "Your detailed, multi-paragraph summary translated to Simplified Chinese...",
-    "th": "Your detailed, multi-paragraph summary translated to Thai..."
+    "en": "Your rigorous 3-paragraph summary in English, using \\n\\n for paragraph breaks...",
+    "ja": "Your rigorous 3-paragraph summary translated to Japanese, using \\n\\n for paragraph breaks...",
+    "ko": "Your rigorous 3-paragraph summary translated to Korean, using \\n\\n for paragraph breaks...",
+    "zh": "Your rigorous 3-paragraph summary translated to Simplified Chinese, using \\n\\n for paragraph breaks...",
+    "th": "Your rigorous 3-paragraph summary translated to Thai, using \\n\\n for paragraph breaks..."
+  },
+  "sectorImplications": {
+    "en": { "Energy": "Implication based on top traits...", "Information": "Implication...", "Reasoning": "...", "Motivation": "...", "Execution": "...", "Emotional Architecture": "...", "Meta-Self": "..." },
+    "ja": { "Energy": "Japanese implication...", ... },
+    "ko": { ... },
+    "zh": { ... },
+    "th": { ... }
   },
   "translatedTraits": {
     "en": { "Original Trait 1 English Name": "Translated to English", "Original Trait 2 English Name": "Translated to English", "Original Trait 3 English Name": "Translated to English" },
@@ -154,4 +170,3 @@ Return a STRICTLY VALID JSON object with the following structure. Do not include
 }
 
 startServer();
-
