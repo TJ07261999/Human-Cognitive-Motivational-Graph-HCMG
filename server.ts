@@ -67,7 +67,7 @@ async function startServer() {
   // API Route for Gemini analysis
   app.post('/api/analyze', async (req, res) => {
     try {
-      const { topTraits } = req.body;
+      const { topTraits, bottomTraits, showWeakness } = req.body;
       
       const apiKey = process.env.GEMINI_API_KEY;
       if (!apiKey) {
@@ -84,12 +84,12 @@ async function startServer() {
       });
       
       const prompt = `You are a psychological and cognitive expert.
-Based on the user's top three dominant traits from a psychological assessment, provide a highly detailed, comprehensive, and deep psychological summary of what kind of person they are, their strengths, their cognitive patterns, and what motivates them.
+Based on the user's top three dominant traits${showWeakness ? ' and bottom three traits (weaknesses)' : ''} from a psychological assessment, provide a highly detailed, comprehensive, and deep psychological summary of what kind of person they are.
 
-The summary MUST be extremely extensive (at least 600 words) and MUST structurally contain three full, deep paragraphs per language:
-Paragraph 1: Core Identity & Cognitive Patterns - Analyze how these traits interact to form their fundamental worldview and thought processes.
+The summary MUST be extremely extensive (at least 600 words) and MUST structurally contain ${showWeakness ? 'FOUR' : 'THREE'} full, deep paragraphs per language:
+Paragraph 1: Core Identity & Cognitive Patterns - Analyze how their top traits interact to form their fundamental worldview and thought processes.
 Paragraph 2: Execution & Strengths - Detail how they apply these traits to solve complex problems and produce unique value in real-world scenarios.
-Paragraph 3: Inner Motivations & Optimal Environment - Explain what drives them internally and the specific conditions they need to thrive.
+Paragraph 3: Inner Motivations & Optimal Environment - Explain what drives them internally and the specific conditions they need to thrive.${showWeakness ? '\nParagraph 4: Blind Spots & Areas for Growth - Explore how their BOTTOM traits (weaknesses) manifest in their behavior, highlighting potential pitfalls, cognitive blind spots, and how they can mitigate them. Do this thoughtfully and constructively.' : ''}
 
 Furthermore, provide exactly one informative sentence for each of the 7 abstract cognitive sectors (Energy, Information, Reasoning, Motivation, Execution, Emotional Architecture, Meta-Self) detailing what their profile suggests about their capability in that specific sector.
 
@@ -97,31 +97,32 @@ Write in a friendly and professional tone.
 
 Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
+${showWeakness ? `\nBottom Traits (Weaknesses, in English):\n${(bottomTraits || []).map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}` : ''}
 
-Analyze these traits and translate the detailed summary and the trait names into English, Japanese, Korean, Simplified Chinese, and Thai.
+Analyze these traits and translate the detailed summary and ALL trait names${showWeakness ? ' (both top and bottom)' : ''} into English, Japanese, Korean, Simplified Chinese, and Thai.
 Return a STRICTLY VALID JSON object with the following structure. Do not include markdown formatting or backticks.
 
 {
   "summaries": {
-    "en": "Your rigorous 3-paragraph summary in English, using \\n\\n for paragraph breaks...",
-    "ja": "Your rigorous 3-paragraph summary translated to Japanese, using \\n\\n for paragraph breaks...",
-    "ko": "Your rigorous 3-paragraph summary translated to Korean, using \\n\\n for paragraph breaks...",
-    "zh": "Your rigorous 3-paragraph summary translated to Simplified Chinese, using \\n\\n for paragraph breaks...",
-    "th": "Your rigorous 3-paragraph summary translated to Thai, using \\n\\n for paragraph breaks..."
+    "en": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary in English, using \\n\\n for paragraph breaks...",
+    "ja": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Japanese, using \\n\\n for paragraph breaks...",
+    "ko": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Korean, using \\n\\n for paragraph breaks...",
+    "zh": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Simplified Chinese, using \\n\\n for paragraph breaks...",
+    "th": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Thai, using \\n\\n for paragraph breaks..."
   },
   "sectorImplications": {
     "en": { "Energy": "Implication based on top traits...", "Information": "Implication...", "Reasoning": "...", "Motivation": "...", "Execution": "...", "Emotional Architecture": "...", "Meta-Self": "..." },
-    "ja": { "Energy": "Japanese implication...", ... },
+    "ja": { ... },
     "ko": { ... },
     "zh": { ... },
     "th": { ... }
   },
   "translatedTraits": {
-    "en": { "Original Trait 1 English Name": "Translated to English", "Original Trait 2 English Name": "Translated to English", "Original Trait 3 English Name": "Translated to English" },
-    "ja": { "Original Trait 1 English Name": "Translated to Japanese", ... },
-    "ko": { "Original Trait 1 English Name": "Translated to Korean", ... },
-    "zh": { "Original Trait 1 English Name": "Translated to Simplified Chinese", ... },
-    "th": { "Original Trait 1 English Name": "Translated to Thai", ... }
+    "en": { "Trait Name": "Translated to English", ... },
+    "ja": { "Trait Name": "Translated to Japanese", ... },
+    "ko": { "Trait Name": "Translated to Korean", ... },
+    "zh": { "Trait Name": "Translated to Simplified Chinese", ... },
+    "th": { "Trait Name": "Translated to Thai", ... }
   }
 }`;
 
