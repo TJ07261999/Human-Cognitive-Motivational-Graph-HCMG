@@ -63,24 +63,28 @@ export default function Results() {
 
   const { topTraits, bottomTraits, showWeakness, vectorHash, answers } = data;
   const aiSummary = data.aiSummaries ? (data.aiSummaries[language] || data.aiSummaries['en'] || '') : data.aiSummary;
+  const aiTradeoffs = data.aiTradeoffs ? (data.aiTradeoffs[language] || data.aiTradeoffs['en'] || '') : '';
+  const aiDependencies = data.aiDependencies ? (data.aiDependencies[language] || data.aiDependencies['en'] || '') : '';
   const translatedTraits = data.translatedTraitsMap ? (data.translatedTraitsMap[language] || data.translatedTraitsMap['en'] || {}) : data.translatedTraits;
 
-  // Find top categories based on answers
-  const categoryScores: Record<string, { total: number, count: number }> = {};
-  Object.entries(answers).forEach(([nodeId, val]) => {
-    const node = graphData.nodes.find((n: any) => n.id === nodeId);
-    if (node) {
-      if (!categoryScores[node.category]) {
-        categoryScores[node.category] = { total: 0, count: 0 };
+  let catAverages = data.structuredProfile?.categories || [];
+  if (catAverages.length === 0) {
+    const categoryScores: Record<string, { total: number, count: number }> = {};
+    Object.entries(answers).forEach(([nodeId, val]) => {
+      const node = graphData.nodes.find((n: any) => n.id === nodeId);
+      if (node) {
+        if (!categoryScores[node.category]) {
+          categoryScores[node.category] = { total: 0, count: 0 };
+        }
+        categoryScores[node.category].total += (val as number);
+        categoryScores[node.category].count += 1;
       }
-      categoryScores[node.category].total += (val as number);
-      categoryScores[node.category].count += 1;
-    }
-  });
+    });
 
-  const catAverages = Object.entries(categoryScores)
-    .map(([cat, data]) => ({ category: cat, score: data.total / data.count }))
-    .sort((a,b) => b.score - a.score);
+    catAverages = Object.entries(categoryScores)
+      .map(([cat, d]) => ({ category: cat, score: d.total / d.count }))
+      .sort((a,b) => b.score - a.score);
+  }
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-24">
@@ -106,17 +110,56 @@ export default function Results() {
       </motion.div>
 
       {aiSummary && (
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3 }}
-          className="bg-neutral-800/50 border border-neutral-700/50 rounded-3xl p-8 mb-16 relative overflow-hidden"
-        >
-          <h2 className="text-xl font-medium tracking-tight mb-4 text-white">{t('r.summary')}</h2>
-          <div className="text-neutral-200 leading-relaxed text-lg z-10 relative whitespace-pre-wrap font-sans">
-            {aiSummary}
-          </div>
-        </motion.div>
+        <div className="space-y-6 mb-16">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3 }}
+            className="bg-neutral-800/50 border border-neutral-700/50 rounded-3xl p-8 relative overflow-hidden"
+          >
+            <h2 className="text-xl font-medium tracking-tight mb-4 text-white">{t('r.summary')}</h2>
+            <div className="text-neutral-200 leading-relaxed text-lg z-10 relative whitespace-pre-wrap font-sans">
+              {aiSummary}
+            </div>
+          </motion.div>
+
+          {(aiTradeoffs || aiDependencies) && (
+            <div className="grid md:grid-cols-2 gap-6">
+              {aiDependencies && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="bg-indigo-950/30 border border-indigo-900/50 rounded-3xl p-8"
+                >
+                  <h2 className="text-xl font-medium tracking-tight mb-4 text-white flex items-center gap-2">
+                    <Network className="text-indigo-400" size={20} />
+                    {t('r.dependencies')}
+                  </h2>
+                  <div className="text-indigo-200/80 leading-relaxed z-10 relative whitespace-pre-wrap font-sans">
+                    {aiDependencies}
+                  </div>
+                </motion.div>
+              )}
+              {aiTradeoffs && showWeakness !== false && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="bg-rose-950/20 border border-rose-900/30 rounded-3xl p-8"
+                >
+                  <h2 className="text-xl font-medium tracking-tight mb-4 text-white flex items-center gap-2">
+                    <Hexagon className="text-rose-400" size={20} />
+                    {t('r.tradeoffs')}
+                  </h2>
+                  <div className="text-rose-200/70 leading-relaxed z-10 relative whitespace-pre-wrap font-sans">
+                    {aiTradeoffs}
+                  </div>
+                </motion.div>
+              )}
+            </div>
+          )}
+        </div>
       )}
 
       <div className="grid md:grid-cols-2 gap-12">
