@@ -1,4 +1,4 @@
-import fs from 'fs';
+mport fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { getQuestion } from './questionsData.js';
