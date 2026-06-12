@@ -61,7 +61,7 @@ export default function Results() {
     );
   }
 
-  const { topTraits, vectorHash, answers } = data;
+  const { topTraits, bottomTraits, showWeakness, vectorHash, answers } = data;
   const aiSummary = data.aiSummaries ? (data.aiSummaries[language] || data.aiSummaries['en'] || '') : data.aiSummary;
   const translatedTraits = data.translatedTraitsMap ? (data.translatedTraitsMap[language] || data.translatedTraitsMap['en'] || {}) : data.translatedTraits;
 
@@ -120,7 +120,7 @@ export default function Results() {
       )}
 
       <div className="grid md:grid-cols-2 gap-12">
-        <div className="space-y-8">
+        <div className="space-y-12">
           <div>
             <h2 className="text-xl font-medium tracking-tight mb-6 flex items-center gap-3">
               <Network className="text-indigo-400" size={20} /> {t('r.prominent_traits')}
@@ -142,6 +142,22 @@ export default function Results() {
               ))}
             </div>
           </div>
+          
+          {showWeakness !== false && bottomTraits && bottomTraits.length > 0 && (
+            <div>
+              <h2 className="text-xl font-medium tracking-tight mb-6 flex items-center gap-3 opacity-80">
+                <Network className="text-rose-400" size={20} /> {t('r.weaknesses')}
+              </h2>
+              <div className="space-y-4">
+                {bottomTraits.map((trait: any, i: number) => (
+                  <div key={i} className="bg-neutral-900/50 border border-neutral-800/50 rounded-2xl p-6 flex flex-col items-center text-center opacity-80 hover:opacity-100 transition-opacity">
+                    <div className="text-2xl font-semibold mb-1 text-white">{trait.score}%</div>
+                    <div className="text-rose-400 font-medium mb-2">{translatedTraits?.[trait.name] || trait.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         <div>
