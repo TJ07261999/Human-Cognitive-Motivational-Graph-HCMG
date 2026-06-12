@@ -2,321 +2,443 @@ export interface QuestionLocale {
   en: string;
   ja: string;
   ko: string;
+  zh?: string;
+  th?: string;
 }
 
 export const questionMap: Record<string, QuestionLocale> = {
   // --- Energy ---
   "Social Energy": {
-    en: "Do you gain energy by being around large groups of people?",
-    ja: "大人数の中にいると、逆に活力が湧いてくるタイプですか？",
-    ko: "많은 사람들과 함께 있을 때 오히려 에너지를 얻는 편인가요?"
+    en: "After a long party or a big social event, do you feel pumped up and energized rather than exhausted?",
+    ja: "飲み会やイベントで大勢の人と過ごした後、疲れるどころか逆にテンションが上がって元気になりますか？",
+    ko: "회식이나 모임에서 많은 사람들과 어울린 후, 피곤하기보다는 오히려 에너지가 넘치고 기분이 좋아지나요?",
+    zh: "在参加完热闹的聚会或大型社交活动后，你是否非但不觉得累，反而感到精神焕发、充满活力？",
+    th: "หลังจากไปงานปาร์ตี้หรืองานสังสรรค์ที่มีคนเยอะๆ คุณรู้สึกมีพลังและกระตือรือร้นมากกว่าที่จะรู้สึกเหนื่อยล้าหรือไม่?"
   },
   "Solitude Recovery": {
-    en: "Do you need completely alone time to recharge your mental battery?",
-    ja: "精神的なバッテリーを回復するために、完全に一人きりの時間が必要ですか？",
-    ko: "정신적인 에너지를 회복하기 위해 완전히 혼자만의 시간이 필요한가요?"
+    en: "When you're completely exhausted, do you need to spend a whole day completely alone to feel like yourself again?",
+    ja: "心身ともに疲れ切ったとき、誰とも会わずに自分一人だけで引きこもる時間が絶対に必要ですか？",
+    ko: "몸과 마음이 완전히 지쳤을 때, 누구도 만나지 않고 혼자만의 시간을 가져야만 다시 나다운 모습으로 돌아오나요?",
+    zh: "当你感到彻底精疲力尽时，是否必须独自呆上一整天，才能找回平时的自己？",
+    th: "เมื่อคุณรู้สึกเหนื่อยล้ามากๆ คุณจำเป็นต้องใช้เวลาอยู่คนเดียวเต็มๆ วันเพื่อฟื้นฟูพลังและกลับมาเป็นตัวเองอีกครั้งหรือไม่?"
   },
   "Conversation Initiation": {
-    en: "Do you casually start conversations with strangers you meet?",
-    ja: "初対面の人や見知らぬ人にも、自分から気軽に話しかける方ですか？",
-    ko: "처음 보는 사람에게도 먼저 가볍게 말을 거는 편인가요?"
+    en: "While waiting in line or sitting next to a stranger, do you easily strike up friendly chats with them?",
+    ja: "お店で並んでいる時や隣り合わせた知らない人にも、「今日は暑いですね」などの世間話を気軽にふれますか？",
+    ko: "줄을 서서 기다릴 때나 옆에 앉은 모르는 사람에게 '오늘 날씨가 덥네요'와 같은 가벼운 인사를 쉽게 건네는 편인가요?",
+    zh: "在排队等候或坐在陌生人旁边时，你是否很容易就能和对方自然地闲聊起来？",
+    th: "เวลาต่อคิวหรือนั่งข้างคนแปลกหน้า คุณสามารถเริ่มชวนพวกเขาคุยเล่นได้อย่างเป็นธรรมชาติหรือไม่?"
   },
   "Leadership Emergence": {
-    en: "When no one is leading the group, do you naturally step up to take charge?",
-    ja: "誰も仕切る人がいない状況で、自然と自分がリーダー役を引き受けますか？",
-    ko: "그룹을 이끄는 사람이 없을 때 자연스럽게 리더 역할을 맡는 편인가요?"
+    en: "When a group project or a trip with friends has no clear organizer, do you naturally step in to plan and assign tasks?",
+    ja: "友人との旅行やグループワークで、「誰が仕切る？」と微妙な空気が流れた時、自然と自分がまとめ役を引き受けてしまいますか？",
+    ko: "친구들과의 여행이나 팀 프로젝트에서 나서는 사람이 없을 때, 자연스럽게 당신이 총대를 메고 계획을 짜거나 역할을 분담하나요?",
+    zh: "在朋友结伴出游或团队合作时，如果没人主动组织，你是否会自然而然地站出来安排计划和分配任务？",
+    th: "เวลาทำงานกลุ่มหรือไปเที่ยวกับเพื่อนๆ แล้วไม่มีคนคอยจัดการ คุณมักจะอาสารับบทเป็นคนวางแผนและแบ่งหน้าที่เสมอหรือไม่?"
   },
   "Emotional Expressiveness": {
-    en: "Do your friends always know exactly what you're feeling just by looking at you?",
-    ja: "顔や態度に出やすく、今自分がどう感じているか他人にすぐ伝わりますか？",
-    ko: "표정이나 태도에 감정이 잘 드러나서 다른 사람들이 내 기분을 금방 알아채나요?"
+    en: "Do people often tell you 'Your face shows everything you're thinking' because your expressions are so easy to read?",
+    ja: "嬉しいときやイライラしているとき、自分では隠しているつもりでも「顔に書いてあるよ」と周りにすぐバレてしまいますか？",
+    ko: "기쁘거나 짜증날 때 숨기려고 해도 주변 사람들에게 '얼굴에 다 쓰여 있어'라는 말을 자주 들을 정도로 표정에 감정이 잘 드러나나요?",
+    zh: "你是否经常被别人说“你的心情全写在脸上了”，因为你的表情真的太容易被看穿了？",
+    th: "มักจะมีคนบอกคุณว่า 'สีหน้าคุณฟ้องหมดเลยว่าคิดอะไรอยู่' เพราะอารมณ์ของคุณแสดงออกทางสีหน้าชัดเจนหรือไม่?"
   },
   "Independence Preference": {
-    en: "Do you strongly prefer working alone rather than compromising in a team?",
-    ja: "チームで妥協しながら進めるくらいなら、全部一人でやり切りたいですか？",
-    ko: "팀에서 타협하며 일하기보다 혼자 모든 것을 처리하는 것을 선호하나요?"
+    en: "Would you rather do a whole project by yourself just the way you like it, instead of arguing with a team to find a compromise?",
+    ja: "チームで意見を合わせて妥協しながら進めるくらいなら、「全部自分でやるから好きにさせて！」と思うタイプですか？",
+    ko: "팀원들과 의견을 맞추며 타협하느니, '차라리 내가 다 할 테니 내 방식대로 하게 둬!'라고 생각하는 편인가요?",
+    zh: "与其在团队中为了迎合大家而不断妥协，你是否更宁愿一个人包揽所有任务，按自己的想法去做？",
+    th: "คุณยอมทำงานทั้งหมดด้วยตัวเองตามวิธีที่คุณชอบ มากกว่าที่จะต้องมานั่งถกเถียงหรือประนีประนอมกับเพื่อนร่วมทีมหรือไม่?"
   },
   "Interdependence Preference": {
-    en: "Do you feel that complex tasks are always better solved by a collaborative team?",
-    ja: "複雑な課題は一人で悩むより、チームで協力して解き明かす方が好きですか？",
-    ko: "복잡한 과제는 혼자 고민하기보다 팀과 협력하여 해결하는 것을 좋아하나요?"
+    en: "When faced with a really difficult problem, is your first instinct to gather smart people to brainstorm together rather than suffering alone?",
+    ja: "とても難しい問題に直面したとき、一人で抱え込んで悩むより、すぐに「みんなで集まってアイデアを出そう」と考えるタイプですか？",
+    ko: "정말 어려운 문제에 부딪혔을 때, 혼자 끙끙대기보다 곧바로 똑똑한 사람들을 모아 '다 같이 머리를 맞대보자'고 생각하나요?",
+    zh: "当遇到非常棘手的问题时，你的第一反应是找聪明人一起集思广益，而不是一个人独自苦思冥想？",
+    th: "เมื่อเจอกับปัญหาที่ยากมากๆ สัญชาตญาณแรกของคุณคือการเรียกคนเก่งๆ มาร่วมกันระดมสมอง มากกว่าที่จะทนคิดคนเดียวใช่หรือไม่?"
   },
   "Social Risk Taking": {
-    en: "Are you willing to ask embarrassing questions in public if it helps you learn?",
-    ja: "自分が学ぶためなら、人前で恥をかくような質問をすることにも抵抗がありませんか？",
-    ko: "배움을 위해서라면 사람들 앞에서 창피함을 무릅쓰고 질문하는 것에 거부감이 없나요?"
+    en: "Are you okay with looking silly or asking basic questions in a meeting if it means you finally understand the topic?",
+    ja: "会議や授業で「こんなことも知らないのか」と思われても、自分が納得するために恥を忍んで質問することができますか？",
+    ko: "회의나 수업 중에 다른 사람들이 '이런 것도 몰라?'라고 생각할까 봐 걱정하기보다는, 내가 제대로 이해하기 위해 부끄러움을 무릅쓰고 질문하는 편인가요?",
+    zh: "在会议或课堂上，就算可能会显得自己不懂，为了弄明白，你也完全不介意当着大家的面提出最基础的问题？",
+    th: "ในที่ประชุมหรือในห้องเรียน หากคุณไม่เข้าใจ คุณกล้าที่จะถามคำถามแม้ว่าคนอื่นอาจจะมองว่ามันเป็นเรื่องง่ายๆ ไหม เพื่อให้คุณเข้าใจได้จริงๆ?"
   },
 
   // --- Information ---
   "Pattern Seeking": {
-    en: "Do you constantly try to find the hidden rules or patterns behind random events?",
-    ja: "バラバラの現象の中に、「裏にある共通の法則」を無意識に探してしまいますか？",
-    ko: "무작위적인 사건들 속에서 무의식적으로 숨겨진 규칙이나 공통된 패턴을 찾으려 하나요?"
+    en: "Do you catch yourself noticing coincidences or making connections between totally unrelated events in your daily life?",
+    ja: "日常生活の中で、「最近これが立て続けに起きているから、何か法則があるのでは？」と無意識に出来事の繋がりを探してしまいますか？",
+    ko: "일상생활에서 일어나는 전혀 상관없는 일들 사이에서 '최근 이런 일이 계속 생기는데, 뭔가 연결고리가 있는 거 아닐까?'라며 우연이나 패턴을 자주 찾나요?",
+    zh: "在日常生活中，你是否会经常留意到一些巧合，或者不知不觉地在完全不相关的事件之间找出某种规律或联系？",
+    th: "ในชีวิตประจำวัน คุณมักจะสังเกตเห็นความบังเอิญ หรือพยายามหาจุดเชื่อมโยงระหว่างเหตุการณ์ที่ไม่เกี่ยวข้องกันเลยบ่อยๆ หรือไม่?"
   },
   "Big Picture Thinking": {
-    en: "Do you focus on the grand vision rather than getting bogged down in the details?",
-    ja: "細かいことよりも「結局どういうことか」という全体像やビジョンを重視しますか？",
-    ko: "세부적인 것보다 '결국 어떤 의미인지' 거시적인 비전을 더 중요하게 생각하나요?"
+    en: "When someone explains a long story, do you just want them to skip the details and tell you the main point or 'the big picture'?",
+    ja: "誰かの長い話を聞いているとき、細かいエピソードよりも「結局、一番言いたい結論はなに？」と全体像を早く知りたくなりますか？",
+    ko: "누군가 긴 이야기를 할 때, 시시콜콜한 세부 사항보다 '그래서 결론이 뭐야?', '큰 그림이 뭔데?'에 더 집중하고 싶어지나요?",
+    zh: "听别人讲长篇大论时，你是不是心里总在想“跳过这些细节，直接告诉我重点或大局是什么”？",
+    th: "เวลาที่มีคนเล่าเรื่องยาวๆ คุณมักจะอยากให้พวกเขาข้ามรายละเอียดไปเลย แล้วบอกประเด็นหลักหรือ 'ภาพรวม' ของเรื่องมาเลย หรือไม่?"
   },
   "Detail Orientation": {
-    en: "Do you naturally catch small typos or tiny inconsistencies that others miss?",
-    ja: "他の人が見落とすような小さなミスや矛盾、誤字などに自然と気づいてしまいますか？",
-    ko: "다른 사람들이 놓치는 작은 실수나 모순, 오타 등을 자연스럽게 눈치채나요?"
+    en: "When reading an article or looking at a menu, do small typos or slightly misaligned text bother you immediately?",
+    ja: "記事を読んでいる時やメニューを見ている時、小さな誤字や文字のズレなどが真っ先に目に飛び込んできて気になってしまいますか？",
+    ko: "기사를 읽거나 메뉴판을 볼 때, 작은 오타나 줄이 살짝 삐뚤어진 것들이 남들보다 먼저 눈에 띄고 거슬리나요?",
+    zh: "在阅读文章或看菜单时，你是否总是能一眼发现别人注意不到的小错别字或排版不齐，而且觉得很不舒服？",
+    th: "เวลาอ่านบทความหรือดูเมนูอาหาร คุณมักจะรู้สึกขัดใจทันทีเมื่อเห็นคำผิดเล็กๆ น้อยๆ หรือการจัดบรรทัดที่ไม่ตรงใช่หรือไม่?"
   },
   "Novelty Detection": {
-    en: "Are you always the first to notice when something small changes in your environment?",
-    ja: "部屋のちょっとした変化や、他人の小さな髪型の変化などに誰よりも早く気づきますか？",
-    ko: "주변 환경의 작은 변화나 다른 사람의 미세한 변화를 누구보다 빨리 눈치채나요?"
+    en: "Are you always the first to point out when a friend gets a slight haircut or someone moves a small decoration in a room?",
+    ja: "友人が前髪をちょっと切ったことや、部屋の小物の配置が少し変わったことなど、どんな小さな変化にも誰より早く気づきますか？",
+    ko: "친구가 앞머리를 살짝 잘랐다거나 방의 작은 소품 배치가 달라진 걸 누구보다 가장 먼저 알아채고 이야기하나요?",
+    zh: "当朋友稍微剪了头发，或者房间里某个不起眼的小摆设换了位置，你是不是总是第一个注意到并指出来？",
+    th: "คุณมักจะเป็นคนแรกที่ทักเสมอเวลาเพื่อนตัดผมมานิดหน่อย หรือเมื่อมีการขยับของตกแต่งชิ้นเล็กๆ ในห้องหรือไม่?"
   },
   "Ambiguity Tolerance": {
-    en: "Are you comfortable moving forward even when the plan is highly uncertain?",
-    ja: "正解がない、あるいは先が見えない不確実な状況でも、ストレスなく前に進めますか？",
-    ko: "정답이 없거나 미래가 불확실한 상황에서도 스트레스 없이 앞으로 나아갈 수 있나요?"
+    en: "When starting a trip without a set itinerary, do you feel excited by the mystery rather than stressed about what's next?",
+    ja: "スケジュールが白紙のまま旅行に出かけた時、「何が起きるか分からない状況」にストレスを感じるより、むしろワクワクしますか？",
+    ko: "계획표 없이 여행을 떠났을 때, '다음에 뭘 하지?'라는 막막함에 스트레스받기보다는 무슨 일이 생길지 모르는 상황 자체를 즐기며 설레하나요?",
+    zh: "如果在没有任何详细行程安排的情况下出发去旅行，相较于为接下来要干什么感到焦虑，你是否更对未知感到兴奋？",
+    th: "เวลาออกเดินทางโดยที่ยังไม่มีแผนการเดินทางที่ชัดเจน คุณจะรู้สึกตื่นเต้นกับสิ่งที่ไม่คาดคิด มากกว่าที่จะกังวลว่าต้องทำอะไรต่อไปหรือไม่?"
   },
   "Curiosity Trigger": {
-    en: "Do you often fall down deep internet rabbit holes reading about random facts?",
-    ja: "全く関係ない事柄について、時間を忘れてネットで調べ続けてしまうことがありますか？",
-    ko: "전혀 상관없는 주제에 대해 시간 가는 줄 모르고 인터넷에서 깊이 찾아보는 경우가 있나요?"
+    en: "Do you ever look up one random question online and end up reading Wikipedia articles about it for three hours?",
+    ja: "ネットでふと気になった言葉を検索しただけなのに、次から次へとリンクを辿ってしまい、気づけば3時間経っていたということがよくありますか？",
+    ko: "인터넷에서 문득 궁금해진 단어를 검색했다가 꼬리에 꼬리를 무는 링크를 타고 넘어가, 정신 차려보니 3시간째 위키백과를 읽고 있던 적이 많나요?",
+    zh: "你有没有过上网随手搜一个问题，结果不知不觉在维基百科上顺着链接看了三个小时的经历？",
+    th: "คุณเคยเริ่มจากการค้นหาคำถามสุ่มๆ บนเน็ต แล้วสุดท้ายก็ใช้เวลาอ่านบทความใน Wikipedia เกี่ยวกับเรื่องนั้นยาวไป 3 ชั่วโมงเลยหรือไม่?"
   },
   "Analogy Formation": {
-    en: "Do you often explain complex ideas by comparing them to entirely different things?",
-    ja: "複雑な概念を説明する時、全く別の分野の例え話（メタファー）を使うのが得意ですか？",
-    ko: "복잡한 개념을 설명할 때 전혀 다른 분야의 비유(메타포)를 사용하는 것을 잘하나요?"
+    en: "When explaining something complicated like tech or rules, do you naturally say things like 'It's basically like ordering at a restaurant'?",
+    ja: "難しいルールや仕組みを人に説明する時、「それって要するに、レストランの注文と同じでね…」のように、別の身近なものに例えるのが得意ですか？",
+    ko: "복잡한 규칙이나 기술을 다른 사람에게 설명할 때, '이건 쉽게 말해서 식당에서 주문하는 거랑 같아'처럼 일상생활에 빗대어 설명하는 것을 잘하나요?",
+    zh: "在向别人解释复杂的技术或规则时，你是否很自然地就会说“这就好比去餐厅点菜一样”这种比喻？",
+    th: "เวลาอธิบายเรื่องที่เข้าใจยากๆ เช่น เรื่องเทคโนโลยีหรือกฎเกณฑ์ คุณมักจะใช้การเปรียบเทียบเสมอ เช่น 'มันก็เหมือนกับการสั่งอาหารในร้านนั่นแหละ' หรือไม่?"
   },
   "Trend Recognition": {
-    en: "Can you usually predict what will become popular before the general public catches on?",
-    ja: "世間で大流行する前に、「次はこれが来そう」というトレンドの兆しに気づくことが多いですか？",
-    ko: "세상에 크게 유행하기 전에 '다음은 이거다'라는 트렌드의 조짐을 자주 알아차리나요?"
+    en: "Do you often find yourself using an app, listening to a band, or saying a slang word months before everyone else catches on?",
+    ja: "お気に入りのアプリや音楽、言葉などが、世間で大流行する数ヶ月前からすでに見つけてハマっていることがよくありますか？",
+    ko: "어떤 앱이나 음악 밴드, 유행어 등이 사람들 사이에서 본격적으로 유행하기 몇 달 전부터 이미 당신은 그것을 즐겨 쓰고 있었던 적이 잦나요?",
+    zh: "你是不是经常发现某个App、某支乐队或某句流行语，在你用了几个月之后，才开始在大众中彻底火起来？",
+    th: "คุณมักจะพบว่าตัวเองใช้แอปพลิเคชัน ฟังเพลงของวงดนตรี หรือใช้คำแสลงใหม่ๆ ล่วงหน้าหลายเดือนก่อนที่คนส่วนใหญ่จะเริ่มฮิตกันหรือไม่?"
   },
 
   // --- Reasoning ---
   "Logical Consistency": {
-    en: "Does it bother you when someone makes an argument that contradicts their earlier statement?",
-    ja: "他人の発言に矛盾や論理の飛躍があると、すごく気になって突っ込みたくなりますか？",
-    ko: "타인의 발언에 모순이나 논리적 비약이 있으면 몹시 신경 쓰이고 지적하고 싶어지나요?"
+    en: "When a movie character changes their mind for no logical reason, does it annoy you enough to pull you out of the story?",
+    ja: "映画やドラマを見ていて、登場人物の行動やセリフに「さっき言ってたことと論理的に矛盾してる！」と気づいて冷めてしまうことがありますか？",
+    ko: "영화나 드라마를 볼 때 등장인물의 행동이나 대사가 '아까 하던 말하고 앞뒤가 안 맞잖아?'라고 느껴지면 답답해서 몰입이 깨지는 편인가요?",
+    zh: "在看电影时，如果角色的想法毫无逻辑地突然转变，这是否会让你十分介意，甚至到了无法继续投入在剧情中的地步？",
+    th: "เวลาดูหนังและตัวละครเปลี่ยนความคิดโดยไม่มีเหตุผลที่สมเหตุสมผล มันทำให้คุณรู้สึกขัดใจจนหมดสนุกกับหนังไปเลยหรือไม่?"
   },
   "Systems Thinking": {
-    en: "When a problem occurs, do you look at the whole system rather than blaming one person?",
-    ja: "問題が起きた時、誰かのせいにするより「仕組みやシステムのどこが悪かったか」を考えますか？",
-    ko: "문제가 발생했을 때 누군가를 탓하기보다 '시스템의 어디가 잘못되었는지'를 생각하나요?"
+    en: "When a coworker makes a mistake, do you wonder if the process or the tools they were using are actually to blame?",
+    ja: "同僚がミスをしたとき、「アイツが悪い」と責める前に、「もしかしてマニュアルやツールなど仕組み自体に問題があるのでは？」と考えますか？",
+    ko: "동료가 실수를 했을 때, '저 사람 왜 저래'라고 탓하기보다 '사용하던 매뉴얼이나 업무 과정 자체에 문제가 있는 거 아닐까?'라고 먼저 생각하나요?",
+    zh: "当同事犯了错，比起直接责怪他，你是不是更倾向于思考是不是工作流程、机制或是使用的工具本身存在缺陷？",
+    th: "เมื่อเพื่อนร่วมงานทำผิดพลาด คุณมักจะตั้งคำถามว่ากระบวนการทำงานหรือเครื่องมือที่พวกเขาใช้นั้นแหละที่เป็นต้นเหตุ มากกว่าที่จะโทษว่าพวกเขาเป็นคนผิดหรือไม่?"
   },
   "Probabilistic Thinking": {
-    en: "Do you think in terms of percentages and probabilities rather than absolute certainties?",
-    ja: "物事を「絶対そうだ」ではなく、「〇〇%の確率でそうなる」と確率で考える癖がありますか？",
-    ko: "무언가를 '절대 그렇다'라고 하기보다 '몇 %의 확률로 그렇게 될 것'이라고 확률로 계산하나요?"
+    en: "Instead of saying 'It will definitely rain,' do you prefer saying things like 'I'd bet there's an 80% chance it's going to rain'?",
+    ja: "日常の出来事を「絶対にこうなる」と断言するより、「たぶん80%くらいの確率でこうなるだろうな」と心の中で確率計算をしてしまいますか？",
+    ko: "어떤 일이 일어날지 말할 때, '무조건 비가 올 거야'라고 확언하기보다 '80% 정도의 확률로 비가 올 것 같아'라고 확률로 예측하는 것을 편하게 느끼나요?",
+    zh: "在日常交谈中，你是否很少说“绝对会这样”，而是更喜欢说“我觉得大概有80%的几率会这样”之类用概率来描述的话？",
+    th: "แทนที่จะพูดว่า 'ฝนตกแน่นอน' คุณมักจะชอบพูดว่า 'ฉันคิดว่ามีโอกาส 80% ที่ฝนจะตก' มากกว่าไหม?"
   },
   "Long Term Planning": {
-    en: "Do you make detailed plans for where you want to be 5 or 10 years from now?",
-    ja: "5年後、10年後に自分がどうなっていたいか、具体的なロードマップを常に描いていますか？",
-    ko: "5년 후, 10년 후에 어떤 모습일지 구체적인 로드맵을 항상 그려놓고 있나요?"
+    en: "When deciding on a job or moving to a new city, do you heavily calculate how it will affect your life 10 years down the line?",
+    ja: "仕事選びや引っ越しなど重要な決断をするとき、「10年後の自分の人生プランにどう影響するか」までじっくり逆算して考えますか？",
+    ko: "직업을 선택하거나 새로운 곳으로 이사하는 등의 중요한 결정을 할 때, '이 선택이 나의 10년 뒤 인생에 어떤 영향을 미칠까'를 깊이 연결 지어 계산하나요?",
+    zh: "在决定换工作或搬到一个新城市时，你是否会非常慎重地计算和推演这一决定会对你10年后的生活产生什么影响？",
+    th: "เวลาต้องตัดสินใจเรื่องใหญ่ๆ อย่างเช่น ย้ายงานหรือย้ายจังหวัด คุณมักจะคำนวณอย่างรอบคอบว่ามันจะส่งผลต่อชีวิตคุณในอีก 10 ปีข้างหน้าอย่างไรไหม?"
   },
   "Mental Simulation": {
-    en: "Do you mentally play out multiple \"what-if\" scenarios in your head before acting?",
-    ja: "行動する前に、頭の中で「ああなったらこうする」という分岐シナリオを何度もシミュレーションしますか？",
-    ko: "행동하기 전에 머릿속으로 '만약 이렇게 되면 이렇게 하자'는 분기 시나리오를 여러 번 시뮬레이션하나요?"
+    en: "Before sending a risky text or confronting a friend, do you run through five different ways the conversation could go in your head?",
+    ja: "少し言いにくいLINEを送る前、「こう返ってきたらこう返す」「もし怒ったらこう言う」と、何パターンものシミュレーションを脳内で繰り返しますか？",
+    ko: "조금 조심스러운 카톡을 보내거나 친구에게 힘든 이야기를 꺼내기 전에, '이런 답장이 오면 이렇게 말해야지'하며 대화의 흐름을 머릿속으로 다섯 가지 이상 시뮬레이션하나요?",
+    zh: "在发一条有风险的信息或找朋友对峙前，你是不是会在脑海里预演五种不同的对话走向，想好各自的应对方案？",
+    th: "ก่อนจะส่งข้อความที่อาจทำให้เกิดปัญหา หรือก่อนจะไปเผชิญหน้ากับเพื่อน คุณมักจะจำลองสถานการณ์ในหัวไว้หลายๆ แบบเผื่อว่าพวกเขาจะตอบกลับมาอย่างไรบ้าง?"
   },
   "Self Reflection": {
-    en: "Do you frequently analyze your own thought processes to see where you might be wrong?",
-    ja: "自分が間違っている可能性を考慮し、自分の思考の癖や偏りを客観的に分析しますか？",
-    ko: "자신이 틀렸을 가능성을 고려하고 자신의 사고방식이나 편향을 객관적으로 분석하나요?"
+    en: "When you get into an argument, do you later replay it alone in your room and realize, 'Actually, my logic was completely unfair there'?",
+    ja: "誰かと口論になった後、一人になってから「いや、よく考えたらあの時の自分の理屈はちょっとフェアじゃなかったな」と冷静に振り返って反省することがよくありますか？",
+    ko: "누군가와 말다툼을 한 후, 혼자 내 방에 앉아 대화를 곱씹어 보며 '사실 그때 내 논리가 완전히 억지였네'라고 스스로의 잘못을 냉정하게 되돌아보나요?",
+    zh: "和别人争吵后，一个人静下来的时候，你会不会反复复盘刚才的对话，并意识到“其实刚才我的逻辑也有点强词夺理”？",
+    th: "เวลาเถียงกับใคร เมื่อกลับมาอยู่คนเดียว คุณมักจะย้อนคิดถึงเหตุการณ์นั้นแล้วพบว่า 'ที่จริงแล้ว เหตุผลของฉันก็ไม่ค่อยจะแฟร์เหมือนกันนะ' ใช่ไหม?"
   },
   "Goal Decomposition": {
-    en: "When faced with a massive project, do you naturally break it down into small, actionable steps?",
-    ja: "大きな目標や複雑な課題に直面したとき、自然と小さな具体的なステップに分解して考えることができますか？",
-    ko: "거대한 목표나 복잡한 과제에 직면했을 때, 자연스럽게 작고 구체적인 단계로 나누어 생각할 수 있나요?"
+    en: "When given a massive, overwhelming task like cleaning the whole house, do you casually break it down into 'Okay, first I'll do the desk...'?",
+    ja: "「家中の大掃除」などの面倒で大きすぎるタスクを前にした時、とりあえず「まずはこの机の上だけ終わらせよう」と細かく切り分けてすぐ行動に移せますか？",
+    ko: "집안 전체 대청소처럼 막막하고 버거운 일이 주어졌을 때, 당황하지 않고 '좋아, 일단 책상 위부터 치우자'며 부담 없는 작은 단계로 나누어 시작하나요?",
+    zh: "面对像“彻底打扫整个屋子”这样令人头大且繁重的任务时，你是不是会很自然地把它拆解，告诉自己“算了，我先弄好这张书桌吧”？",
+    th: "เมื่อต้องเจองานที่หนักหนาสาหัสอย่างการทำความสะอาดทั้งบ้าน คุณมักจะค่อยๆ แบ่งงานออกเป็นส่วนเล็กๆ เช่น 'งั้นเริ่มจากจัดโต๊ะนี้ก่อนแล้วกัน...' ใช่ไหม?"
   },
   "Error Detection": {
-    en: "Are you remarkably quick at spotting the single flaw in an otherwise good plan?",
-    ja: "良さそうに見える計画の中にある「たった一つの致命的な欠陥」を瞬時に見抜くことができますか？",
-    ko: "좋아 보이는 계획 속에 있는 '단 하나의 치명적인 결함'을 순식간에 간파할 수 있나요?"
+    en: "When your friends are explaining a great weekend plan, are you usually the first one to say 'Wait, isn't that restaurant closed on Sundays'?",
+    ja: "友人たちが盛り上がって立てている完璧そうな旅行計画に対して、「待って、その時間はそもそも電車がないんじゃない？」と真っ先に欠陥に気づくタイプですか？",
+    ko: "친구들이 완벽한 주말 계획을 짜며 신나할 때, 가장 먼저 '잠깐만, 그 식당 일요일에는 휴무 아니야?'라며 치명적인 오류를 찾아내는 역할을 주로 맡나요?",
+    zh: "当朋友极力向你推销一个听起来很完美的周末计划时，你是不是通常最先泼冷水说：“等等，那家餐厅周日不开门吧”？",
+    th: "เวลาเพื่อนๆ เสนอแผนการเที่ยววันหยุดที่ฟังดูสมบูรณ์แบบ คุณมักจะเป็นคนแรกที่พูดว่า 'เดี๋ยวนะ ร้านอาหารนั้นมันปิดวันอาทิตย์ไม่ใช่เหรอ' หรือไม่?"
   },
 
   // --- Motivation ---
   "Curiosity": {
-    en: "Are you driven by a pure desire to understand how the world works?",
-    ja: "「世界がどう機能しているのか知りたい」という純粋な知的好奇心に突き動かされますか？",
-    ko: "'세상이 어떻게 돌아가는지 알고 싶다'는 순수한 지적 호기심에 이끌리나요?"
+    en: "Do you ever find yourself taking apart a pen or a gadget just because you urgently need to see how the springs and gears work inside?",
+    ja: "ただ「中身の仕組みがどうなっているか知りたい！」という衝動だけで、ボールペンや家電を分解してみたくなることはありますか？",
+    ko: "단지 내부에 스프링이나 톱니바퀴가 어떻게 맞물려 돌아가는지 너무 궁금해서, 멀쩡한 볼펜이나 장난감을 분해해 본 적이 있나요?",
+    zh: "你有没有过纯粹因为非常想看看内部的弹簧和齿轮是怎么运作的，而忍不住动手拆开一支笔或一个小物件的经历？",
+    th: "คุณเคยรื้อชิ้นส่วนปากกาหรือเครื่องมืออะไรสักอย่าง เพียงเพราะคุณอยากรู้ว่าชิ้นส่วนข้างในมันทำงานยังไงหรือไม่?"
   },
   "Achievement Drive": {
-    en: "Are you highly motivated to reach the top and be recognized as the best?",
-    ja: "どうしても頂点に行きたい、一番として認められたいという野心的な欲求が強いですか？",
-    ko: "어떻게든 정상에 서고 싶고 최고로 인정받고 싶은 야망이 강한가요?"
+    en: "When playing a casual video game or a sport with friends, do you secretly feel you absolutely have to be the number one player in the room?",
+    ja: "友達とたわいないゲームやスポーツで遊んでいる時でも、心のどこかで「絶対に自分が一番にならなきゃ気が済まない」と密かに闘志を燃やしていますか？",
+    ko: "친구들과 가볍게 하는 비디오 게임이나 스포츠에서도, 속으로는 '여기서 무조건 내가 1등을 해야 해'라고 남몰래 강한 승부욕을 불태우나요?",
+    zh: "即使是跟朋友随便玩玩游戏或运动，你心里是不是也会暗自较劲，觉得自己今天绝对必须是全场最厉害的那个？",
+    th: "เวลาเล่นเกมหรือเล่นกีฬาสนุกๆ กับเพื่อน คุณแอบรู้สึกในใจลึกๆ ว่าคุณจะต้องเป็นที่หนึ่งให้ได้ หรือไม่?"
   },
   "Autonomy Drive": {
-    en: "Do you hate being micromanaged and need the freedom to do things your own way?",
-    ja: "細かく管理されることを激しく嫌い、自分のやり方で自由にやりたいですか？",
-    ko: "사사건건 간섭받는 것을 극도로 싫어하고 나만의 방식으로 자유롭게 하고 싶나요?"
+    en: "Does it completely drain your motivation when a boss or parent tells you exactly how to do a chore, step by step, instead of letting you figure it out?",
+    ja: "上司や親から「まずはこれをやって、次はこうして」と手順を細かく指示されると、自分でやり方を決める自由を奪われた気がして一気にやる気を失いますか？",
+    ko: "상사나 부모님이 '일단 이거 하고, 그다음에 이거 해'라며 하나부터 열까지 간섭하면, 내 방식대로 할 자유를 뺏긴 것 같아 순식간에 의욕이 떨어지나요?",
+    zh: "当老板或父母不仅仅让你做事，还要事无巨细地规定你第一步干嘛、第二步干嘛时，这是否会让你顿失干劲？",
+    th: "คุณจะหมดความกระตือรือร้นทันทีไหม ถ้าเจ้านายหรือพ่อแม่มาคอยบอกวิธีทำงานเป็นขั้นเป็นตอน แทนที่จะปล่อยให้คุณลองหาวิธีทำด้วยตัวเอง?"
   },
   "Altruism": {
-    en: "Are you willing to sacrifice your own time and resources just to help someone else?",
-    ja: "見返りがなくても、自分のリソースを犠牲にして他人のために尽くすことができますか？",
-    ko: "보상이 없더라도 자신의 자원을 희생하면서까지 타인을 위해 헌신할 수 있나요?"
+    en: "If a coworker is struggling with a deadline, would you willingly stay two hours late to help them, even if you don't get paid or thanked for it?",
+    ja: "同僚が終わらない仕事で困っていたら、自分には１円の得にならなくても、残業して手伝ってあげたいと心から思えますか？",
+    ko: "동료가 마감 기한에 쫓겨 힘들어할 때, 나에게 별다른 보상이나 칭찬이 돌아오지 않더라도 진심을 다해 두 시간씩 야근하며 도와줄 수 있나요?",
+    zh: "如果同事赶工作进度遇到困难，即使加班帮忙没有额外的报酬，甚至别人都不会特意感谢你，你也乐意留下来帮他两小时忙吗？",
+    th: "ถ้าเพื่อนร่วมงานกำลังปั่นงานไม่ทันกำหนด คุณยินดีที่จะอยู่ช่วยพวกเขาทำงานจนดึกไหม แม้ว่าจะไม่ได้ค่าล่วงเวลาหรือคำขอบคุณเลยก็ตาม?"
   },
   "Legacy Seeking": {
-    en: "Do you want to build something that will outlast your own lifetime?",
-    ja: "自分が死んだ後も、この世界に長く残り続けるような何かを創り出したいと思いますか？",
-    ko: "자신이 죽은 후에도 이 세상에 오래 남을 무언가를 만들어내고 싶나요?"
+    en: "Do you ever daydream about writing a book, building a company, or creating something that people will still talk about 100 years from now?",
+    ja: "ふとしたとき、「100年後の人たちにも語り継がれるような本や会社、作品をこの世に残したい」と壮大な夢想をすることがありますか？",
+    ko: "문득 '내가 죽고 100년이 지난 뒤에도 사람들이 기억하고 이야기할 만한 책, 회사, 혹은 위대한 작품을 이 세상에 남기고 싶다'는 상상을 종종 하나요?",
+    zh: "你是否曾幻想自己写了一本书、创立了一家公司，或者创造了某种东西，而在100年后人们依然在谈论它？",
+    th: "คุณเคยฝันอยากจะเขียนหนังสือ สร้างบริษัท หรือสร้างผลงานที่จะถูกพูดถึงไปอีก 100 ปีข้างหน้าบ้างไหม?"
   },
   "Meaning Seeking": {
-    en: "Is it completely impossible for you to do work that lacks a deeper philosophical purpose?",
-    ja: "深い哲学的な意義や目的がない仕事をこなすことは、あなたにとって耐え難いことですか？",
-    ko: "깊은 철학적 의미나 목적이 없는 일을 하는 것은 당신에게 견딜 수 없는 일인가요?"
+    en: "Would you rather take a massive pay cut to work for a charity you believe in, rather than pushing papers for a wealthy corporation?",
+    ja: "大企業で意味のない事務作業をして高給をもらうくらいなら、給料が激減しても、自分が心から共感できる意義ある活動（NPOなど）にフルタイムで参加したいと思いますか？",
+    ko: "아무리 월급을 많이 주더라도 돈 많은 기업에서 의미 없는 서류 작업만 하는 부품이 되느니, 급여가 확 줄더라도 내가 가치를 믿는 자선 단체나 프로젝트에서 일하는 것이 훨씬 낫다고 생각하나요?",
+    zh: "比起在一家赚钱的大公司里当个每天只会机械盖章的工具人，你是否宁愿拿很少的工资去为你坚信的公益慈善事业工作？",
+    th: "คุณยอมได้รับเงินเดือนน้อยลงมากๆ เพื่อทำงานให้กับองค์กรการกุศลที่คุณเชื่อมั่น มากกว่าที่จะนั่งทำงานเอกสารสบายๆ ในบริษัทใหญ่โตใช่หรือไม่?"
   },
   "Status Seeking": {
-    en: "Is achieving high social standing and visible credibility a primary goal for you?",
-    ja: "高い社会的地位や権威、目に見えるステータスを獲得することが人生の重要な目標ですか？",
-    ko: "높은 사회적 지위나 권위, 눈에 보이는 지위를 얻는 것이 인생의 중요한 목표인가요?"
+    en: "Is it genuinely important to you to have a prestigious job title, a verified social media badge, or the respect of high-profile people?",
+    ja: "誰もが知る立派な肩書きや、SNSの公式マーク、有名人から一目置かれるような「社会的ステータス」を手に入れることは、あなたにとって本当に重要な目標ですか？",
+    ko: "모두가 부러워할 만한 번듯한 직함, SNS 등에서 얻는 수많은 팔로워, 혹은 사회적으로 높은 사람들에게 인정받는 것이 당신 삶에서 정말로 중요한 원동력인가요?",
+    zh: "获得令人羡慕的头衔、社交媒体上的大V认证，或是得到业内大人物的尊重，这些“明面上的地位”对你来说是否非常重要？",
+    th: "การมีตำแหน่งงานระดับสูง การมีชื่อเสียงในโซเชียลมีเดีย หรือการได้รับการยอมรับจากคนสำคัญ เป็นเป้าหมายที่แท้จริงของคุณใช่หรือไม่?"
   },
   "Security Seeking": {
-    en: "Do you strongly prioritize a stable, low-risk environment over a highly volatile but rewarding one?",
-    ja: "ハイリスク・ハイリターンな環境よりも、安定していて予測可能な安全な環境を強く望みますか？",
-    ko: "위험이 크고 보상도 큰 환경보다 안정적이고 예측 가능한 안전한 환경을 강하게 원하나요?"
+    en: "Would you always choose a mildly boring job that guarantees you will never be fired, over an exciting startup where you might go broke next month?",
+    ja: "来月会社が潰れるかもしれないワクワクするスタートアップより、少し退屈でも「絶対にクビにならない安定保証された仕事」を迷わず選びますか？",
+    ko: "당장 다음 달에 망할 수도 있지만 매일 가슴 뛰고 스릴 넘치는 스타트업보다는, 일이 좀 지루하더라도 '절대 잘리지 않고 보장되는 직장'을 1순위로 선택하나요?",
+    zh: "你是不是会毫不犹豫地选择一份稍微枯燥但绝对不会失业的稳定工作，而不是去一家很酷但下个月可能就倒闭的创业公司？",
+    th: "คุณมักจะเลือกทำงานที่น่าเบื่อไปวันๆ แต่การันตีว่าไม่โดนไล่ออกแน่นอน มากกว่าจะไปทำงานที่น่าตื่นเต้นในบริษัทสตาร์ทอัพที่อาจจะล้มละลายในเดือนหน้า ใช่หรือไม่?"
   },
   "Freedom Seeking": {
-    en: "Do you prioritize personal freedom and independence over highly structured environments?",
-    ja: "ガチガチに管理された環境よりも、確固たる個人の自由や独立性を優先しますか？",
-    ko: "엄격하게 관리되는 환경보다 개인의 자유와 독립성을 우선시하나요?"
+    en: "Would you sacrifice a lot of money just to be able to wake up without an alarm clock and decide your own schedule every day?",
+    ja: "毎朝アラームをかけずに起き、その日のスケジュールを自分の気分だけで決められる自由が手に入るなら、収入が大きく減っても構わないと思いますか？",
+    ko: "매일 아침 알람 없이 일어나서 하루 일과를 내 마음대로 정할 수 있는 완벽한 자유가 주어진다면, 지금보다 돈을 훨씬 적게 벌어도 상관없다고 생각하나요?",
+    zh: "为了能够每天睡觉睡到自然醒，想干嘛就干嘛、完全自己安排时间，你是否愿意为此放弃赚大钱的机会？",
+    th: "คุณยอมสูญเสียเงินก้อนโต เพียงเพื่อให้ตัวเองสามารถตื่นนอนได้โดยไม่ต้องตั้งนาฬิกาปลุก และทำงานตามตารางที่คุณกำหนดเองในทุกๆ วันหรือไม่?"
   },
   "Exploration Drive": {
-    en: "Do you feel a constant urge to travel to new places or try completely unfamiliar activities?",
-    ja: "新しい場所へ行ったり、全く未知のことへ挑戦したいという強い衝動を常に感じますか？",
-    ko: "새로운 장소에 가거나 전혀 모르는 활동에 도전하고 싶은 강한 충동을 항상 느끼나요?"
+    en: "Do you feel an intense itch to randomly book a cheap flight to a country you know nothing about, just to see what it's like?",
+    ja: "ふと、「言葉も文化も全く知らない見知らぬ国に、今すぐ格安航空券をとって飛び出してしまいたい！」という強い衝動に駆られることが頻繁にありますか？",
+    ko: "길을 걷다가 갑자기 '이름도 처음 들어보는 낯선 나라에 당장 저가 항공권을 끊고 훌쩍 떠나서 그곳이 어떤지 직접 부딪혀 보고 싶다'는 강렬한 충동을 자주 느끼나요?",
+    zh: "你是否经常会有一种强烈的冲动，想随便订一张便宜的打折机票，飞到一个你完全一无所知的国家，仅仅为了看看那边长什么样？",
+    th: "คุณเคยรู้สึกตื่นเต้นจนอยากจะสุ่มจองตั๋วเครื่องบินราคาถูกไปยังประเทศที่คุณไม่รู้อะไรเลย เพียงเพื่อไปดูว่ามันเป็นยังไงไหม?"
   },
 
   // --- Execution ---
   "Persistence": {
-    en: "Do you keep pushing toward a goal for years, even when progress is totally invisible?",
-    ja: "成果が全く見えない状態が続いても、何年も同じ目標に向かって泥臭く努力し続けられますか？",
-    ko: "성과가 전혀 보이지 않는 상태가 계속되어도 몇 년 동안 같은 목표를 향해 꾸준히 노력할 수 있나요?"
+    en: "If you're working on a personal project or learning a new skill and see zero progress for a whole year, do you still keep pushing forward without giving up?",
+    ja: "語学学習や副業など、1年間まったく成果が見えなくても、「いつか芽が出るはず」と信じて諦めずにコツコツ続けられますか？",
+    ko: "외국어 공부나 개인 프로젝트를 할 때, 1년 동안 아무런 성과나 발전이 눈에 보이지 않아도 포기하지 않고 묵묵히 계속할 수 있나요?",
+    zh: "在学习新技能或做个人项目时，如果整整一年都看不到任何进展或成果，你还能坚持不懈地继续做下去吗？",
+    th: "เวลาเรียนรู้ทักษะใหม่หรือทำโปรเจกต์ส่วนตัว ถ้าผ่านไปเป็นปีแล้วยังไม่เห็นความก้าวหน้าเลย คุณยังสามารถพยายามทำต่อไปโดยไม่ล้มเลิกได้หรือไม่?"
   },
   "Discipline": {
-    en: "Can you strictly follow the rules and schedules you set for yourself even without external pressure?",
-    ja: "他人からのプレッシャーがなくても、自分で決めたルールやスケジュールを厳格に守ることができますか？",
-    ko: "외부의 압력이나 시선이 없어도 스스로 정한 규칙과 일정을 엄격하게 지킬 수 있나요?"
+    en: "On a completely free weekend with absolutely no plans or people watching you, do you still wake up on time and stick to your own schedule?",
+    ja: "誰とも約束がない完全にフリーな休日でも、ダラダラせずに自分で決めた起床時間やスケジュールをきっちり守って過ごせますか？",
+    ko: "아무런 약속도 없고 보는 사람도 없는 완벽하게 자유로운 주말에도, 늦잠 자지 않고 스스로 정한 기상 시간과 일정을 지키는 편인가요?",
+    zh: "在没有任何安排、也没人监督的完全自由的周末，你还能按时起床，并严格遵守自己定下的计划吗？",
+    th: "ในวันหยุดที่ว่างเปล่า ไม่มีนัดและไม่มีใครคอยจับตาดู คุณยังคงตื่นนอนตรงเวลาและทำตามตารางเวลาที่คุณวางแผนไว้เองได้หรือไม่?"
   },
   "Planning": {
-    en: "Do you always write down a concrete plan and timeline before executing a big task?",
-    ja: "大きな作業に取り掛かる前には、必ず具体的な計画やタイムラインを整理しますか？",
-    ko: "큰 작업에 착수하기 전에 반드시 구체적인 계획이나 타임라인을 정리하나요?"
+    en: "Before tackling a big chore like moving to a new apartment, do you sit down and write out a detailed timeline and step-by-step checklist first?",
+    ja: "引っ越しのような大きな作業をする前、まずは「いつまでに箱詰めして、いつこれの手続きをして…」と詳細な手順とタイムラインを紙やスマホに書き出しますか？",
+    ko: "이사처럼 큰 일을 앞두고 있을 때, 머리로만 생각하지 않고 '언제 짐을 싸고, 언제 어떤 서류를 처리할지' 구체적인 일정과 체크리스트를 먼저 작성하나요?",
+    zh: "在着手像搬家这样的大工程之前，你是不是一定会先坐下来，把详细的时间表和具体的分步清单白纸黑字地列出来？",
+    th: "ก่อนจะเริ่มจัดการเรื่องใหญ่อย่างการย้ายบ้าน คุณต้องมานั่งลิสต์รายการสิ่งที่ต้องทำและกำหนดการอย่างละเอียดทีละขั้นตอนก่อนเสมอหรือไม่?"
   },
   "Adaptability": {
-    en: "When the original plan completely fails, do you pivot immediately without getting upset?",
-    ja: "計画が完全に失敗しても、落ち込んだり意地を張ったりせず、すぐさま別の方法に切り替えられますか？",
-    ko: "계획이 완전히 실패해도 우울해하거나 고집 부리지 않고 바로 다른 방법으로 전환할 수 있나요?"
+    en: "If your perfectly planned outdoor trip gets completely ruined by a sudden storm, can you instantly switch to an indoor backup plan without complaining or feeling down?",
+    ja: "完璧に計画した旅行が突然の台風で台無しになったとき、文句を言ったり落ち込んだりせず、すぐさま「じゃあ室内で遊ぼう！」とプランを切り替えて楽しめますか？",
+    ko: "완벽하게 짠 야외 데이트나 여행 코스가 갑작스러운 폭우로 전부 취소되었을 때, 짜증 내거나 우울해하지 않고 즉시 실내 데이트로 계획을 수정해 즐길 수 있나요?",
+    zh: "如果精心策划的户外旅行被突如其来的暴雨彻底毁了，你能否立刻切换到室内备用方案，并且毫无怨言地享受接下来的安排？",
+    th: "ถ้าทริปเที่ยวที่คุณวางแผนมาอย่างดีพังทลายลงเพราะพายุเข้ากะทันหัน คุณสามารถเปลี่ยนแผนไปเที่ยวในร่มแทนได้อย่างรวดเร็วและสนุกไปกับมันโดยไม่บ่นหรืออารมณ์เสียหรือไม่?"
   },
   "Deep Work Capacity": {
-    en: "Can you focus on a single complex task for 4+ hours straight without getting distracted?",
-    ja: "スマホやSNSを一切見ず、4時間以上連続でひとつの複雑な作業に没頭できますか？",
-    ko: "스마트폰이나 SNS를 전혀 보지 않고 4시간 이상 연속으로 하나의 복잡한 작업에 몰두할 수 있나요?"
+    en: "Can you leave your phone in another room and focus purely on one difficult task or study topic for 4 hours straight without checking social media once?",
+    ja: "スマホを別の部屋に置き、SNSや通知を一切気にすることなく、4時間ぶっ続けでひとつの難しい勉強や作業に没頭し続けることができますか？",
+    ko: "스마트폰을 다른 방에 두고, SNS나 알림을 전혀 확인하지 않은 채 4시간 연속으로 푹 빠져서 어려운 공부나 작업에만 집중할 수 있나요?",
+    zh: "你能把手机丢在另一个房间，并且连续4个小时完全沉浸在一项相对困难的工作或学习中，一次也不去看社交媒体吗？",
+    th: "คุณสามารถเอาโทรศัพท์ไปไว้ห้องอื่น แล้วจดจ่อกับการทำงานหรือเรียนเรื่องยากๆ เรื่องเดียวต่อเนื่อง 4 ชั่วโมงเต็มโดยไม่แตะโซเชียลมีเดียเลยได้หรือไม่?"
   },
   "Experimentation Rate": {
-    en: "Do you constantly run small 'experiments' in your life, testing new tools or routines?",
-    ja: "「とりあえず試してみよう」と、日常的に新しいツールややり方を頻繁に実験してみるタイプですか？",
-    ko: "'일단 시험해 보자'며 일상적으로 새로운 도구나 방식을 자주 실험해보는 편인가요?"
+    en: "Do you frequently download new productivity apps, try weird new morning routines, or completely rearrange your desk just to see if it makes you more efficient?",
+    ja: "「こっちの方が早起きできるかも」「このアプリの方が便利かも」と、日常のルーティンや使うツールを頻繁に変えて実験（お試し）するのが好きですか？",
+    ko: "'이렇게 하면 더 효율적일까?'하며 새로운 할 일 관리 앱을 깔아보거나, 아침 루틴을 바꿔보거나, 책상 배치를 수시로 바꾸는 등 소소한 실험을 자주 하나요?",
+    zh: "你是否经常下载各种新的效率App、尝试奇特的新早晨习惯，或者重新布置桌面，只为了测试这样能不能让自己效率更高？",
+    th: "คุณชอบโหลดแอปพลิเคชันจัดการเวลาใหม่ๆ ลองจัดตารางชีวิตตอนเช้าแบบแปลกๆ หรือจัดโต๊ะทำงานใหม่บ่อยๆ เพียงเพื่อทดสอบว่ามันช่วยให้คุณทำงานได้ดีขึ้นหรือไม่?"
   },
   "Follow Through": {
-    en: "Do you always finish what you start, no matter how boring it gets?",
-    ja: "どんなに途中で退屈になったり面倒になっても、一度始めたことは最後まで必ずやりとげますか？",
-    ko: "도중에 아무리 지루해지거나 귀찮아져도 한 번 시작한 일은 끝까지 해내나요?"
+    en: "Even if a book you started reading or a personal project gets incredibly boring halfway through, do you force yourself to finish it anyway?",
+    ja: "読み始めた本や見始めた映画が途中でめちゃくちゃつまらなくなっても、「一度始めたからには」と最後までやり遂げ（見届け）ないと気が済まないですか？",
+    ko: "읽기 시작한 책이나 시작한 개인 프로젝트가 중간에 너무 지루해지더라도, '이왕 시작한 거 끝은 봐야지'라며 억지로라도 끝까지 마무리하나요?",
+    zh: "即使一本刚看了一半的书或者突然觉得无聊的个人项目让你非常厌烦，你也会为了“既然开始了就要有个结果”而强迫自己看完或做完吗？",
+    th: "แม้ว่าหนังสือที่คุณกำลังอ่านหรือโปรเจกต์ที่คุณทำอยู่จะเริ่มน่าเบื่อสุดๆ กลางคัน คุณก็ยังบังคับตัวเองให้ทำมันจนจบเพียงเพราะคุณได้เริ่มทำมันไปแล้วใช่หรือไม่?"
   },
   "Task Switching": {
-    en: "Can you instantly switch from a highly focused task to a sudden meeting without losing your train of thought?",
-    ja: "集中している作業中に突然の別の用件が入っても、まったく動じずにすぐ頭を切り替えて対応できますか？",
-    ko: "집중해서 하던 작업 중에 갑작스러운 다른 일이 생겨도 전혀 동요하지 않고 바로 머리를 전환해서 대응할 수 있나요?"
+    en: "If you are deep in the zone working and someone interrupts you with a random question, can you answer them and instantly snap right back into the exact same focus?",
+    ja: "ものすごく集中して作業している時に、人から突然話しかけられて中断しても、答えた後すぐに元の深い集中状態にスッと戻ることができますか？",
+    ko: "엄청나게 집중해서 일하고 있을 때 누군가 갑자기 말을 걸어 흐름이 끊겨도, 대답하고 나서 바로 조금 전의 엄청난 집중 상태로 즉시 돌아갈 수 있나요?",
+    zh: "当你正全身心投入工作时，如果有人突然打断并问你一个问题，你能在回答完之后，无缝衔接、立刻找回刚才那种全神贯注的状态吗？",
+    th: "ถ้าคุณกำลังดำดิ่งไปกับการทำงานแล้วจู่ๆ มีคนขัดจังหวะด้วยคำถาม คุณสามารถตอบพวกเขาแล้วกลับเข้าสู่โหมดสมาธิระดับเดิมได้ในทันทีเลยหรือไม่?"
   },
   "Initiative": {
-    en: "When you see something broken or inefficient, do you immediately fix it without being asked?",
-    ja: "非効率な手順や問題を見たとき、誰かに頼まれる前に自発的に改善してしまいますか？",
-    ko: "비효율적인 절차나 문제를 발견했을 때 누군가의 부탁이 없어도 자발적으로 개선하나요?"
+    en: "If you notice the shared office kitchen is mildly messy or a team document is totally disorganized, do you just fix and clean it yourself without waiting to be asked?",
+    ja: "職場の共有フォルダがぐちゃぐちゃだったり、備品が使いにくかったりした時、誰かに指示される前に「自分が直した方が早い」と勝手に整理してしまいますか？",
+    ko: "팀에서 다 같이 쓰는 공유 폴더가 엉망이거나 비품이 눈에 띄게 부족할 때, 누군가 시키기 전에 '내가 정리하는 게 빠르겠다'며 먼저 나서서 해결하나요?",
+    zh: "如果发现公司的共享文件夹很乱，或者团队的文档排版一塌糊涂，你会不会在老板没发话的情况下，直接自己动手把它们重新整理好？",
+    th: "ถ้าคุณเห็นว่าเอกสารของทีมกระจัดกระจาย หรือโต๊ะส่วนรวมค่อนข้างรก คุณมักจะจัดระเบียบและจัดการมันเองโดยไม่ต้องรอให้ใครมาสั่งใช่หรือไม่?"
   },
   "Risk Taking": {
-    en: "Are you comfortable making decisions where you might lose a lot of time or money if you are wrong?",
-    ja: "失敗すれば多くの時間や資金を失う可能性があるような大きな決断も、恐れずに下すことができますか？",
-    ko: "실패하면 많은 시간이나 자금을 잃을 수 있는 큰 결정도 두려움 없이 내릴 수 있나요?"
+    en: "Would you quit an 'okay' stable job to start your own business or move to a new country, knowing there's a strong chance you might end up completely broke?",
+    ja: "「失敗したら貯金がゼロになるかもしれない」というリスクがあっても、起業や海外移住などの「自分が本当にやりたい大きな挑戦」に思い切って踏み出せますか？",
+    ko: "'실패하면 그동안 모은 돈을 다 날릴 수도 있다'는 큰 위험을 알면서도, 창업이나 해외 이주 같은 큰 도전에 과감하게 베팅할 수 있나요?",
+    zh: "明知有可能最后会赔光所有的积蓄，你还敢不敢毅然决然地辞去一份稳定的工作，去创业或者搬到一个全新的国家生活？",
+    th: "คุณกล้าที่จะลาออกจากงานที่มั่นคงเพื่อไปเปิดธุรกิจของตัวเอง หรือย้ายประเทศ โดยที่รู้ว่ามีโอกาสสูงมากที่คุณอาจจะไม่เหลือเงินเก็บเลยหรือไม่?"
   },
 
   // --- Emotional Architecture ---
   "Emotional Regulation": {
-    en: "When someone strongly insults you, can you stay completely calm and objective?",
-    ja: "理不尽に激しく批判されたり侮辱されても、一切取り乱さず冷静で客観的でいられますか？",
-    ko: "부당하게 심한 비판이나 모욕을 받아도 전혀 흔들리지 않고 냉정하고 객관적인 태도를 유지할 수 있나요?"
+    en: "When someone says something harsh or unfair to you, are you able to brush it off and stay calm instead of snapping back?",
+    ja: "誰かに理不尽なことやキツイ言葉を言われたとき、カッとならずに「まあそういう意見もあるか」と冷静に受け流せますか？",
+    ko: "누군가 당신에게 부당하거나 차가운 말을 했을 때, 욱하지 않고 '뭐 그럴 수도 있지'라며 차분하게 넘길 수 있나요?",
+    zh: "当有人对你说出刻薄或不公平的话时，你能否不急躁，而是冷静地一笑置之？",
+    th: "เมื่อมีคนพูดจาทำร้ายจิตใจหรือพูดไม่ยุติธรรมกับคุณ คุณสามารถปล่อยผ่านและใจเย็นได้โดยไม่ตอบโต้กลับไปได้หรือไม่?"
   },
   "Empathy": {
-    en: "Do you physically feel a sense of pain or sadness when you see a stranger crying?",
-    ja: "見知らぬ人が泣いたり苦しんでいるのを見ると、自分まで胸が痛くなったり悲しくなりますか？",
-    ko: "모르는 사람이 우는 것을 보면 자신도 모르게 마음이 아프거나 슬퍼지나요?"
+    en: "When watching a sad movie or seeing a friend cry, do you naturally start tearing up or feeling their sadness physically?",
+    ja: "悲しい映画を観たり、友人が泣いているのを見たりすると、自分まで胸が締め付けられて自然と涙が出てきますか？",
+    ko: "슬픈 영화를 보거나 친구가 우는 모습을 볼 때, 나도 모르게 가슴이 먹먹해지거나 눈물이 나곤 하나요?",
+    zh: "在看悲伤的电影或看到朋友哭泣时，你是否也会感到心头一紧，自然而然地跟着流泪？",
+    th: "เวลาดูหนังเศร้าหรือเห็นเพื่อนร้องไห้ คุณรู้สึกเจ็บปวดในใจหรือร้องไห้ตามโดยธรรมชาติหรือไม่?"
   },
   "Resilience": {
-    en: "Do you bounce back to your normal cheerful self very quickly after a major failure?",
-    ja: "大きな挫折や失敗を経験しても、落ち込む期間は短く、すぐにいつもの自分に立ち直れますか？",
-    ko: "큰 좌절이나 실패를 겪어도 우울한 기간이 짧고 금방 평소의 모습으로 회복하나요?"
+    en: "If you mess up a big presentation or a project falls apart, can you shake it off after a good night's sleep and start fresh?",
+    ja: "仕事や趣味で大きなミスをして落ち込んでも、一晩寝たり美味しいものを食べたりすれば「よし、次がんばろう」とすぐに立ち直れますか？",
+    ko: "일이나 취미에서 큰 실수를 해 우울해지더라도, 하룻밤 푹 자고 나면 '좋아, 다시 해보자'라며 금방 훌훌 털어버릴 수 있나요?",
+    zh: "如果搞砸了一场重要的展示或项目失败了，经过一晚的休息，你是否就能重新振作起来，准备重新开始？",
+    th: "ถ้าคุณทำพลาดในงานสำคัญ คุณสามารถสลัดความรู้สึกแย่ๆ ทิ้งไปหลังจากนอนหลับเต็มอิ่ม และพร้อมเริ่มต้นใหม่ได้หรือไม่?"
   },
   "Trust": {
-    en: "Do you tend to assume people have good intentions until they prove otherwise?",
-    ja: "「基本的に人は善意で動いている」と信じ、最初から他人を疑ってかかることはしませんか？",
-    ko: "'기본적으로 사람은 선의를 가지고 행동한다'고 믿고 처음부터 타인을 의심하지 않나요?"
+    en: "When you meet someone new, do you instinctively trust them and assume they mean well, rather than being suspicious right away?",
+    ja: "初対面の人と接する時、「裏があるのではないか」と疑うよりも、まずは「いい人だろう」と好意的に信じるタイプですか？",
+    ko: "처음 만난 사람을 대할 때 '혹시 꿍꿍이가 있는 거 아닐까' 의심하기보다는 '좋은 사람일 거야'라고 일단 믿는 편인가요?",
+    zh: "当你认识新朋友时，你会出于本能地信任对方、认为他们是好意，而不是一开始就怀疑他们？",
+    th: "เวลาพบคนใหม่ๆ คุณมักจะเชื่อใจและคิดว่าพวกเขาหวังดี แทนที่จะสงสัยความตั้งใจของพวกเขาตั้งแต่แรกหรือไม่?"
   },
   "Vulnerability": {
-    en: "Are you comfortable sharing your deepest fears or insecurities with others?",
-    ja: "自分の弱気な部分やコンプレックス、恐怖心を他人に素直に打ち明けることに抵抗がありませんか？",
-    ko: "자신의 연약한 부분이나 콤플렉스, 두려움을 타인에게 솔직하게 털어놓는 것에 거부감이 없나요?"
+    en: "Is it easy for you to talk openly with your friends or partner about your biggest insecurities, fears, or embarrassing moments?",
+    ja: "自分の抱える大きな不安や自信のなさ、あるいは「恥ずかしい失敗談」を、心を許せる友人や恋人に素直に話すことができますか？",
+    ko: "자신이 겪는 깊은 불안이나 자신 없는 부분, 혹은 '창피한 실패 경험'을 친한 친구나 연인에게 솔직하게 털어놓을 수 있나요?",
+    zh: "你是否很容易跟朋友或伴侣坦诚地倾诉自己内心的不安、恐惧或尴尬的经历？",
+    th: "คุณรู้สึกสบายใจที่จะพูดคุยอย่างเปิดอกกับเพื่อนหรือคนรักเกี่ยวกับเรื่องที่คุณไม่มั่นใจ กลัว หรือเรื่องน่าอายหรือไม่?"
   },
   "Forgiveness": {
-    en: "Can you genuinely forgive someone who betrayed you, without holding a grudge?",
-    ja: "自分を裏切った相手に対しても、後まで恨みを引きずることなく心から許すことができますか？",
-    ko: "자신을 배신한 사람에게도 뒤끝 없이 진심으로 용서할 수 있나요?"
+    en: "If a friend cancels important plans last minute or betrays your trust, can you forgive them completely without holding a grudge for months?",
+    ja: "友人に大切な約束をすっぽかされるなど嫌な思いをさせられても、関係が修復されれば、その後いつまでも根に持つことなく心から許せますか？",
+    ko: "친구가 중요한 약속을 어기는 등 서운한 행동을 했어도, 오해가 풀리면 나중까지 마음에 두지 않고 진심으로 용서할 수 있나요?",
+    zh: "如果朋友在最后关头取消了重要计划或辜负了你的信任，事后和解的话，你能否彻底原谅他们，而不记仇？",
+    th: "ถ้าเพื่อนยกเลิกนัดสำคัญกะทันหันหรือทำลายความเชื่อใจของคุณ คุณสามารถให้อภัยพวกเขาโดยไม่เก็บมาคิดแค้นเป็นเวลานานได้หรือไม่?"
   },
   "Optimism": {
-    en: "Do you naturally assume that things will eventually work out for the best?",
-    ja: "根拠がなくても、「最終的にはどうにかなる、良い方向に向かうはずだ」と楽観的に考えますか？",
-    ko: "근거가 없더라도 '결국에는 다 잘될 것이다, 좋은 방향으로 갈 것이다'라고 낙관적으로 생각하나요?"
+    en: "Even in stressful situations where things look bad, do you naturally think 'it'll all work out somehow' and stay generally positive?",
+    ja: "トラブルが起きて先が見えないような状況でも、「まあ、最終的にはなんとかなるだろう」と自然に前向きに考えることができますか？",
+    ko: "문제가 생겨 앞이 막막한 상황에서도 '뭐, 어떻게든 잘 해결되겠지'라며 자연스럽게 긍정적으로 생각하는 편인가요?",
+    zh: "即使在情况看起来很糟的压力下，你也总会自然而然地觉得“船到桥头自然直”，保持乐观的心态？",
+    th: "แม้ในสถานการณ์ตึงเครียดที่ดูแย่ไปหมด คุณมักจะคิดว่า 'เดี๋ยวทุกอย่างก็จะดีเอง' และรู้สึกในแง่บวกอยู่เสมอหรือไม่?"
   },
   "Rejection Sensitivity": {
-    en: "Do you overthink and worry deeply when someone subtly ignores or dismisses your idea?",
-    ja: "自分のアイデアが軽く無視されたり拒絶されたりすると、深く傷つき引きずってしまいますか？",
-    ko: "자신의 아이디어가 가볍게 무시당하거나 거절당하면 깊이 상처받고 오래 담아두는 편인가요?"
+    en: "If someone leaves your message 'read' without replying or gives a half-hearted reaction to your joke, does it bother you and replay in your mind for hours?",
+    ja: "LINEを既読スルーされたり、自分の発言への反応が薄かったりすると、「何か気に障ることをしたかな…」と何時間も引きずって悩みますか？",
+    ko: "메시지에 '읽씹'을 당하거나 내 말에 대한 주변의 반응이 미지근할 때, '내가 무언가 잘못했나?'라며 오랫동안 마음에 두고 고민하나요?",
+    zh: "如果有人“已读不回”你的消息，或者对你的话反应冷淡，你是否会很介意，甚至在脑海里纠结好几个小时？",
+    th: "ถ้ามีคนอ่านข้อความของคุณแต่ไม่ตอบ หรือแสดงท่าทีเฉยชาต่อมุกตลกของคุณ เรื่องนี้จะกวนใจและวนเวียนอยู่ในหัวคุณเป็นชั่วโมงหรือไม่?"
   },
 
   // --- Meta-Self ---
   "Metacognition": {
-    en: "Do you find yourself observing your own thoughts as if you were a third party?",
-    ja: "ふと、「こう考えている自分」をもう一人の自分が上から客観的に観察しているような感覚になりますか？",
-    ko: "문득 '이렇게 생각하고 있는 나'를 또 다른 내가 위에서 객관적으로 관찰하고 있는 듯한 느낌이 드나요?"
+    en: "In your daily life, do you ever step back and calmly analyze your own feelings or thoughts, like asking yourself 'Why am I reacting this way right now?'",
+    ja: "日常の中で、ふと「なんで自分は今こんな反応をしているんだろう」と、自分の感情や考えを一歩引いて冷静に分析することがありますか？",
+    ko: "일상 속에서 문득 '나는 왜 지금 이런 반응을 보일까?'라며 자신의 감정이나 생각을 한 걸음 물러서서 냉정하게 분석하는 경우가 있나요?",
+    zh: "在日常生活中，你是否会偶尔退一步冷静分析自己的情绪或想法，比如思考“我为什么现在会有这样的反应？”",
+    th: "ในชีวิตประจำวัน คุณเคยถอยออกมาหนึ่งก้าวเพื่อวิเคราะห์ความรู้สึกหรือความคิดของตัวเองอย่างใจเย็น เช่น คิดว่า 'ทำไมตอนนี้ฉันถึงแสดงปฏิกิริยาแบบนี้' หรือไม่?"
   },
   "Learning From Failure": {
-    en: "Do you treat your own miserable failures purely as data points for future optimization?",
-    ja: "自分の悲惨な大失敗でさえも、感情的に落ち込むより「未来の成功のためのデータ」として冷静に処理しますか？",
-    ko: "자신의 처참한 실패조차도 감정적으로 좌절하기보다 '미래의 성공을 위한 데이터'로 냉정하게 처리하나요?"
+    en: "When you make a big mistake, do you quickly bounce back from feeling down and switch your mindset to 'What can I learn from this for next time?'",
+    ja: "大きな失敗をしてしまったとき、いつまでも落ち込まずに「次はどうすれば上手くいくか」とすぐに気持ちを切り替えることができますか？",
+    ko: "큰 실수를 했을 때, 계속 우울해하지 않고 '다음에는 어떻게 하면 잘될까?'라며 곧바로 마음을 전환할 수 있나요?",
+    zh: "犯下大错时，你能否不去沉浸在沮丧中，而是立刻转变心态去想“下次怎样才能做好”？",
+    th: "เมื่อคุณทำผิดพลาดครั้งใหญ่ คุณสามารถเปลี่ยนจากความรู้สึกเศร้าได้อย่างรวดเร็ว แล้วคิดว่า 'ครั้งหน้าจะต้องทำอย่างไรให้ดีขึ้น' ได้หรือไม่?"
   },
   "Authenticity": {
     en: "Are you exactly the same person in public, with friends, and when completely alone?",
     ja: "「職場での自分」「友人との自分」「一人の時の自分」の間に、全く裏表やキャラクターの違いがありませんか？",
-    ko: "'직장에서의 나', '친구와 있을 때의 나', '혼자 있을 때의 나' 사이에 전혀 겉과 속이 다르거나 캐릭터의 차이가 없나요?"
+    ko: "'직장에서의 나', '친구와 있을 때의 나', '혼자 있을 때의 나' 사이에 전혀 겉과 속이 다르거나 캐릭터의 차이가 없나요?",
+    zh: "在“工作中的我”、“和朋友在一起的我”以及“独处时的我”之间，你的性格和表现是完全一致、没有差别的吗？",
+    th: "ตัวคุณในที่สาธารณะ ตอนอยู่กับเพื่อน และตอนอยู่คนเดียว แทบจะไม่มีความแตกต่างหรือมีเบื้องหน้าเบื้องหลังเลยใช่หรือไม่?"
   },
   "Growth Orientation": {
     en: "Do you fundamentally believe that talent is a myth and any skill can be learned?",
     ja: "「才能で決まる」という考えを嫌い、どんな能力でも時間と正しい努力で後天的に獲得できると信じていますか？",
-    ko: "'재능에 따라 결정된다'는 생각을 싫어하고, 어떤 능력이든 시간과 올바른 노력으로 후천적으로 얻을 수 있다고 믿나요?"
+    ko: "'재능에 따라 결정된다'는 생각을 싫어하고, 어떤 능력이든 시간과 올바른 노력으로 후천적으로 얻을 수 있다고 믿나요?",
+    zh: "你是否不认同“一切由天赋决定”，并坚信任何能力都可以通过时间和正确的努力在后天获得？",
+    th: "คุณไม่ชอบแนวคิดที่ว่า 'ทุกอย่างถูกกำหนดด้วยพรสวรรค์' และเชื่อว่าทักษะเกือบทุกอย่างสามารถเรียนรู้และฝึกฝนได้ด้วยความพยายามใช่หรือไม่?"
   },
   "Blind Spot Detection": {
-    en: "Do you actively ask others to point out flaws in your reasoning that you might be missing?",
-    ja: "自分が気付いていない思考の死角や欠点を指摘してもらうよう、自ら他人に頼むことがありますか？",
-    ko: "자신이 깨닫지 못한 사고의 사각지대나 단점을 지적해달라고 스스로 타인에게 부탁하는 경우가 있나요?"
+    en: "In your daily life or work, do you actively ask friends or colleagues to point out your mistakes or biases that you might not notice?",
+    ja: "普段の生活や職場で、自分では気づかないような考え方のクセや間違いを、友人や同僚に「率直に指摘してほしい」と頼むことはありますか？",
+    ko: "일상생활이나 직장에서 자신이 미처 깨닫지 못한 생각의 습관이나 실수를 친구나 동료에게 솔직하게 지적해달라고 먼저 부탁하는 편인가요?",
+    zh: "在日常生活或工作中，你会不会主动请朋友或同事坦率地指出你自己没有注意到的思维习惯或错误？",
+    th: "ในชีวิตประจำวันหรือที่ทำงาน คุณมักจะขอให้เพื่อนหรือเพื่อนร่วมงานช่วยชี้ให้เห็นถึงรูปแบบความคิดหรือข้อผิดพลาดที่คุณอาจไม่รู้ตัวอย่างตรงไปตรงมาหรือไม่?"
   },
   "Identity Flexibility": {
-    en: "Are you willing to completely change your core beliefs if presented with compelling evidence?",
-    ja: "圧倒的な証拠や論理があれば、自分がこれまで強く信じてきた信念やアイデンティティでもあっさり捨てられますか？",
-    ko: "압도적인 증거나 논리가 있다면, 지금까지 강하게 믿어온 신념이나 정체성이라도 쉽게 버릴 수 있나요?"
+    en: "Even if it's a personal rule or belief you've held onto for a long time, can you easily change your mind if you learn convincing new facts?",
+    ja: "長年「これが正しい」とこだわってきた自分なりのルールや価値観であっても、納得のいく事実を知れば、すんなりと考え方を変えられますか？",
+    ko: "오랫동안 '이것이 옳다'고 고집해 온 나만의 규칙이나 가치관이라도, 납득할 만한 사실을 알게 되면 쉽게 생각을 바꿀 수 있나요?",
+    zh: "即使是长久以来坚持的个人原则或价值观，只要了解到令人信服的事实，你能否直接放下执念并改变想法？",
+    th: "แม้ว่าจะเป็นกฎเกณฑ์หรือค่านิยมส่วนตัวที่คุณยึดถือมานาน หากคุณได้รับข้อเท็จจริงที่สมเหตุสมผล คุณสามารถเปลี่ยนความคิดได้อย่างง่ายดายหรือไม่?"
   },
   "Self Correction": {
-    en: "Can you admit you were completely wrong in the middle of a heated argument and change sides instantly?",
-    ja: "白熱した議論の途中でも、自分が完全に間違っていたと気づけば、即座に認めて相手の意見に賛同できますか？",
-    ko: "치열한 논쟁 중에도 자신이 완전히 틀렸다는 것을 깨달으면 즉시 인정하고 상대방의 의견에 동의할 수 있나요?"
+    en: "In everyday conversations or work meetings, when you realize your idea is wrong, can you honestly admit it and adapt to the other person's opinion?",
+    ja: "普段の会話や仕事の打ち合わせで、自分の考えが間違っていると気づいたとき、素直にそれを認めて相手の意見に合わせることができますか？",
+    ko: "평소 대화나 업무 회의에서 내 생각이 틀렸다는 것을 깨달았을 때, 솔직하게 인정하고 상대방의 의견에 맞출 수 있나요?",
+    zh: "在日常交谈或工作会议中，当你意识到自己的想法是错误的时候，你能否坦诚承认并听从对方的意见？",
+    th: "ในบทสนทนาทั่วไปหรือการประชุมงาน เมื่อคุณรู้ตัวว่าความคิดของคุณผิด คุณสามารถยอมรับตามตรงและปรับตามความเห็นของอีกฝ่ายได้หรือไม่?"
   },
   "Perspective Taking": {
-    en: "Can you easily argue the opposite side of your own beliefs just to understand the other person?",
-    ja: "相手を理解するために、自分自身の信念とは全く真逆の立場からでも説得力のある意見を述べることができますか？",
-    ko: "상대방을 이해하기 위해 자신의 신념과는 완전히 반대되는 입장에서도 설득력 있는 의견을 제시할 수 있나요?"
+    en: "Can you intentionally take a position completely opposite to your own beliefs and construct a persuasive argument?",
+    ja: "あえて自分自身の意見や信念とは全く真逆の立場に立ち、説得力のある主張を組み立てることができますか？",
+    ko: "자신의 의견이나 신념과 완전히 반대되는 입장에 서서, 설득력 있는 주장을 구성할 수 있나요?",
+    zh: "你能否刻意站在与自己观点或信念完全相反的立场上，并构建出有说服力的论点？",
+    th: "คุณสามารถตั้งใจยอมรับความคิดที่ตรงข้ามกับความเชื่อของคุณอย่างสิ้นเชิงและสร้างข้อโต้แย้งที่สมเหตุสมผลได้หรือไม่?"
   }
 };
 
