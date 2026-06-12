@@ -63,7 +63,8 @@ export default function Questionnaire() {
         const node = graphData.nodes.find((n: any) => n.id === nodeId);
         return { name: node ? node.name : nodeId, score: (val as number) * 20 }; // scale 1-5 to 20-100%
       });
-      const topTraits = traitScores.sort((a,b) => b.score - a.score).slice(0, 3);
+      const topTraits = [...traitScores].sort((a,b) => b.score - a.score).slice(0, 3);
+      const bottomTraits = [...traitScores].sort((a,b) => a.score - b.score).slice(0, 3);
 
       // Generate a deterministic hash based on answers
       let hashSum = 0;
@@ -76,8 +77,9 @@ export default function Questionnaire() {
 
       let aiSummaries: Record<string, string> = {};
       let translatedTraitsMap: Record<string, Record<string, string>> = {};
+      let sectorImplicationsMap: Record<string, Record<string, string>> = {};
       
-      let sectorImplicationsMap: any = {};
+      const showWeakness = sessionStorage.getItem('showWeakness') !== 'false';
       
       let attempts = 0;
       let success = false;
@@ -86,7 +88,7 @@ export default function Questionnaire() {
           const analyzeRes = await fetch('/api/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ topTraits })
+            body: JSON.stringify({ topTraits, bottomTraits, showWeakness })
           });
           if (analyzeRes.ok) {
             const analyzeData = await analyzeRes.json();
@@ -96,12 +98,10 @@ export default function Questionnaire() {
                sectorImplicationsMap = analyzeData.result.sectorImplications || {};
                success = true;
             } else {
-               // Malformed JSON response, try again
                attempts++;
                await new Promise(r => setTimeout(r, Math.min(1000 * attempts, 10000)));
             }
           } else {
-             console.warn('Analysis failed with status', analyzeRes.status);
              attempts++;
              await new Promise(r => setTimeout(r, Math.min(1000 * attempts, 10000)));
           }
@@ -115,11 +115,13 @@ export default function Questionnaire() {
       const responseDoc = {
         answers,
         topTraits,
+        bottomTraits,
         vectorHash,
         aiSummaries,
         translatedTraitsMap,
         sectorImplicationsMap,
-        version: "1.1-multilingual-summary"
+        showWeakness,
+        version: "1.2-weaknesses"
       };
       
       let docId = null;
@@ -140,9 +142,9 @@ export default function Questionnaire() {
       }
       
       if (docId) {
-        navigate(`/results/${docId}`, { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap, sectorImplicationsMap } });
+        navigate(`/results/${docId}`, { state: responseDoc });
       } else {
-        navigate('/results', { state: { topTraits, vectorHash, answers, aiSummaries, translatedTraitsMap, sectorImplicationsMap } });
+        navigate('/results', { state: responseDoc });
       }
     } catch (err: any) {
       console.error(err);
@@ -242,3 +244,4 @@ export default function Questionnaire() {
     </div>
   );
 }
+
