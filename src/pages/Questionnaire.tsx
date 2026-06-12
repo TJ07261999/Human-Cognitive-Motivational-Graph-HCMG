@@ -58,13 +58,51 @@ export default function Questionnaire() {
   const submitData = async () => {
     setIsSubmitting(true);
     try {
-      // Find top 3 individual traits (node names) with highest scores (val)
       const traitScores = Object.entries(answers).map(([nodeId, val]) => {
         const node = graphData.nodes.find((n: any) => n.id === nodeId);
-        return { name: node ? node.name : nodeId, score: (val as number) * 20 }; // scale 1-5 to 20-100%
+        return { 
+          id: nodeId,
+          name: node ? node.name : nodeId, 
+          category: node ? node.category : 'Unknown',
+          score: (val as number) * 20 
+        }; // scale 1-5 to 20-100%
       });
       const topTraits = [...traitScores].sort((a,b) => b.score - a.score).slice(0, 3);
       const bottomTraits = [...traitScores].sort((a,b) => a.score - b.score).slice(0, 3);
+      
+      const categoryScoresMap: Record<string, { total: number, count: number }> = {};
+      Object.entries(answers).forEach(([nodeId, val]) => {
+        const node = graphData.nodes.find((n: any) => n.id === nodeId);
+        if (node) {
+          if (!categoryScoresMap[node.category]) {
+            categoryScoresMap[node.category] = { total: 0, count: 0 };
+          }
+          categoryScoresMap[node.category].total += (val as number);
+          categoryScoresMap[node.category].count += 1;
+        }
+      });
+      
+      const categoryAverages = Object.entries(categoryScoresMap)
+        .map(([cat, data]) => ({ category: cat, score: data.total / data.count }))
+        .sort((a,b) => b.score - a.score);
+
+      const dependenciesData = [];
+      for (const t of topTraits) {
+        const node = graphData.nodes.find((n: any) => n.id === t.id);
+        if (node && node.dependencies && node.dependencies.length > 0) {
+          node.dependencies.forEach((dep: any) => {
+             const targetNode = graphData.nodes.find((n: any) => n.id === dep.target);
+             if (targetNode) {
+                dependenciesData.push({
+                   source: node.name,
+                   target: targetNode.name,
+                   weight: dep.weight || 1.0,
+                   description: `${node.name} positively influences ${targetNode.name}`
+                });
+             }
+          });
+        }
+      }
 
       // Generate a deterministic hash based on answers
       let hashSum = 0;
@@ -81,6 +119,9 @@ export default function Questionnaire() {
       
       const showWeakness = sessionStorage.getItem('showWeakness') !== 'false';
       
+      let aiTradeoffs: Record<string, string> = {};
+      let aiDependencies: Record<string, string> = {};
+
       let attempts = 0;
       let success = false;
       while (!success) {
@@ -88,7 +129,13 @@ export default function Questionnaire() {
           const analyzeRes = await fetch('/api/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ topTraits, bottomTraits, showWeakness })
+            body: JSON.stringify({ 
+               topTraits, 
+               bottomTraits, 
+               categoryAverages,
+               dependenciesData,
+               showWeakness 
+            })
           });
           if (analyzeRes.ok) {
             const analyzeData = await analyzeRes.json();
@@ -96,6 +143,8 @@ export default function Questionnaire() {
                aiSummaries = analyzeData.result.summaries || {};
                translatedTraitsMap = analyzeData.result.translatedTraits || {};
                sectorImplicationsMap = analyzeData.result.sectorImplications || {};
+               aiTradeoffs = analyzeData.result.tradeoffs || {};
+               aiDependencies = analyzeData.result.dependencies || {};
                success = true;
             } else {
                attempts++;
@@ -112,16 +161,25 @@ export default function Questionnaire() {
         }
       }
 
+      const structuredProfile = {
+         categories: categoryAverages,
+         traits: traitScores,
+         dependencies: dependenciesData,
+      };
+
       const responseDoc = {
         answers,
         topTraits,
         bottomTraits,
+        structuredProfile,
         vectorHash,
         aiSummaries,
+        aiTradeoffs,
+        aiDependencies,
         translatedTraitsMap,
         sectorImplicationsMap,
         showWeakness,
-        version: "1.2-weaknesses"
+        version: "1.3-structured-profile"
       };
       
       let docId = null;
