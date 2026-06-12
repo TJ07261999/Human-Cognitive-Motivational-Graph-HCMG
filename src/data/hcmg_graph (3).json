@@ -1,0 +1,5854 @@
+{
+  "nodes": [
+    {
+      "id": "child_ENE_0_0",
+      "name": "Social Energy",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Social Energy.",
+      "question": {
+        "en": "After a long party or a big social event, do you feel pumped up and energized rather than exhausted?",
+        "ja": "飲み会やイベントで大勢の人と過ごした後、疲れるどころか逆にテンションが上がって元気になりますか？",
+        "ko": "회식이나 모임에서 많은 사람들과 어울린 후, 피곤하기보다는 오히려 에너지가 넘치고 기분이 좋아지나요?",
+        "zh": "在参加完热闹的聚会或大型社交活动后，你是否非但不觉得累，反而感到精神焕发、充满活力？",
+        "th": "หลังจากไปงานปาร์ตี้หรืองานสังสรรค์ที่มีคนเยอะๆ คุณรู้สึกมีพลังและกระตือรือร้นมากกว่าที่จะรู้สึกเหนื่อยล้าหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_0_1",
+      "name": "Solitude Recovery",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Solitude Recovery.",
+      "question": {
+        "en": "When you're completely exhausted, do you need to spend a whole day completely alone to feel like yourself again?",
+        "ja": "心身ともに疲れ切ったとき、誰とも会わずに自分一人だけで引きこもる時間が絶対に必要ですか？",
+        "ko": "몸과 마음이 완전히 지쳤을 때, 누구도 만나지 않고 혼자만의 시간을 가져야만 다시 나다운 모습으로 돌아오나요?",
+        "zh": "当你感到彻底精疲力尽时，是否必须独自呆上一整天，才能找回平时的自己？",
+        "th": "เมื่อคุณรู้สึกเหนื่อยล้ามากๆ คุณจำเป็นต้องใช้เวลาอยู่คนเดียวเต็มๆ วันเพื่อฟื้นฟูพลังและกลับมาเป็นตัวเองอีกครั้งหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_0_2",
+      "name": "Group Stimulation",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Group Stimulation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_0_3",
+      "name": "Conversation Initiation",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Conversation Initiation.",
+      "question": {
+        "en": "While waiting in line or sitting next to a stranger, do you easily strike up friendly chats with them?",
+        "ja": "お店で並んでいる時や隣り合わせた知らない人にも、「今日は暑いですね」などの世間話を気軽にふれますか？",
+        "ko": "줄을 서서 기다릴 때나 옆에 앉은 모르는 사람에게 '오늘 날씨가 덥네요'와 같은 가벼운 인사를 쉽게 건네는 편인가요?",
+        "zh": "在排队等候或坐在陌生人旁边时，你是否很容易就能和对方自然地闲聊起来？",
+        "th": "เวลาต่อคิวหรือนั่งข้างคนแปลกหน้า คุณสามารถเริ่มชวนพวกเขาคุยเล่นได้อย่างเป็นธรรมชาติหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_0",
+      "name": "Social Initiation",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for social initiation within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_ENE_0_0",
+        "child_ENE_0_1",
+        "child_ENE_0_2",
+        "child_ENE_0_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_1_0",
+      "name": "Conversation Maintenance",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Conversation Maintenance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_1_1",
+      "name": "Leadership Emergence",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Leadership Emergence.",
+      "question": {
+        "en": "When a group project or a trip with friends has no clear organizer, do you naturally step in to plan and assign tasks?",
+        "ja": "友人との旅行やグループワークで、「誰が仕切る？」と微妙な空気が流れた時、自然と自分がまとめ役を引き受けてしまいますか？",
+        "ko": "친구들과의 여행이나 팀 프로젝트에서 나서는 사람이 없을 때, 자연스럽게 당신이 총대를 메고 계획을 짜거나 역할을 분담하나요?",
+        "zh": "在朋友结伴出游或团队合作时，如果没人主动组织，你是否会自然而然地站出来安排计划和分配任务？",
+        "th": "เวลาทำงานกลุ่มหรือไปเที่ยวกับเพื่อนๆ แล้วไม่มีคนคอยจัดการ คุณมักจะอาสารับบทเป็นคนวางแผนและแบ่งหน้าที่เสมอหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_1_2",
+      "name": "Social Risk Taking",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Social Risk Taking.",
+      "question": {
+        "en": "Are you okay with looking silly or asking basic questions in a meeting if it means you finally understand the topic?",
+        "ja": "会議や授業で「こんなことも知らないのか」と思われても、自分が納得するために恥を忍んで質問することができますか？",
+        "ko": "회의나 수업 중에 다른 사람들이 '이런 것도 몰라?'라고 생각할까 봐 걱정하기보다는, 내가 제대로 이해하기 위해 부끄러움을 무릅쓰고 질문하는 편인가요?",
+        "zh": "在会议或课堂上，就算可能会显得自己不懂，为了弄明白，你也完全不介意当着大家的面提出最基础的问题？",
+        "th": "ในที่ประชุมหรือในห้องเรียน หากคุณไม่เข้าใจ คุณกล้าที่จะถามคำถามแม้ว่าคนอื่นอาจจะมองว่ามันเป็นเรื่องง่ายๆ ไหม เพื่อให้คุณเข้าใจได้จริงๆ?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_1_3",
+      "name": "Emotional Expressiveness",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Expressiveness.",
+      "question": {
+        "en": "Do people often tell you 'Your face shows everything you're thinking' because your expressions are so easy to read?",
+        "ja": "嬉しいときやイライラしているとき、自分では隠しているつもりでも「顔に書いてあるよ」と周りにすぐバレてしまいますか？",
+        "ko": "기쁘거나 짜증날 때 숨기려고 해도 주변 사람들에게 '얼굴에 다 쓰여 있어'라는 말을 자주 들을 정도로 표정에 감정이 잘 드러나나요?",
+        "zh": "你是否经常被别人说“你的心情全写在脸上了”，因为你的表情真的太容易被看穿了？",
+        "th": "มักจะมีคนบอกคุณว่า 'สีหน้าคุณฟ้องหมดเลยว่าคิดอะไรอยู่' เพราะอารมณ์ของคุณแสดงออกทางสีหน้าชัดเจนหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_1",
+      "name": "Social Maintenance",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for social maintenance within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_ENE_1_0",
+        "child_ENE_1_1",
+        "child_ENE_1_2",
+        "child_ENE_1_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_2_0",
+      "name": "Emotional Containment",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Containment.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_2_1",
+      "name": "Public Confidence",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Public Confidence.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_2_2",
+      "name": "Private Reflection",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Private Reflection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_2_3",
+      "name": "Crowd Tolerance",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Crowd Tolerance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_2",
+      "name": "Internal Recovery",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for internal recovery within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_ENE_2_0",
+        "child_ENE_2_1",
+        "child_ENE_2_2",
+        "child_ENE_2_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_3_0",
+      "name": "Networking Drive",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Networking Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_3_1",
+      "name": "Mentorship Seeking",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Mentorship Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_3_2",
+      "name": "Mentorship Giving",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Mentorship Giving.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_3_3",
+      "name": "Competitive Presence",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Competitive Presence.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_3",
+      "name": "Group Presence",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for group presence within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_ENE_3_0",
+        "child_ENE_3_1",
+        "child_ENE_3_2",
+        "child_ENE_3_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_4_0",
+      "name": "Cooperative Presence",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Cooperative Presence.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_4_1",
+      "name": "Attention Seeking",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Attention Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_4_2",
+      "name": "Independence Preference",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Independence Preference.",
+      "question": {
+        "en": "Would you rather do a whole project by yourself just the way you like it, instead of arguing with a team to find a compromise?",
+        "ja": "チームで意見を合わせて妥協しながら進めるくらいなら、「全部自分でやるから好きにさせて！」と思うタイプですか？",
+        "ko": "팀원들과 의견을 맞추며 타협하느니, '차라리 내가 다 할 테니 내 방식대로 하게 둬!'라고 생각하는 편인가요?",
+        "zh": "与其在团队中为了迎合大家而不断妥协，你是否更宁愿一个人包揽所有任务，按自己的想法去做？",
+        "th": "คุณยอมทำงานทั้งหมดด้วยตัวเองตามวิธีที่คุณชอบ มากกว่าที่จะต้องมานั่งถกเถียงหรือประนีประนอมกับเพื่อนร่วมทีมหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_ENE_4_3",
+      "name": "Interdependence Preference",
+      "category": "Energy",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Interdependence Preference.",
+      "question": {
+        "en": "When faced with a really difficult problem, is your first instinct to gather smart people to brainstorm together rather than suffering alone?",
+        "ja": "とても難しい問題に直面したとき、一人で抱え込んで悩むより、すぐに「みんなで集まってアイデアを出そう」と考えるタイプですか？",
+        "ko": "정말 어려운 문제에 부딪혔을 때, 혼자 끙끙대기보다 곧바로 똑똑한 사람들을 모아 '다 같이 머리를 맞대보자'고 생각하나요?",
+        "zh": "当遇到非常棘手的问题时，你的第一反应是找聪明人一起集思广益，而不是一个人独自苦思冥想？",
+        "th": "เมื่อเจอกับปัญหาที่ยากมากๆ สัญชาตญาณแรกของคุณคือการเรียกคนเก่งๆ มาร่วมกันระดมสมอง มากกว่าที่จะทนคิดคนเดียวใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_ENE_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_4",
+      "name": "Independence",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for independence within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_ENE_4_0",
+        "child_ENE_4_1",
+        "child_ENE_4_2",
+        "child_ENE_4_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_ENE_5",
+      "name": "Competitive Edge",
+      "category": "Energy",
+      "tier": 1,
+      "definition": "Fundamental capacity for competitive edge within Energy.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_0_0",
+      "name": "Pattern Seeking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Pattern Seeking.",
+      "question": {
+        "en": "Do you catch yourself noticing coincidences or making connections between totally unrelated events in your daily life?",
+        "ja": "日常生活の中で、「最近これが立て続けに起きているから、何か法則があるのでは？」と無意識に出来事の繋がりを探してしまいますか？",
+        "ko": "일상생활에서 일어나는 전혀 상관없는 일들 사이에서 '최근 이런 일이 계속 생기는데, 뭔가 연결고리가 있는 거 아닐까?'라며 우연이나 패턴을 자주 찾나요?",
+        "zh": "在日常生活中，你是否会经常留意到一些巧合，或者不知不觉地在完全不相关的事件之间找出某种规律或联系？",
+        "th": "ในชีวิตประจำวัน คุณมักจะสังเกตเห็นความบังเอิญ หรือพยายามหาจุดเชื่อมโยงระหว่างเหตุการณ์ที่ไม่เกี่ยวข้องกันเลยบ่อยๆ หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_0_1",
+      "name": "Pattern Completion",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Pattern Completion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_0_2",
+      "name": "Pattern Generalization",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Pattern Generalization.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_0_3",
+      "name": "Abstraction",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Abstraction.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_0_4",
+      "name": "Concretization",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Concretization.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_0_5",
+      "name": "Detail Orientation",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Detail Orientation.",
+      "question": {
+        "en": "When reading an article or looking at a menu, do small typos or slightly misaligned text bother you immediately?",
+        "ja": "記事を読んでいる時やメニューを見ている時、小さな誤字や文字のズレなどが真っ先に目に飛び込んできて気になってしまいますか？",
+        "ko": "기사를 읽거나 메뉴판을 볼 때, 작은 오타나 줄이 살짝 삐뚤어진 것들이 남들보다 먼저 눈에 띄고 거슬리나요?",
+        "zh": "在阅读文章或看菜单时，你是否总是能一眼发现别人注意不到的小错别字或排版不齐，而且觉得很不舒服？",
+        "th": "เวลาอ่านบทความหรือดูเมนูอาหาร คุณมักจะรู้สึกขัดใจทันทีเมื่อเห็นคำผิดเล็กๆ น้อยๆ หรือการจัดบรรทัดที่ไม่ตรงใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_0",
+      "name": "Pattern Intelligence",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for pattern intelligence within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_0_0",
+        "child_INF_0_1",
+        "child_INF_0_2",
+        "child_INF_0_3",
+        "child_INF_0_4",
+        "child_INF_0_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_1_0",
+      "name": "Big Picture Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Big Picture Thinking.",
+      "question": {
+        "en": "When someone explains a long story, do you just want them to skip the details and tell you the main point or 'the big picture'?",
+        "ja": "誰かの長い話を聞いているとき、細かいエピソードよりも「結局、一番言いたい結論はなに？」と全体像を早く知りたくなりますか？",
+        "ko": "누군가 긴 이야기를 할 때, 시시콜콜한 세부 사항보다 '그래서 결론이 뭐야?', '큰 그림이 뭔데?'에 더 집중하고 싶어지나요?",
+        "zh": "听别人讲长篇大论时，你是不是心里总在想“跳过这些细节，直接告诉我重点或大局是什么”？",
+        "th": "เวลาที่มีคนเล่าเรื่องยาวๆ คุณมักจะอยากให้พวกเขาข้ามรายละเอียดไปเลย แล้วบอกประเด็นหลักหรือ 'ภาพรวม' ของเรื่องมาเลย หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_1_1",
+      "name": "Context Sensitivity",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Context Sensitivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_1_2",
+      "name": "Signal Detection",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Signal Detection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_1_3",
+      "name": "Noise Filtering",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Noise Filtering.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_1_4",
+      "name": "Novelty Detection",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Novelty Detection.",
+      "question": {
+        "en": "Are you always the first to point out when a friend gets a slight haircut or someone moves a small decoration in a room?",
+        "ja": "友人が前髪をちょっと切ったことや、部屋の小物の配置が少し変わったことなど、どんな小さな変化にも誰より早く気づきますか？",
+        "ko": "친구가 앞머리를 살짝 잘랐다거나 방의 작은 소품 배치가 달라진 걸 누구보다 가장 먼저 알아채고 이야기하나요?",
+        "zh": "当朋友稍微剪了头发，或者房间里某个不起眼的小摆设换了位置，你是不是总是第一个注意到并指出来？",
+        "th": "คุณมักจะเป็นคนแรกที่ทักเสมอเวลาเพื่อนตัดผมมานิดหน่อย หรือเมื่อมีการขยับของตกแต่งชิ้นเล็กๆ ในห้องหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_1_5",
+      "name": "Curiosity Trigger",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Curiosity Trigger.",
+      "question": {
+        "en": "Do you ever look up one random question online and end up reading Wikipedia articles about it for three hours?",
+        "ja": "ネットでふと気になった言葉を検索しただけなのに、次から次へとリンクを辿ってしまい、気づけば3時間経っていたということがよくありますか？",
+        "ko": "인터넷에서 문득 궁금해진 단어를 검색했다가 꼬리에 꼬리를 무는 링크를 타고 넘어가, 정신 차려보니 3시간째 위키백과를 읽고 있던 적이 많나요?",
+        "zh": "你有没有过上网随手搜一个问题，结果不知不觉在维基百科上顺着链接看了三个小时的经历？",
+        "th": "คุณเคยเริ่มจากการค้นหาคำถามสุ่มๆ บนเน็ต แล้วสุดท้ายก็ใช้เวลาอ่านบทความใน Wikipedia เกี่ยวกับเรื่องนั้นยาวไป 3 ชั่วโมงเลยหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_1",
+      "name": "Signal Processing",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for signal processing within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_1_0",
+        "child_INF_1_1",
+        "child_INF_1_2",
+        "child_INF_1_3",
+        "child_INF_1_4",
+        "child_INF_1_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_2_0",
+      "name": "Evidence Reliance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Evidence Reliance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_2_1",
+      "name": "Experience Reliance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Experience Reliance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_2_2",
+      "name": "Intuition Reliance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Intuition Reliance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_2_3",
+      "name": "Memory Reliance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Memory Reliance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_2_4",
+      "name": "Observation Accuracy",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Observation Accuracy.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_2_5",
+      "name": "Situational Awareness",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Situational Awareness.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_2",
+      "name": "Cognitive Modality",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for cognitive modality within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_2_0",
+        "child_INF_2_1",
+        "child_INF_2_2",
+        "child_INF_2_3",
+        "child_INF_2_4",
+        "child_INF_2_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_3_0",
+      "name": "Semantic Compression",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Semantic Compression.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_3_1",
+      "name": "Knowledge Integration",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Knowledge Integration.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_3_2",
+      "name": "Cross Domain Mapping",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Cross Domain Mapping.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_3_3",
+      "name": "Analogy Formation",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Analogy Formation.",
+      "question": {
+        "en": "When explaining something complicated like tech or rules, do you naturally say things like 'It's basically like ordering at a restaurant'?",
+        "ja": "難しいルールや仕組みを人に説明する時、「それって要するに、レストランの注文と同じでね…」のように、別の身近なものに例えるのが得意ですか？",
+        "ko": "복잡한 규칙이나 기술을 다른 사람에게 설명할 때, '이건 쉽게 말해서 식당에서 주문하는 거랑 같아'처럼 일상생활에 빗대어 설명하는 것을 잘하나요?",
+        "zh": "在向别人解释复杂的技术或规则时，你是否很自然地就会说“这就好比去餐厅点菜一样”这种比喻？",
+        "th": "เวลาอธิบายเรื่องที่เข้าใจยากๆ เช่น เรื่องเทคโนโลยีหรือกฎเกณฑ์ คุณมักจะใช้การเปรียบเทียบเสมอ เช่น 'มันก็เหมือนกับการสั่งอาหารในร้านนั่นแหละ' หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_3_4",
+      "name": "Concept Formation",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Concept Formation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_3_5",
+      "name": "Concept Refinement",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Concept Refinement.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_3",
+      "name": "Memory & Recall",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for memory & recall within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_3_0",
+        "child_INF_3_1",
+        "child_INF_3_2",
+        "child_INF_3_3",
+        "child_INF_3_4",
+        "child_INF_3_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_4_0",
+      "name": "Information Retention",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Information Retention.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_4_1",
+      "name": "Information Recall",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Information Recall.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_4_2",
+      "name": "Visual Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Visual Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_4_3",
+      "name": "Verbal Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Verbal Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_4_4",
+      "name": "Spatial Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Spatial Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_4_5",
+      "name": "Temporal Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Temporal Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_4",
+      "name": "Future & Scenario",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for future & scenario within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_4_0",
+        "child_INF_4_1",
+        "child_INF_4_2",
+        "child_INF_4_3",
+        "child_INF_4_4",
+        "child_INF_4_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_5_0",
+      "name": "Future Projection",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Future Projection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_5_1",
+      "name": "Counterfactual Thinking",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Counterfactual Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_5_2",
+      "name": "Scenario Generation",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Scenario Generation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_5_3",
+      "name": "Trend Recognition",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Trend Recognition.",
+      "question": {
+        "en": "Do you often find yourself using an app, listening to a band, or saying a slang word months before everyone else catches on?",
+        "ja": "お気に入りのアプリや音楽、言葉などが、世間で大流行する数ヶ月前からすでに見つけてハマっていることがよくありますか？",
+        "ko": "어떤 앱이나 음악 밴드, 유행어 등이 사람들 사이에서 본격적으로 유행하기 몇 달 전부터 이미 당신은 그것을 즐겨 쓰고 있었던 적이 잦나요?",
+        "zh": "你是不是经常发现某个App、某支乐队或某句流行语，在你用了几个月之后，才开始在大众中彻底火起来？",
+        "th": "คุณมักจะพบว่าตัวเองใช้แอปพลิเคชัน ฟังเพลงของวงดนตรี หรือใช้คำแสลงใหม่ๆ ล่วงหน้าหลายเดือนก่อนที่คนส่วนใหญ่จะเริ่มฮิตกันหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_5_4",
+      "name": "Weak Signal Recognition",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Weak Signal Recognition.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_5_5",
+      "name": "Opportunity Detection",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Opportunity Detection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_5",
+      "name": "Ambiguity Management",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for ambiguity management within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_5_0",
+        "child_INF_5_1",
+        "child_INF_5_2",
+        "child_INF_5_3",
+        "child_INF_5_4",
+        "child_INF_5_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_INF_6_0",
+      "name": "Risk Detection",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Risk Detection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_6_1",
+      "name": "Ambiguity Tolerance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Ambiguity Tolerance.",
+      "question": {
+        "en": "When starting a trip without a set itinerary, do you feel excited by the mystery rather than stressed about what's next?",
+        "ja": "スケジュールが白紙のまま旅行に出かけた時、「何が起きるか分からない状況」にストレスを感じるより、むしろワクワクしますか？",
+        "ko": "계획표 없이 여행을 떠났을 때, '다음에 뭘 하지?'라는 막막함에 스트레스받기보다는 무슨 일이 생길지 모르는 상황 자체를 즐기며 설레하나요?",
+        "zh": "如果在没有任何详细行程安排的情况下出发去旅行，相较于为接下来要干什么感到焦虑，你是否更对未知感到兴奋？",
+        "th": "เวลาออกเดินทางโดยที่ยังไม่มีแผนการเดินทางที่ชัดเจน คุณจะรู้สึกตื่นเต้นกับสิ่งที่ไม่คาดคิด มากกว่าที่จะกังวลว่าต้องทำอะไรต่อไปหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_6_2",
+      "name": "Complexity Tolerance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Complexity Tolerance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "child_INF_6_3",
+      "name": "Uncertainty Tolerance",
+      "category": "Information",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Uncertainty Tolerance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_INF_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.9
+        }
+      ]
+    },
+    {
+      "id": "parent_INF_6",
+      "name": "Context & Detail",
+      "category": "Information",
+      "tier": 1,
+      "definition": "Fundamental capacity for context & detail within Information.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_INF_6_0",
+        "child_INF_6_1",
+        "child_INF_6_2",
+        "child_INF_6_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_0",
+      "name": "Logical Consistency",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Logical Consistency.",
+      "question": {
+        "en": "When a movie character changes their mind for no logical reason, does it annoy you enough to pull you out of the story?",
+        "ja": "映画やドラマを見ていて、登場人物の行動やセリフに「さっき言ってたことと論理的に矛盾してる！」と気づいて冷めてしまうことがありますか？",
+        "ko": "영화나 드라마를 볼 때 등장인물의 행동이나 대사가 '아까 하던 말하고 앞뒤가 안 맞잖아?'라고 느껴지면 답답해서 몰입이 깨지는 편인가요?",
+        "zh": "在看电影时，如果角色的想法毫无逻辑地突然转变，这是否会让你十分介意，甚至到了无法继续投入在剧情中的地步？",
+        "th": "เวลาดูหนังและตัวละครเปลี่ยนความคิดโดยไม่มีเหตุผลที่สมเหตุสมผล มันทำให้คุณรู้สึกขัดใจจนหมดสนุกกับหนังไปเลยหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_1",
+      "name": "Deductive Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Deductive Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_2",
+      "name": "Inductive Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Inductive Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_3",
+      "name": "Abductive Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Abductive Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_4",
+      "name": "Causal Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Causal Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_0_5",
+      "name": "Systems Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Systems Thinking.",
+      "question": {
+        "en": "When a coworker makes a mistake, do you wonder if the process or the tools they were using are actually to blame?",
+        "ja": "同僚がミスをしたとき、「アイツが悪い」と責める前に、「もしかしてマニュアルやツールなど仕組み自体に問題があるのでは？」と考えますか？",
+        "ko": "동료가 실수를 했을 때, '저 사람 왜 저래'라고 탓하기보다 '사용하던 매뉴얼이나 업무 과정 자체에 문제가 있는 거 아닐까?'라고 먼저 생각하나요?",
+        "zh": "当同事犯了错，比起直接责怪他，你是不是更倾向于思考是不是工作流程、机制或是使用的工具本身存在缺陷？",
+        "th": "เมื่อเพื่อนร่วมงานทำผิดพลาด คุณมักจะตั้งคำถามว่ากระบวนการทำงานหรือเครื่องมือที่พวกเขาใช้นั้นแหละที่เป็นต้นเหตุ มากกว่าที่จะโทษว่าพวกเขาเป็นคนผิดหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_0",
+      "name": "Logical Structure",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for logical structure within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_0_0",
+        "child_REA_0_1",
+        "child_REA_0_2",
+        "child_REA_0_3",
+        "child_REA_0_4",
+        "child_REA_0_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_0",
+      "name": "Network Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Network Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_1",
+      "name": "Probabilistic Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Probabilistic Thinking.",
+      "question": {
+        "en": "Instead of saying 'It will definitely rain,' do you prefer saying things like 'I'd bet there's an 80% chance it's going to rain'?",
+        "ja": "日常の出来事を「絶対にこうなる」と断言するより、「たぶん80%くらいの確率でこうなるだろうな」と心の中で確率計算をしてしまいますか？",
+        "ko": "어떤 일이 일어날지 말할 때, '무조건 비가 올 거야'라고 확언하기보다 '80% 정도의 확률로 비가 올 것 같아'라고 확률로 예측하는 것을 편하게 느끼나요?",
+        "zh": "在日常交谈中，你是否很少说“绝对会这样”，而是更喜欢说“我觉得大概有80%的几率会这样”之类用概率来描述的话？",
+        "th": "แทนที่จะพูดว่า 'ฝนตกแน่นอน' คุณมักจะชอบพูดว่า 'ฉันคิดว่ามีโอกาส 80% ที่ฝนจะตก' มากกว่าไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_2",
+      "name": "Bayesian Updating",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Bayesian Updating.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_3",
+      "name": "Hypothesis Generation",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Hypothesis Generation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_4",
+      "name": "Hypothesis Testing",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Hypothesis Testing.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_1_5",
+      "name": "Critical Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Critical Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_1",
+      "name": "Systems Intelligence",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for systems intelligence within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_1_0",
+        "child_REA_1_1",
+        "child_REA_1_2",
+        "child_REA_1_3",
+        "child_REA_1_4",
+        "child_REA_1_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_0",
+      "name": "Skepticism",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Skepticism.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_1",
+      "name": "Falsification Seeking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Falsification Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_2",
+      "name": "Decision Accuracy",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Decision Accuracy.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_3",
+      "name": "Decision Speed",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Decision Speed.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_4",
+      "name": "Tradeoff Analysis",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Tradeoff Analysis.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_2_5",
+      "name": "Optimization Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Optimization Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_2",
+      "name": "Probabilistic Analysis",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for probabilistic analysis within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_2_0",
+        "child_REA_2_1",
+        "child_REA_2_2",
+        "child_REA_2_3",
+        "child_REA_2_4",
+        "child_REA_2_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_0",
+      "name": "Resource Allocation",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Resource Allocation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_1",
+      "name": "Constraint Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Constraint Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_2",
+      "name": "Strategic Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Strategic Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_3",
+      "name": "Tactical Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Tactical Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_4",
+      "name": "Long Term Planning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Long Term Planning.",
+      "question": {
+        "en": "When deciding on a job or moving to a new city, do you heavily calculate how it will affect your life 10 years down the line?",
+        "ja": "仕事選びや引っ越しなど重要な決断をするとき、「10年後の自分の人生プランにどう影響するか」までじっくり逆算して考えますか？",
+        "ko": "직업을 선택하거나 새로운 곳으로 이사하는 등의 중요한 결정을 할 때, '이 선택이 나의 10년 뒤 인생에 어떤 영향을 미칠까'를 깊이 연결 지어 계산하나요?",
+        "zh": "在决定换工作或搬到一个新城市时，你是否会非常慎重地计算和推演这一决定会对你10年后的生活产生什么影响？",
+        "th": "เวลาต้องตัดสินใจเรื่องใหญ่ๆ อย่างเช่น ย้ายงานหรือย้ายจังหวัด คุณมักจะคำนวณอย่างรอบคอบว่ามันจะส่งผลต่อชีวิตคุณในอีก 10 ปีข้างหน้าอย่างไรไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_3_5",
+      "name": "Short Term Planning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Short Term Planning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_3",
+      "name": "Decision Making",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for decision making within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_3_0",
+        "child_REA_3_1",
+        "child_REA_3_2",
+        "child_REA_3_3",
+        "child_REA_3_4",
+        "child_REA_3_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_0",
+      "name": "Meta Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Meta Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_1",
+      "name": "Recursive Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Recursive Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_2",
+      "name": "Self Reflection",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Reflection.",
+      "question": {
+        "en": "When you get into an argument, do you later replay it alone in your room and realize, 'Actually, my logic was completely unfair there'?",
+        "ja": "誰かと口論になった後、一人になってから「いや、よく考えたらあの時の自分の理屈はちょっとフェアじゃなかったな」と冷静に振り返って反省することがよくありますか？",
+        "ko": "누군가와 말다툼을 한 후, 혼자 내 방에 앉아 대화를 곱씹어 보며 '사실 그때 내 논리가 완전히 억지였네'라고 스스로의 잘못을 냉정하게 되돌아보나요?",
+        "zh": "和别人争吵后，一个人静下来的时候，你会不会反复复盘刚才的对话，并意识到“其实刚才我的逻辑也有点强词夺理”？",
+        "th": "เวลาเถียงกับใคร เมื่อกลับมาอยู่คนเดียว คุณมักจะย้อนคิดถึงเหตุการณ์นั้นแล้วพบว่า 'ที่จริงแล้ว เหตุผลของฉันก็ไม่ค่อยจะแฟร์เหมือนกันนะ' ใช่ไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_3",
+      "name": "Error Detection",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Error Detection.",
+      "question": {
+        "en": "When your friends are explaining a great weekend plan, are you usually the first one to say 'Wait, isn't that restaurant closed on Sundays'?",
+        "ja": "友人たちが盛り上がって立てている完璧そうな旅行計画に対して、「待って、その時間はそもそも電車がないんじゃない？」と真っ先に欠陥に気づくタイプですか？",
+        "ko": "친구들이 완벽한 주말 계획을 짜며 신나할 때, 가장 먼저 '잠깐만, 그 식당 일요일에는 휴무 아니야?'라며 치명적인 오류를 찾아내는 역할을 주로 맡나요?",
+        "zh": "当朋友极力向你推销一个听起来很完美的周末计划时，你是不是通常最先泼冷水说：“等等，那家餐厅周日不开门吧”？",
+        "th": "เวลาเพื่อนๆ เสนอแผนการเที่ยววันหยุดที่ฟังดูสมบูรณ์แบบ คุณมักจะเป็นคนแรกที่พูดว่า 'เดี๋ยวนะ ร้านอาหารนั้นมันปิดวันอาทิตย์ไม่ใช่เหรอ' หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_4",
+      "name": "Assumption Checking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Assumption Checking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_4_5",
+      "name": "Mental Simulation",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Mental Simulation.",
+      "question": {
+        "en": "Before sending a risky text or confronting a friend, do you run through five different ways the conversation could go in your head?",
+        "ja": "少し言いにくいLINEを送る前、「こう返ってきたらこう返す」「もし怒ったらこう言う」と、何パターンものシミュレーションを脳内で繰り返しますか？",
+        "ko": "조금 조심스러운 카톡을 보내거나 친구에게 힘든 이야기를 꺼내기 전에, '이런 답장이 오면 이렇게 말해야지'하며 대화의 흐름을 머릿속으로 다섯 가지 이상 시뮬레이션하나요?",
+        "zh": "在发一条有风险的信息或找朋友对峙前，你是不是会在脑海里预演五种不同的对话走向，想好各自的应对方案？",
+        "th": "ก่อนจะส่งข้อความที่อาจทำให้เกิดปัญหา หรือก่อนจะไปเผชิญหน้ากับเพื่อน คุณมักจะจำลองสถานการณ์ในหัวไว้หลายๆ แบบเผื่อว่าพวกเขาจะตอบกลับมาอย่างไรบ้าง?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_4",
+      "name": "Strategic Planning",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for strategic planning within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_4_0",
+        "child_REA_4_1",
+        "child_REA_4_2",
+        "child_REA_4_3",
+        "child_REA_4_4",
+        "child_REA_4_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_0",
+      "name": "Multi Perspective Thinking",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Multi Perspective Thinking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_1",
+      "name": "Conflict Resolution Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Conflict Resolution Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_2",
+      "name": "Ethical Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Ethical Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_3",
+      "name": "Moral Consistency",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Moral Consistency.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_4",
+      "name": "Value Reasoning",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Value Reasoning.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_5_5",
+      "name": "Prioritization",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Prioritization.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_5",
+      "name": "Meta & Error Check",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for meta & error check within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_5_0",
+        "child_REA_5_1",
+        "child_REA_5_2",
+        "child_REA_5_3",
+        "child_REA_5_4",
+        "child_REA_5_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_6_0",
+      "name": "Goal Decomposition",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Goal Decomposition.",
+      "question": {
+        "en": "When given a massive, overwhelming task like cleaning the whole house, do you casually break it down into 'Okay, first I'll do the desk...'?",
+        "ja": "「家中の大掃除」などの面倒で大きすぎるタスクを前にした時、とりあえず「まずはこの机の上だけ終わらせよう」と細かく切り分けてすぐ行動に移せますか？",
+        "ko": "집안 전체 대청소처럼 막막하고 버거운 일이 주어졌을 때, 당황하지 않고 '좋아, 일단 책상 위부터 치우자'며 부담 없는 작은 단계로 나누어 시작하나요?",
+        "zh": "面对像“彻底打扫整个屋子”这样令人头大且繁重的任务时，你是不是会很自然地把它拆解，告诉自己“算了，我先弄好这张书桌吧”？",
+        "th": "เมื่อต้องเจองานที่หนักหนาสาหัสอย่างการทำความสะอาดทั้งบ้าน คุณมักจะค่อยๆ แบ่งงานออกเป็นส่วนเล็กๆ เช่น 'งั้นเริ่มจากจัดโต๊ะนี้ก่อนแล้วกัน...' ใช่ไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_6_1",
+      "name": "Goal Synthesis",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Goal Synthesis.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_6_2",
+      "name": "Framework Building",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Framework Building.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_REA_6_3",
+      "name": "Model Building",
+      "category": "Reasoning",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Model Building.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_REA_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_REA_6",
+      "name": "Ethical & Value",
+      "category": "Reasoning",
+      "tier": 1,
+      "definition": "Fundamental capacity for ethical & value within Reasoning.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_REA_6_0",
+        "child_REA_6_1",
+        "child_REA_6_2",
+        "child_REA_6_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_0_0",
+      "name": "Curiosity",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Curiosity.",
+      "question": {
+        "en": "Do you ever find yourself taking apart a pen or a gadget just because you urgently need to see how the springs and gears work inside?",
+        "ja": "ただ「中身の仕組みがどうなっているか知りたい！」という衝動だけで、ボールペンや家電を分解してみたくなることはありますか？",
+        "ko": "단지 내부에 스프링이나 톱니바퀴가 어떻게 맞물려 돌아가는지 너무 궁금해서, 멀쩡한 볼펜이나 장난감을 분해해 본 적이 있나요?",
+        "zh": "你有没有过纯粹因为非常想看看内部的弹簧和齿轮是怎么运作的，而忍不住动手拆开一支笔或一个小物件的经历？",
+        "th": "คุณเคยรื้อชิ้นส่วนปากกาหรือเครื่องมืออะไรสักอย่าง เพียงเพราะคุณอยากรู้ว่าชิ้นส่วนข้างในมันทำงานยังไงหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_0_1",
+      "name": "Achievement Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Achievement Drive.",
+      "question": {
+        "en": "When playing a casual video game or a sport with friends, do you secretly feel you absolutely have to be the number one player in the room?",
+        "ja": "友達とたわいないゲームやスポーツで遊んでいる時でも、心のどこかで「絶対に自分が一番にならなきゃ気が済まない」と密かに闘志を燃やしていますか？",
+        "ko": "친구들과 가볍게 하는 비디오 게임이나 스포츠에서도, 속으로는 '여기서 무조건 내가 1등을 해야 해'라고 남몰래 강한 승부욕을 불태우나요?",
+        "zh": "即使是跟朋友随便玩玩游戏或运动，你心里是不是也会暗自较劲，觉得自己今天绝对必须是全场最厉害的那个？",
+        "th": "เวลาเล่นเกมหรือเล่นกีฬาสนุกๆ กับเพื่อน คุณแอบรู้สึกในใจลึกๆ ว่าคุณจะต้องเป็นที่หนึ่งให้ได้ หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_0_2",
+      "name": "Mastery Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Mastery Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_0_3",
+      "name": "Autonomy Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Autonomy Drive.",
+      "question": {
+        "en": "Does it completely drain your motivation when a boss or parent tells you exactly how to do a chore, step by step, instead of letting you figure it out?",
+        "ja": "上司や親から「まずはこれをやって、次はこうして」と手順を細かく指示されると、自分でやり方を決める自由を奪われた気がして一気にやる気を失いますか？",
+        "ko": "상사나 부모님이 '일단 이거 하고, 그다음에 이거 해'라며 하나부터 열까지 간섭하면, 내 방식대로 할 자유를 뺏긴 것 같아 순식간에 의욕이 떨어지나요?",
+        "zh": "当老板或父母不仅仅让你做事，还要事无巨细地规定你第一步干嘛、第二步干嘛时，这是否会让你顿失干劲？",
+        "th": "คุณจะหมดความกระตือรือร้นทันทีไหม ถ้าเจ้านายหรือพ่อแม่มาคอยบอกวิธีทำงานเป็นขั้นเป็นตอน แทนที่จะปล่อยให้คุณลองหาวิธีทำด้วยตัวเอง?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_0_4",
+      "name": "Freedom Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Freedom Seeking.",
+      "question": {
+        "en": "Would you sacrifice a lot of money just to be able to wake up without an alarm clock and decide your own schedule every day?",
+        "ja": "毎朝アラームをかけずに起き、その日のスケジュールを自分の気分だけで決められる自由が手に入るなら、収入が大きく減っても構わないと思いますか？",
+        "ko": "매일 아침 알람 없이 일어나서 하루 일과를 내 마음대로 정할 수 있는 완벽한 자유가 주어진다면, 지금보다 돈을 훨씬 적게 벌어도 상관없다고 생각하나요?",
+        "zh": "为了能够每天睡觉睡到自然醒，想干嘛就干嘛、完全自己安排时间，你是否愿意为此放弃赚大钱的机会？",
+        "th": "คุณยอมสูญเสียเงินก้อนโต เพียงเพื่อให้ตัวเองสามารถตื่นนอนได้โดยไม่ต้องตั้งนาฬิกาปลุก และทำงานตามตารางที่คุณกำหนดเองในทุกๆ วันหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_0",
+      "name": "Intrinsic Drive",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for intrinsic drive within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_0_0",
+        "child_MOT_0_1",
+        "child_MOT_0_2",
+        "child_MOT_0_3",
+        "child_MOT_0_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_1_0",
+      "name": "Exploration Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Exploration Drive.",
+      "question": {
+        "en": "Do you feel an intense itch to randomly book a cheap flight to a country you know nothing about, just to see what it's like?",
+        "ja": "ふと、「言葉も文化も全く知らない見知らぬ国に、今すぐ格安航空券をとって飛び出してしまいたい！」という強い衝動に駆られることが頻繁にありますか？",
+        "ko": "길을 걷다가 갑자기 '이름도 처음 들어보는 낯선 나라에 당장 저가 항공권을 끊고 훌쩍 떠나서 그곳이 어떤지 직접 부딪혀 보고 싶다'는 강렬한 충동을 자주 느끼나요?",
+        "zh": "你是否经常会有一种强烈的冲动，想随便订一张便宜的打折机票，飞到一个你完全一无所知的国家，仅仅为了看看那边长什么样？",
+        "th": "คุณเคยรู้สึกตื่นเต้นจนอยากจะสุ่มจองตั๋วเครื่องบินราคาถูกไปยังประเทศที่คุณไม่รู้อะไรเลย เพียงเพื่อไปดูว่ามันเป็นยังไงไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_1_1",
+      "name": "Creation Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Creation Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_1_2",
+      "name": "Innovation Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Innovation Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_1_3",
+      "name": "Recognition Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Recognition Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_1_4",
+      "name": "Status Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Status Seeking.",
+      "question": {
+        "en": "Is it genuinely important to you to have a prestigious job title, a verified social media badge, or the respect of high-profile people?",
+        "ja": "誰もが知る立派な肩書きや、SNSの公式マーク、有名人から一目置かれるような「社会的ステータス」を手に入れることは、あなたにとって本当に重要な目標ですか？",
+        "ko": "모두가 부러워할 만한 번듯한 직함, SNS 등에서 얻는 수많은 팔로워, 혹은 사회적으로 높은 사람들에게 인정받는 것이 당신 삶에서 정말로 중요한 원동력인가요?",
+        "zh": "获得令人羡慕的头衔、社交媒体上的大V认证，或是得到业内大人物的尊重，这些“明面上的地位”对你来说是否非常重要？",
+        "th": "การมีตำแหน่งงานระดับสูง การมีชื่อเสียงในโซเชียลมีเดีย หรือการได้รับการยอมรับจากคนสำคัญ เป็นเป้าหมายที่แท้จริงของคุณใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_1",
+      "name": "Social Status Drive",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for social status drive within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_1_0",
+        "child_MOT_1_1",
+        "child_MOT_1_2",
+        "child_MOT_1_3",
+        "child_MOT_1_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_2_0",
+      "name": "Wealth Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Wealth Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_2_1",
+      "name": "Security Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Security Seeking.",
+      "question": {
+        "en": "Would you always choose a mildly boring job that guarantees you will never be fired, over an exciting startup where you might go broke next month?",
+        "ja": "来月会社が潰れるかもしれないワクワクするスタートアップより、少し退屈でも「絶対にクビにならない安定保証された仕事」を迷わず選びますか？",
+        "ko": "당장 다음 달에 망할 수도 있지만 매일 가슴 뛰고 스릴 넘치는 스타트업보다는, 일이 좀 지루하더라도 '절대 잘리지 않고 보장되는 직장'을 1순위로 선택하나요?",
+        "zh": "你是不是会毫不犹豫地选择一份稍微枯燥但绝对不会失业的稳定工作，而不是去一家很酷但下个月可能就倒闭的创业公司？",
+        "th": "คุณมักจะเลือกทำงานที่น่าเบื่อไปวันๆ แต่การันตีว่าไม่โดนไล่ออกแน่นอน มากกว่าจะไปทำงานที่น่าตื่นเต้นในบริษัทสตาร์ทอัพที่อาจจะล้มละลายในเดือนหน้า ใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_2_2",
+      "name": "Stability Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Stability Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_2_3",
+      "name": "Impact Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Impact Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_2_4",
+      "name": "Influence Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Influence Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_2",
+      "name": "Security & Stability",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for security & stability within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_2_0",
+        "child_MOT_2_1",
+        "child_MOT_2_2",
+        "child_MOT_2_3",
+        "child_MOT_2_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_3_0",
+      "name": "Leadership Desire",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Leadership Desire.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_3_1",
+      "name": "Contribution Desire",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Contribution Desire.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_3_2",
+      "name": "Service Orientation",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Service Orientation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_3_3",
+      "name": "Community Orientation",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Community Orientation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_3_4",
+      "name": "Belonging Need",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Belonging Need.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_3",
+      "name": "Impact & Influence",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for impact & influence within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_3_0",
+        "child_MOT_3_1",
+        "child_MOT_3_2",
+        "child_MOT_3_3",
+        "child_MOT_3_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_4_0",
+      "name": "Relationship Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Relationship Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_4_1",
+      "name": "Competition Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Competition Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_4_2",
+      "name": "Challenge Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Challenge Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_4_3",
+      "name": "Adventure Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Adventure Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_4_4",
+      "name": "Learning Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Learning Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_4",
+      "name": "Altruism & Community",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for altruism & community within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_4_0",
+        "child_MOT_4_1",
+        "child_MOT_4_2",
+        "child_MOT_4_3",
+        "child_MOT_4_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_5_0",
+      "name": "Discovery Drive",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Discovery Drive.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_5_1",
+      "name": "Meaning Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Meaning Seeking.",
+      "question": {
+        "en": "Would you rather take a massive pay cut to work for a charity you believe in, rather than pushing papers for a wealthy corporation?",
+        "ja": "大企業で意味のない事務作業をして高給をもらうくらいなら、給料が激減しても、自分が心から共感できる意義ある活動（NPOなど）にフルタイムで参加したいと思いますか？",
+        "ko": "아무리 월급을 많이 주더라도 돈 많은 기업에서 의미 없는 서류 작업만 하는 부품이 되느니, 급여가 확 줄더라도 내가 가치를 믿는 자선 단체나 프로젝트에서 일하는 것이 훨씬 낫다고 생각하나요?",
+        "zh": "比起在一家赚钱的大公司里当个每天只会机械盖章的工具人，你是否宁愿拿很少的工资去为你坚信的公益慈善事业工作？",
+        "th": "คุณยอมได้รับเงินเดือนน้อยลงมากๆ เพื่อทำงานให้กับองค์กรการกุศลที่คุณเชื่อมั่น มากกว่าที่จะนั่งทำงานเอกสารสบายๆ ในบริษัทใหญ่โตใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_5_2",
+      "name": "Purpose Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Purpose Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_5_3",
+      "name": "Legacy Seeking",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Legacy Seeking.",
+      "question": {
+        "en": "Do you ever daydream about writing a book, building a company, or creating something that people will still talk about 100 years from now?",
+        "ja": "ふとしたとき、「100年後の人たちにも語り継がれるような本や会社、作品をこの世に残したい」と壮大な夢想をすることがありますか？",
+        "ko": "문득 '내가 죽고 100년이 지난 뒤에도 사람들이 기억하고 이야기할 만한 책, 회사, 혹은 위대한 작품을 이 세상에 남기고 싶다'는 상상을 종종 하나요?",
+        "zh": "你是否曾幻想自己写了一本书、创立了一家公司，或者创造了某种东西，而在100年后人们依然在谈论它？",
+        "th": "คุณเคยฝันอยากจะเขียนหนังสือ สร้างบริษัท หรือสร้างผลงานที่จะถูกพูดถึงไปอีก 100 ปีข้างหน้าบ้างไหม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_5_4",
+      "name": "Identity Expression",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Identity Expression.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_5",
+      "name": "Self Actualization",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for self actualization within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_5_0",
+        "child_MOT_5_1",
+        "child_MOT_5_2",
+        "child_MOT_5_3",
+        "child_MOT_5_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_6_0",
+      "name": "Self Development",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Development.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_6_1",
+      "name": "Self Protection",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Protection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_6_2",
+      "name": "Altruism",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Altruism.",
+      "question": {
+        "en": "If a coworker is struggling with a deadline, would you willingly stay two hours late to help them, even if you don't get paid or thanked for it?",
+        "ja": "同僚が終わらない仕事で困っていたら、自分には１円の得にならなくても、残業して手伝ってあげたいと心から思えますか？",
+        "ko": "동료가 마감 기한에 쫓겨 힘들어할 때, 나에게 별다른 보상이나 칭찬이 돌아오지 않더라도 진심을 다해 두 시간씩 야근하며 도와줄 수 있나요?",
+        "zh": "如果同事赶工作进度遇到困难，即使加班帮忙没有额外的报酬，甚至别人都不会特意感谢你，你也乐意留下来帮他两小时忙吗？",
+        "th": "ถ้าเพื่อนร่วมงานกำลังปั่นงานไม่ทันกำหนด คุณยินดีที่จะอยู่ช่วยพวกเขาทำงานจนดึกไหม แม้ว่าจะไม่ได้ค่าล่วงเวลาหรือคำขอบคุณเลยก็ตาม?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_6_3",
+      "name": "Power Motivation",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Power Motivation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MOT_6_4",
+      "name": "Aesthetic Motivation",
+      "category": "Motivation",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Aesthetic Motivation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MOT_6"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MOT_6",
+      "name": "Exploration & Mastery",
+      "category": "Motivation",
+      "tier": 1,
+      "definition": "Fundamental capacity for exploration & mastery within Motivation.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MOT_6_0",
+        "child_MOT_6_1",
+        "child_MOT_6_2",
+        "child_MOT_6_3",
+        "child_MOT_6_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_0_0",
+      "name": "Persistence",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Persistence.",
+      "question": {
+        "en": "If you're working on a personal project or learning a new skill and see zero progress for a whole year, do you still keep pushing forward without giving up?",
+        "ja": "語学学習や副業など、1年間まったく成果が見えなくても、「いつか芽が出るはず」と信じて諦めずにコツコツ続けられますか？",
+        "ko": "외국어 공부나 개인 프로젝트를 할 때, 1년 동안 아무런 성과나 발전이 눈에 보이지 않아도 포기하지 않고 묵묵히 계속할 수 있나요?",
+        "zh": "在学习新技能或做个人项目时，如果整整一年都看不到任何进展或成果，你还能坚持不懈地继续做下去吗？",
+        "th": "เวลาเรียนรู้ทักษะใหม่หรือทำโปรเจกต์ส่วนตัว ถ้าผ่านไปเป็นปีแล้วยังไม่เห็นความก้าวหน้าเลย คุณยังสามารถพยายามทำต่อไปโดยไม่ล้มเลิกได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_0_1",
+      "name": "Grit",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Grit.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_0_2",
+      "name": "Discipline",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Discipline.",
+      "question": {
+        "en": "On a completely free weekend with absolutely no plans or people watching you, do you still wake up on time and stick to your own schedule?",
+        "ja": "誰とも約束がない完全にフリーな休日でも、ダラダラせずに自分で決めた起床時間やスケジュールをきっちり守って過ごせますか？",
+        "ko": "아무런 약속도 없고 보는 사람도 없는 완벽하게 자유로운 주말에도, 늦잠 자지 않고 스스로 정한 기상 시간과 일정을 지키는 편인가요?",
+        "zh": "在没有任何安排、也没人监督的完全自由的周末，你还能按时起床，并严格遵守自己定下的计划吗？",
+        "th": "ในวันหยุดที่ว่างเปล่า ไม่มีนัดและไม่มีใครคอยจับตาดู คุณยังคงตื่นนอนตรงเวลาและทำตามตารางเวลาที่คุณวางแผนไว้เองได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_3",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_0_3",
+      "name": "Consistency",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Consistency.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_3",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_0_4",
+      "name": "Planning",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Planning.",
+      "question": {
+        "en": "Before tackling a big chore like moving to a new apartment, do you sit down and write out a detailed timeline and step-by-step checklist first?",
+        "ja": "引っ越しのような大きな作業をする前、まずは「いつまでに箱詰めして、いつこれの手続きをして…」と詳細な手順とタイムラインを紙やスマホに書き出しますか？",
+        "ko": "이사처럼 큰 일을 앞두고 있을 때, 머리로만 생각하지 않고 '언제 짐을 싸고, 언제 어떤 서류를 처리할지' 구체적인 일정과 체크리스트를 먼저 작성하나요?",
+        "zh": "在着手像搬家这样的大工程之前，你是不是一定会先坐下来，把详细的时间表和具体的分步清单白纸黑字地列出来？",
+        "th": "ก่อนจะเริ่มจัดการเรื่องใหญ่อย่างการย้ายบ้าน คุณต้องมานั่งลิสต์รายการสิ่งที่ต้องทำและกำหนดการอย่างละเอียดทีละขั้นตอนก่อนเสมอหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_0"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_4",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_0",
+      "name": "Resilience Engine",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for resilience engine within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_0_0",
+        "child_EXE_0_1",
+        "child_EXE_0_2",
+        "child_EXE_0_3",
+        "child_EXE_0_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_1_0",
+      "name": "Organization",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Organization.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_1_1",
+      "name": "Adaptability",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Adaptability.",
+      "question": {
+        "en": "If your perfectly planned outdoor trip gets completely ruined by a sudden storm, can you instantly switch to an indoor backup plan without complaining or feeling down?",
+        "ja": "完璧に計画した旅行が突然の台風で台無しになったとき、文句を言ったり落ち込んだりせず、すぐさま「じゃあ室内で遊ぼう！」とプランを切り替えて楽しめますか？",
+        "ko": "완벽하게 짠 야외 데이트나 여행 코스가 갑작스러운 폭우로 전부 취소되었을 때, 짜증 내거나 우울해하지 않고 즉시 실내 데이트로 계획을 수정해 즐길 수 있나요?",
+        "zh": "如果精心策划的户外旅行被突如其来的暴雨彻底毁了，你能否立刻切换到室内备用方案，并且毫无怨言地享受接下来的安排？",
+        "th": "ถ้าทริปเที่ยวที่คุณวางแผนมาอย่างดีพังทลายลงเพราะพายุเข้ากะทันหัน คุณสามารถเปลี่ยนแผนไปเที่ยวในร่มแทนได้อย่างรวดเร็วและสนุกไปกับมันโดยไม่บ่นหรืออารมณ์เสียหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_1_2",
+      "name": "Flexibility",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Flexibility.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_1_3",
+      "name": "Recovery Speed",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Recovery Speed.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_1_4",
+      "name": "Stress Tolerance",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Stress Tolerance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_1"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_1",
+      "name": "Planning & Org",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for planning & org within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_1_0",
+        "child_EXE_1_1",
+        "child_EXE_1_2",
+        "child_EXE_1_3",
+        "child_EXE_1_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_2_0",
+      "name": "Frustration Tolerance",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Frustration Tolerance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_3",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_2_1",
+      "name": "Delayed Gratification",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Delayed Gratification.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_2_2",
+      "name": "Impulse Control",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Impulse Control.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_2_3",
+      "name": "Focus Duration",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Focus Duration.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_2_4",
+      "name": "Deep Work Capacity",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Deep Work Capacity.",
+      "question": {
+        "en": "Can you leave your phone in another room and focus purely on one difficult task or study topic for 4 hours straight without checking social media once?",
+        "ja": "スマホを別の部屋に置き、SNSや通知を一切気にすることなく、4時間ぶっ続けでひとつの難しい勉強や作業に没頭し続けることができますか？",
+        "ko": "스마트폰을 다른 방에 두고, SNS나 알림을 전혀 확인하지 않은 채 4시간 연속으로 푹 빠져서 어려운 공부나 작업에만 집중할 수 있나요?",
+        "zh": "你能把手机丢在另一个房间，并且连续4个小时完全沉浸在一项相对困难的工作或学习中，一次也不去看社交媒体吗？",
+        "th": "คุณสามารถเอาโทรศัพท์ไปไว้ห้องอื่น แล้วจดจ่อกับการทำงานหรือเรียนเรื่องยากๆ เรื่องเดียวต่อเนื่อง 4 ชั่วโมงเต็มโดยไม่แตะโซเชียลมีเดียเลยได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_2"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_2",
+      "name": "Stress Management",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for stress management within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_2_0",
+        "child_EXE_2_1",
+        "child_EXE_2_2",
+        "child_EXE_2_3",
+        "child_EXE_2_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_3_0",
+      "name": "Task Switching",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Task Switching.",
+      "question": {
+        "en": "If you are deep in the zone working and someone interrupts you with a random question, can you answer them and instantly snap right back into the exact same focus?",
+        "ja": "ものすごく集中して作業している時に、人から突然話しかけられて中断しても、答えた後すぐに元の深い集中状態にスッと戻ることができますか？",
+        "ko": "엄청나게 집중해서 일하고 있을 때 누군가 갑자기 말을 걸어 흐름이 끊겨도, 대답하고 나서 바로 조금 전의 엄청난 집중 상태로 즉시 돌아갈 수 있나요?",
+        "zh": "当你正全身心投入工作时，如果有人突然打断并问你一个问题，你能在回答完之后，无缝衔接、立刻找回刚才那种全神贯注的状态吗？",
+        "th": "ถ้าคุณกำลังดำดิ่งไปกับการทำงานแล้วจู่ๆ มีคนขัดจังหวะด้วยคำถาม คุณสามารถตอบพวกเขาแล้วกลับเข้าสู่โหมดสมาธิระดับเดิมได้ในทันทีเลยหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_3_1",
+      "name": "Habit Formation",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Habit Formation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_3_2",
+      "name": "Routine Maintenance",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Routine Maintenance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_3_3",
+      "name": "Goal Commitment",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Goal Commitment.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_1_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_3_4",
+      "name": "Goal Completion",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Goal Completion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_3"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_3",
+      "name": "Focus & Deep Work",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for focus & deep work within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_3_0",
+        "child_EXE_3_1",
+        "child_EXE_3_2",
+        "child_EXE_3_3",
+        "child_EXE_3_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_4_0",
+      "name": "Initiative",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Initiative.",
+      "question": {
+        "en": "If you notice the shared office kitchen is mildly messy or a team document is totally disorganized, do you just fix and clean it yourself without waiting to be asked?",
+        "ja": "職場の共有フォルダがぐちゃぐちゃだったり、備品が使いにくかったりした時、誰かに指示される前に「自分が直した方が早い」と勝手に整理してしまいますか？",
+        "ko": "팀에서 다 같이 쓰는 공유 폴더가 엉망이거나 비품이 눈에 띄게 부족할 때, 누군가 시키기 전에 '내가 정리하는 게 빠르겠다'며 먼저 나서서 해결하나요?",
+        "zh": "如果发现公司的共享文件夹很乱，或者团队的文档排版一塌糊涂，你会不会在老板没发话的情况下，直接自己动手把它们重新整理好？",
+        "th": "ถ้าคุณเห็นว่าเอกสารของทีมกระจัดกระจาย หรือโต๊ะส่วนรวมค่อนข้างรก คุณมักจะจัดระเบียบและจัดการมันเองโดยไม่ต้องรอให้ใครมาสั่งใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_4_1",
+      "name": "Action Bias",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Action Bias.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_4_2",
+      "name": "Experimentation Rate",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Experimentation Rate.",
+      "question": {
+        "en": "Do you frequently download new productivity apps, try weird new morning routines, or completely rearrange your desk just to see if it makes you more efficient?",
+        "ja": "「こっちの方が早起きできるかも」「このアプリの方が便利かも」と、日常のルーティンや使うツールを頻繁に変えて実験（お試し）するのが好きですか？",
+        "ko": "'이렇게 하면 더 효율적일까?'하며 새로운 할 일 관리 앱을 깔아보거나, 아침 루틴을 바꿔보거나, 책상 배치를 수시로 바꾸는 등 소소한 실험을 자주 하나요?",
+        "zh": "你是否经常下载各种新的效率App、尝试奇特的新早晨习惯，或者重新布置桌面，只为了测试这样能不能让自己效率更高？",
+        "th": "คุณชอบโหลดแอปพลิเคชันจัดการเวลาใหม่ๆ ลองจัดตารางชีวิตตอนเช้าแบบแปลกๆ หรือจัดโต๊ะทำงานใหม่บ่อยๆ เพียงเพื่อทดสอบว่ามันช่วยให้คุณทำงานได้ดีขึ้นหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_4_3",
+      "name": "Iteration Speed",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Iteration Speed.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_4_4",
+      "name": "Risk Taking",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Risk Taking.",
+      "question": {
+        "en": "Would you quit an 'okay' stable job to start your own business or move to a new country, knowing there's a strong chance you might end up completely broke?",
+        "ja": "「失敗したら貯金がゼロになるかもしれない」というリスクがあっても、起業や海外移住などの「自分が本当にやりたい大きな挑戦」に思い切って踏み出せますか？",
+        "ko": "'실패하면 그동안 모은 돈을 다 날릴 수도 있다'는 큰 위험을 알면서도, 창업이나 해외 이주 같은 큰 도전에 과감하게 베팅할 수 있나요?",
+        "zh": "明知有可能最后会赔光所有的积蓄，你还敢不敢毅然决然地辞去一份稳定的工作，去创业或者搬到一个全新的国家生活？",
+        "th": "คุณกล้าที่จะลาออกจากงานที่มั่นคงเพื่อไปเปิดธุรกิจของตัวเอง หรือย้ายประเทศ โดยที่รู้ว่ามีโอกาสสูงมากที่คุณอาจจะไม่เหลือเงินเก็บเลยหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_4"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_4",
+      "name": "Action & Iteration",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for action & iteration within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_4_0",
+        "child_EXE_4_1",
+        "child_EXE_4_2",
+        "child_EXE_4_3",
+        "child_EXE_4_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_5_0",
+      "name": "Risk Management",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Risk Management.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_1_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_5_1",
+      "name": "Resourcefulness",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Resourcefulness.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_5_2",
+      "name": "Self Management",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Management.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_5_3",
+      "name": "Time Management",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Time Management.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_5_4",
+      "name": "Energy Management",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Energy Management.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_5"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_5",
+      "name": "Resource Management",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for resource management within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_5_0",
+        "child_EXE_5_1",
+        "child_EXE_5_2",
+        "child_EXE_5_3",
+        "child_EXE_5_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EXE_6_0",
+      "name": "Learning Execution",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Learning Execution.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_3",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_6_1",
+      "name": "Feedback Utilization",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Feedback Utilization.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_1_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_6_2",
+      "name": "Accountability",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Accountability.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_2",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_6_3",
+      "name": "Reliability",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Reliability.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_0",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "child_EXE_6_4",
+      "name": "Follow Through",
+      "category": "Execution",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Follow Through.",
+      "question": {
+        "en": "Even if a book you started reading or a personal project gets incredibly boring halfway through, do you force yourself to finish it anyway?",
+        "ja": "読み始めた本や見始めた映画が途中でめちゃくちゃつまらなくなっても、「一度始めたからには」と最後までやり遂げ（見届け）ないと気が済まないですか？",
+        "ko": "읽기 시작한 책이나 시작한 개인 프로젝트가 중간에 너무 지루해지더라도, '이왕 시작한 거 끝은 봐야지'라며 억지로라도 끝까지 마무리하나요?",
+        "zh": "即使一本刚看了一半的书或者突然觉得无聊的个人项目让你非常厌烦，你也会为了“既然开始了就要有个结果”而强迫自己看完或做完吗？",
+        "th": "แม้ว่าหนังสือที่คุณกำลังอ่านหรือโปรเจกต์ที่คุณทำอยู่จะเริ่มน่าเบื่อสุดๆ กลางคัน คุณก็ยังบังคับตัวเองให้ทำมันจนจบเพียงเพราะคุณได้เริ่มทำมันไปแล้วใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EXE_6"
+      ],
+      "dependencies": [
+        {
+          "target": "child_MOT_0_1",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "id": "parent_EXE_6",
+      "name": "Commitment Loop",
+      "category": "Execution",
+      "tier": 1,
+      "definition": "Fundamental capacity for commitment loop within Execution.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EXE_6_0",
+        "child_EXE_6_1",
+        "child_EXE_6_2",
+        "child_EXE_6_3",
+        "child_EXE_6_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_0_0",
+      "name": "Emotional Awareness",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Awareness.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_0_1",
+      "name": "Emotional Regulation",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Regulation.",
+      "question": {
+        "en": "When someone says something harsh or unfair to you, are you able to brush it off and stay calm instead of snapping back?",
+        "ja": "誰かに理不尽なことやキツイ言葉を言われたとき、カッとならずに「まあそういう意見もあるか」と冷静に受け流せますか？",
+        "ko": "누군가 당신에게 부당하거나 차가운 말을 했을 때, 욱하지 않고 '뭐 그럴 수도 있지'라며 차분하게 넘길 수 있나요?",
+        "zh": "当有人对你说出刻薄或不公平的话时，你能否不急躁，而是冷静地一笑置之？",
+        "th": "เมื่อมีคนพูดจาทำร้ายจิตใจหรือพูดไม่ยุติธรรมกับคุณ คุณสามารถปล่อยผ่านและใจเย็นได้โดยไม่ตอบโต้กลับไปได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_0_2",
+      "name": "Emotional Intensity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Intensity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_0_3",
+      "name": "Emotional Stability",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Stability.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_0_4",
+      "name": "Empathy",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Empathy.",
+      "question": {
+        "en": "When watching a sad movie or seeing a friend cry, do you naturally start tearing up or feeling their sadness physically?",
+        "ja": "悲しい映画を観たり、友人が泣いているのを見たりすると、自分まで胸が締め付けられて自然と涙が出てきますか？",
+        "ko": "슬픈 영화를 보거나 친구가 우는 모습을 볼 때, 나도 모르게 가슴이 먹먹해지거나 눈물이 나곤 하나요?",
+        "zh": "在看悲伤的电影或看到朋友哭泣时，你是否也会感到心头一紧，自然而然地跟着流泪？",
+        "th": "เวลาดูหนังเศร้าหรือเห็นเพื่อนร้องไห้ คุณรู้สึกเจ็บปวดในใจหรือร้องไห้ตามโดยธรรมชาติหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_0",
+      "name": "Emotional Control",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for emotional control within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_0_0",
+        "child_EMO_0_1",
+        "child_EMO_0_2",
+        "child_EMO_0_3",
+        "child_EMO_0_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_1_0",
+      "name": "Compassion",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Compassion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_1_1",
+      "name": "Sympathy",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Sympathy.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_1_2",
+      "name": "Emotional Contagion",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Contagion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_1_3",
+      "name": "Conflict Sensitivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Conflict Sensitivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_1_4",
+      "name": "Rejection Sensitivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Rejection Sensitivity.",
+      "question": {
+        "en": "If someone leaves your message 'read' without replying or gives a half-hearted reaction to your joke, does it bother you and replay in your mind for hours?",
+        "ja": "LINEを既読スルーされたり、自分の発言への反応が薄かったりすると、「何か気に障ることをしたかな…」と何時間も引きずって悩みますか？",
+        "ko": "메시지에 '읽씹'을 당하거나 내 말에 대한 주변의 반응이 미지근할 때, '내가 무언가 잘못했나?'라며 오랫동안 마음에 두고 고민하나요?",
+        "zh": "如果有人“已读不回”你的消息，或者对你的话反应冷淡，你是否会很介意，甚至在脑海里纠结好几个小时？",
+        "th": "ถ้ามีคนอ่านข้อความของคุณแต่ไม่ตอบ หรือแสดงท่าทีเฉยชาต่อมุกตลกของคุณ เรื่องนี้จะกวนใจและวนเวียนอยู่ในหัวคุณเป็นชั่วโมงหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_1",
+      "name": "Empathy Engine",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for empathy engine within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_1_0",
+        "child_EMO_1_1",
+        "child_EMO_1_2",
+        "child_EMO_1_3",
+        "child_EMO_1_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_2_0",
+      "name": "Shame Sensitivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Shame Sensitivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_2_1",
+      "name": "Guilt Sensitivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Guilt Sensitivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_2_2",
+      "name": "Anger Reactivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Anger Reactivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_2_3",
+      "name": "Anxiety Reactivity",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Anxiety Reactivity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_2_4",
+      "name": "Fear Response",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Fear Response.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_2",
+      "name": "Rejection & Threat",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for rejection & threat within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_2_0",
+        "child_EMO_2_1",
+        "child_EMO_2_2",
+        "child_EMO_2_3",
+        "child_EMO_2_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_3_0",
+      "name": "Resilience",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Resilience.",
+      "question": {
+        "en": "If you mess up a big presentation or a project falls apart, can you shake it off after a good night's sleep and start fresh?",
+        "ja": "仕事や趣味で大きなミスをして落ち込んでも、一晩寝たり美味しいものを食べたりすれば「よし、次がんばろう」とすぐに立ち直れますか？",
+        "ko": "일이나 취미에서 큰 실수를 해 우울해지더라도, 하룻밤 푹 자고 나면 '좋아, 다시 해보자'라며 금방 훌훌 털어버릴 수 있나요?",
+        "zh": "如果搞砸了一场重要的展示或项目失败了，经过一晚的休息，你是否就能重新振作起来，准备重新开始？",
+        "th": "ถ้าคุณทำพลาดในงานสำคัญ คุณสามารถสลัดความรู้สึกแย่ๆ ทิ้งไปหลังจากนอนหลับเต็มอิ่ม และพร้อมเริ่มต้นใหม่ได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_3_1",
+      "name": "Forgiveness",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Forgiveness.",
+      "question": {
+        "en": "If a friend cancels important plans last minute or betrays your trust, can you forgive them completely without holding a grudge for months?",
+        "ja": "友人に大切な約束をすっぽかされるなど嫌な思いをさせられても、関係が修復されれば、その後いつまでも根に持つことなく心から許せますか？",
+        "ko": "친구가 중요한 약속을 어기는 등 서운한 행동을 했어도, 오해가 풀리면 나중까지 마음에 두지 않고 진심으로 용서할 수 있나요?",
+        "zh": "如果朋友在最后关头取消了重要计划或辜负了你的信任，事后和解的话，你能否彻底原谅他们，而不记仇？",
+        "th": "ถ้าเพื่อนยกเลิกนัดสำคัญกะทันหันหรือทำลายความเชื่อใจของคุณ คุณสามารถให้อภัยพวกเขาโดยไม่เก็บมาคิดแค้นเป็นเวลานานได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_3_2",
+      "name": "Gratitude",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Gratitude.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_3_3",
+      "name": "Trust",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Trust.",
+      "question": {
+        "en": "When you meet someone new, do you instinctively trust them and assume they mean well, rather than being suspicious right away?",
+        "ja": "初対面の人と接する時、「裏があるのではないか」と疑うよりも、まずは「いい人だろう」と好意的に信じるタイプですか？",
+        "ko": "처음 만난 사람을 대할 때 '혹시 꿍꿍이가 있는 거 아닐까' 의심하기보다는 '좋은 사람일 거야'라고 일단 믿는 편인가요?",
+        "zh": "当你认识新朋友时，你会出于本能地信任对方、认为他们是好意，而不是一开始就怀疑他们？",
+        "th": "เวลาพบคนใหม่ๆ คุณมักจะเชื่อใจและคิดว่าพวกเขาหวังดี แทนที่จะสงสัยความตั้งใจของพวกเขาตั้งแต่แรกหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_3_4",
+      "name": "Suspicion",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Suspicion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_3",
+      "name": "Resilience & Recovery",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for resilience & recovery within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_3_0",
+        "child_EMO_3_1",
+        "child_EMO_3_2",
+        "child_EMO_3_3",
+        "child_EMO_3_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_4_0",
+      "name": "Vulnerability",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Vulnerability.",
+      "question": {
+        "en": "Is it easy for you to talk openly with your friends or partner about your biggest insecurities, fears, or embarrassing moments?",
+        "ja": "自分の抱える大きな不安や自信のなさ、あるいは「恥ずかしい失敗談」を、心を許せる友人や恋人に素直に話すことができますか？",
+        "ko": "자신이 겪는 깊은 불안이나 자신 없는 부분, 혹은 '창피한 실패 경험'을 친한 친구나 연인에게 솔직하게 털어놓을 수 있나요?",
+        "zh": "你是否很容易跟朋友或伴侣坦诚地倾诉自己内心的不安、恐惧或尴尬的经历？",
+        "th": "คุณรู้สึกสบายใจที่จะพูดคุยอย่างเปิดอกกับเพื่อนหรือคนรักเกี่ยวกับเรื่องที่คุณไม่มั่นใจ กลัว หรือเรื่องน่าอายหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_4_1",
+      "name": "Attachment Security",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Attachment Security.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_4_2",
+      "name": "Optimism",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Optimism.",
+      "question": {
+        "en": "Even in stressful situations where things look bad, do you naturally think 'it'll all work out somehow' and stay generally positive?",
+        "ja": "トラブルが起きて先が見えないような状況でも、「まあ、最終的にはなんとかなるだろう」と自然に前向きに考えることができますか？",
+        "ko": "문제가 생겨 앞이 막막한 상황에서도 '뭐, 어떻게든 잘 해결되겠지'라며 자연스럽게 긍정적으로 생각하는 편인가요?",
+        "zh": "即使在情况看起来很糟的压力下，你也总会自然而然地觉得“船到桥头自然直”，保持乐观的心态？",
+        "th": "แม้ในสถานการณ์ตึงเครียดที่ดูแย่ไปหมด คุณมักจะคิดว่า 'เดี๋ยวทุกอย่างก็จะดีเอง' และรู้สึกในแง่บวกอยู่เสมอหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_4_3",
+      "name": "Pessimism",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Pessimism.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_4_4",
+      "name": "Hopefulness",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Hopefulness.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_4",
+      "name": "Trust & Vulnerability",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for trust & vulnerability within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_4_0",
+        "child_EMO_4_1",
+        "child_EMO_4_2",
+        "child_EMO_4_3",
+        "child_EMO_4_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_5_0",
+      "name": "Self Acceptance",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Acceptance.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_5_1",
+      "name": "Self Compassion",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Compassion.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_5_2",
+      "name": "Emotional Recovery",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Emotional Recovery.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_5_3",
+      "name": "Mood Stability",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Mood Stability.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_EMO_5_4",
+      "name": "Psychological Safety Seeking",
+      "category": "Emotional Architecture",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Psychological Safety Seeking.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_EMO_5"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_EMO_5",
+      "name": "Self Compassion Module",
+      "category": "Emotional Architecture",
+      "tier": 1,
+      "definition": "Fundamental capacity for self compassion module within Emotional Architecture.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_EMO_5_0",
+        "child_EMO_5_1",
+        "child_EMO_5_2",
+        "child_EMO_5_3",
+        "child_EMO_5_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_0_0",
+      "name": "Self Awareness",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Awareness.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_0_1",
+      "name": "Self Insight",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Insight.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_0_2",
+      "name": "Metacognition",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Metacognition.",
+      "question": {
+        "en": "In your daily life, do you ever step back and calmly analyze your own feelings or thoughts, like asking yourself 'Why am I reacting this way right now?'",
+        "ja": "日常の中で、ふと「なんで自分は今こんな反応をしているんだろう」と、自分の感情や考えを一歩引いて冷静に分析することがありますか？",
+        "ko": "일상 속에서 문득 '나는 왜 지금 이런 반응을 보일까?'라며 자신의 감정이나 생각을 한 걸음 물러서서 냉정하게 분석하는 경우가 있나요?",
+        "zh": "在日常生活中，你是否会偶尔退一步冷静分析自己的情绪或想法，比如思考“我为什么现在会有这样的反应？”",
+        "th": "ในชีวิตประจำวัน คุณเคยถอยออกมาหนึ่งก้าวเพื่อวิเคราะห์ความรู้สึกหรือความคิดของตัวเองอย่างใจเย็น เช่น คิดว่า 'ทำไมตอนนี้ฉันถึงแสดงปฏิกิริยาแบบนี้' หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_0_3",
+      "name": "Calibration Accuracy",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Calibration Accuracy.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_0_4",
+      "name": "Identity Stability",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Identity Stability.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_0"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_0",
+      "name": "Self Insight",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for self insight within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MET_0_0",
+        "child_MET_0_1",
+        "child_MET_0_2",
+        "child_MET_0_3",
+        "child_MET_0_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_1_0",
+      "name": "Identity Flexibility",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Identity Flexibility.",
+      "question": {
+        "en": "Even if it's a personal rule or belief you've held onto for a long time, can you easily change your mind if you learn convincing new facts?",
+        "ja": "長年「これが正しい」とこだわってきた自分なりのルールや価値観であっても、納得のいく事実を知れば、すんなりと考え方を変えられますか？",
+        "ko": "오랫동안 '이것이 옳다'고 고집해 온 나만의 규칙이나 가치관이라도, 납득할 만한 사실을 알게 되면 쉽게 생각을 바꿀 수 있나요?",
+        "zh": "即使是长久以来坚持的个人原则或价值观，只要了解到令人信服的事实，你能否直接放下执念并改变想法？",
+        "th": "แม้ว่าจะเป็นกฎเกณฑ์หรือค่านิยมส่วนตัวที่คุณยึดถือมานาน หากคุณได้รับข้อเท็จจริงที่สมเหตุสมผล คุณสามารถเปลี่ยนความคิดได้อย่างง่ายดายหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_1_1",
+      "name": "Cognitive Flexibility",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Cognitive Flexibility.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_1_2",
+      "name": "Perspective Taking",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Perspective Taking.",
+      "question": {
+        "en": "Can you intentionally take a position completely opposite to your own beliefs and construct a persuasive argument?",
+        "ja": "あえて自分自身の意見や信念とは全く真逆の立場に立ち、説得力のある主張を組み立てることができますか？",
+        "ko": "자신의 의견이나 신념과 완전히 반대되는 입장에 서서, 설득력 있는 주장을 구성할 수 있나요?",
+        "zh": "你能否刻意站在与自己观点或信念完全相反的立场上，并构建出有说服力的论点？",
+        "th": "คุณสามารถตั้งใจยอมรับความคิดที่ตรงข้ามกับความเชื่อของคุณอย่างสิ้นเชิงและสร้างข้อโต้แย้งที่สมเหตุสมผลได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_1_3",
+      "name": "Blind Spot Detection",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Blind Spot Detection.",
+      "question": {
+        "en": "In your daily life or work, do you actively ask friends or colleagues to point out your mistakes or biases that you might not notice?",
+        "ja": "普段の生活や職場で、自分では気づかないような考え方のクセや間違いを、友人や同僚に「率直に指摘してほしい」と頼むことはありますか？",
+        "ko": "일상생활이나 직장에서 자신이 미처 깨닫지 못한 생각의 습관이나 실수를 친구나 동료에게 솔직하게 지적해달라고 먼저 부탁하는 편인가요?",
+        "zh": "在日常生活或工作中，你会不会主动请朋友或同事坦率地指出你自己没有注意到的思维习惯或错误？",
+        "th": "ในชีวิตประจำวันหรือที่ทำงาน คุณมักจะขอให้เพื่อนหรือเพื่อนร่วมงานช่วยชี้ให้เห็นถึงรูปแบบความคิดหรือข้อผิดพลาดที่คุณอาจไม่รู้ตัวอย่างตรงไปตรงมาหรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_1_4",
+      "name": "Learning From Failure",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Learning From Failure.",
+      "question": {
+        "en": "When you make a big mistake, do you quickly bounce back from feeling down and switch your mindset to 'What can I learn from this for next time?'",
+        "ja": "大きな失敗をしてしまったとき、いつまでも落ち込まずに「次はどうすれば上手くいくか」とすぐに気持ちを切り替えることができますか？",
+        "ko": "큰 실수를 했을 때, 계속 우울해하지 않고 '다음에는 어떻게 하면 잘될까?'라며 곧바로 마음을 전환할 수 있나요?",
+        "zh": "犯下大错时，你能否不去沉浸在沮丧中，而是立刻转变心态去想“下次怎样才能做好”？",
+        "th": "เมื่อคุณทำผิดพลาดครั้งใหญ่ คุณสามารถเปลี่ยนจากความรู้สึกเศร้าได้อย่างรวดเร็ว แล้วคิดว่า 'ครั้งหน้าจะต้องทำอย่างไรให้ดีขึ้น' ได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_1"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_1",
+      "name": "Identity Engine",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for identity engine within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MET_1_0",
+        "child_MET_1_1",
+        "child_MET_1_2",
+        "child_MET_1_3",
+        "child_MET_1_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_2_0",
+      "name": "Learning From Success",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Learning From Success.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_2_1",
+      "name": "Growth Orientation",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Growth Orientation.",
+      "question": {
+        "en": "Do you fundamentally believe that talent is a myth and any skill can be learned?",
+        "ja": "「才能で決まる」という考えを嫌い、どんな能力でも時間と正しい努力で後天的に獲得できると信じていますか？",
+        "ko": "'재능에 따라 결정된다'는 생각을 싫어하고, 어떤 능력이든 시간과 올바른 노력으로 후천적으로 얻을 수 있다고 믿나요?",
+        "zh": "你是否不认同“一切由天赋决定”，并坚信任何能力都可以通过时间和正确的努力在后天获得？",
+        "th": "คุณไม่ชอบแนวคิดที่ว่า 'ทุกอย่างถูกกำหนดด้วยพรสวรรค์' และเชื่อว่าทักษะเกือบทุกอย่างสามารถเรียนรู้และฝึกฝนได้ด้วยความพยายามใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_2_2",
+      "name": "Fixed Mindset",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Fixed Mindset.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_2_3",
+      "name": "Self Monitoring",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Monitoring.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_2_4",
+      "name": "Self Correction",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Correction.",
+      "question": {
+        "en": "In everyday conversations or work meetings, when you realize your idea is wrong, can you honestly admit it and adapt to the other person's opinion?",
+        "ja": "普段の会話や仕事の打ち合わせで、自分の考えが間違っていると気づいたとき、素直にそれを認めて相手の意見に合わせることができますか？",
+        "ko": "평소 대화나 업무 회의에서 내 생각이 틀렸다는 것을 깨달았을 때, 솔직하게 인정하고 상대방의 의견에 맞출 수 있나요?",
+        "zh": "在日常交谈或工作会议中，当你意识到自己的想法是错误的时候，你能否坦诚承认并听从对方的意见？",
+        "th": "ในบทสนทนาทั่วไปหรือการประชุมงาน เมื่อคุณรู้ตัวว่าความคิดของคุณผิด คุณสามารถยอมรับตามตรงและปรับตามความเห็นของอีกฝ่ายได้หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_2"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_2",
+      "name": "Meta-Learning",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for meta-learning within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MET_2_0",
+        "child_MET_2_1",
+        "child_MET_2_2",
+        "child_MET_2_3",
+        "child_MET_2_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_3_0",
+      "name": "Self Regulation",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Regulation.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_3_1",
+      "name": "Authenticity",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Authenticity.",
+      "question": {
+        "en": "Are you exactly the same person in public, with friends, and when completely alone?",
+        "ja": "「職場での自分」「友人との自分」「一人の時の自分」の間に、全く裏表やキャラクターの違いがありませんか？",
+        "ko": "'직장에서의 나', '친구와 있을 때의 나', '혼자 있을 때의 나' 사이에 전혀 겉과 속이 다르거나 캐릭터의 차이가 없나요?",
+        "zh": "在“工作中的我”、“和朋友在一起的我”以及“独处时的我”之间，你的性格和表现是完全一致、没有差别的吗？",
+        "th": "ตัวคุณในที่สาธารณะ ตอนอยู่กับเพื่อน และตอนอยู่คนเดียว แทบจะไม่มีความแตกต่างหรือมีเบื้องหน้าเบื้องหลังเลยใช่หรือไม่?"
+      },
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_3_2",
+      "name": "Value Consistency",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Value Consistency.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_3_3",
+      "name": "Narrative Coherence",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Narrative Coherence.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_3_4",
+      "name": "Personal Philosophy",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Personal Philosophy.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_3"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_3",
+      "name": "Evaluation & Correction",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for evaluation & correction within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MET_3_0",
+        "child_MET_3_1",
+        "child_MET_3_2",
+        "child_MET_3_3",
+        "child_MET_3_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_4_0",
+      "name": "Meaning Construction",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Meaning Construction.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_4_1",
+      "name": "Future Self Connection",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Future Self Connection.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_4_2",
+      "name": "Self Complexity",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Self Complexity.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_4_3",
+      "name": "Ego Strength",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Ego Strength.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "child_MET_4_4",
+      "name": "Reflective Depth",
+      "category": "Meta-Self",
+      "tier": 2,
+      "definition": "Specific behavioral or cognitive manifestation: Reflective Depth.",
+      "levels": {
+        "1": "Extremely low tendency.",
+        "2": "Below average tendency.",
+        "3": "Moderate tendency.",
+        "4": "Above average tendency.",
+        "5": "Extreme core tendency."
+      },
+      "parents": [
+        "parent_MET_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_4",
+      "name": "Authenticity & Values",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for authenticity & values within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [
+        "child_MET_4_0",
+        "child_MET_4_1",
+        "child_MET_4_2",
+        "child_MET_4_3",
+        "child_MET_4_4"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "parent_MET_5",
+      "name": "Complex Self",
+      "category": "Meta-Self",
+      "tier": 1,
+      "definition": "Fundamental capacity for complex self within Meta-Self.",
+      "levels": {
+        "1": "Minimal capability or drive.",
+        "2": "Occasional or context-dependent activation.",
+        "3": "Average functional capability.",
+        "4": "Highly active and proficient.",
+        "5": "Exceptional and natural integration into behavior."
+      },
+      "children": [],
+      "dependencies": []
+    }
+  ]
+}
