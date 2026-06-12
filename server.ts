@@ -67,7 +67,7 @@ async function startServer() {
   // API Route for Gemini analysis
   app.post('/api/analyze', async (req, res) => {
     try {
-      const { topTraits, bottomTraits, showWeakness } = req.body;
+      const { topTraits, bottomTraits, categoryAverages, dependenciesData, showWeakness } = req.body;
       
       const apiKey = process.env.GEMINI_API_KEY;
       if (!apiKey) {
@@ -93,22 +93,46 @@ Paragraph 3: Inner Motivations & Optimal Environment - Explain what drives them 
 
 Furthermore, provide exactly one informative sentence for each of the 7 abstract cognitive sectors (Energy, Information, Reasoning, Motivation, Execution, Emotional Architecture, Meta-Self) detailing what their profile suggests about their capability in that specific sector.
 
+Based on the top traits and bottom traits, describe the "Cognitive Trade-offs" (i.e. what they sacrifice to achieve their strengths) in one deep paragraph.
+
+Based on the provided Cognitive Dependencies network, describe how their top traits act as an engine to power other capacities in one deep paragraph.
+
 Write in a friendly and professional tone.
 
 Top Traits (in English):
 ${topTraits.map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}
 ${showWeakness ? `\nBottom Traits (Weaknesses, in English):\n${(bottomTraits || []).map((t: any) => `- ${t.name} (${t.score}%)`).join('\n')}` : ''}
 
-Analyze these traits and translate the detailed summary and ALL trait names${showWeakness ? ' (both top and bottom)' : ''} into English, Japanese, Korean, Simplified Chinese, and Thai.
+Dominant Sectors:
+${(categoryAverages || []).map((c: any) => `- ${c.category} (${c.score})`).join('\n')}
+
+Activated Dependencies:
+${(dependenciesData || []).map((d: any) => `- ${d.description} (Weight: ${d.weight})`).join('\n')}
+
+Analyze these traits and translate all content into English, Japanese, Korean, Simplified Chinese, and Thai.
 Return a STRICTLY VALID JSON object with the following structure. Do not include markdown formatting or backticks.
 
 {
   "summaries": {
     "en": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary in English, using \\n\\n for paragraph breaks...",
-    "ja": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Japanese, using \\n\\n for paragraph breaks...",
-    "ko": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Korean, using \\n\\n for paragraph breaks...",
-    "zh": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Simplified Chinese, using \\n\\n for paragraph breaks...",
-    "th": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Thai, using \\n\\n for paragraph breaks..."
+    "ja": "Your rigorous ${showWeakness ? '4' : '3'}-paragraph summary translated to Japanese...",
+    "ko": "...",
+    "zh": "...",
+    "th": "..."
+  },
+  "tradeoffs": {
+    "en": "Trade-offs analysis in English...",
+    "ja": "...",
+    "ko": "...",
+    "zh": "...",
+    "th": "..."
+  },
+  "dependencies": {
+    "en": "Dependencies analysis in English...",
+    "ja": "...",
+    "ko": "...",
+    "zh": "...",
+    "th": "..."
   },
   "sectorImplications": {
     "en": { "Energy": "Implication based on top traits...", "Information": "Implication...", "Reasoning": "...", "Motivation": "...", "Execution": "...", "Emotional Architecture": "...", "Meta-Self": "..." },
