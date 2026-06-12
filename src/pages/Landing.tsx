@@ -41,7 +41,7 @@ export default function Landing() {
 
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
           <button 
-            onClick={() => navigate('/questionnaire')}
+            onClick={() => navigate('/options')}
             className="group relative inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium text-lg overflow-hidden transition-transform hover:scale-105 active:scale-95"
           >
             <span>{t('landing.begin')}</span>
